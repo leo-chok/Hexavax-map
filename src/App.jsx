@@ -3,8 +3,10 @@ import EpidemicMap from "./components/EpidemicMap.jsx";
 import TimeSlider from "./components/TimeSlider.jsx";
 import Legend from "./components/Legend.jsx";
 import DatasetSelector from "./components/DatasetSelector.jsx";
+import ViewSelector from "./components/ViewSelector.jsx";
 import FilterPanel from "./components/FilterPanel.jsx";
 import DepartmentModal from "./components/DepartmentModal.jsx";
+import AreaModal from "./components/AreaModal.jsx";
 
 export default function App() {
   const [dataset, setDataset] = useState("france");
@@ -14,6 +16,8 @@ export default function App() {
   const [pharmacies, setPharmacies] = useState([]);
   const [departmentsGeo, setDepartmentsGeo] = useState(null);
   const [departmentsStatsMap, setDepartmentsStatsMap] = useState({});
+  const [viewMode, setViewMode] = useState("national");
+  const [viewGeojson, setViewGeojson] = useState(null);
   // load persisted filters from localStorage if present (sanitise stored object)
   const [filters, setFilters] = useState(() => {
     try {
@@ -88,6 +92,36 @@ export default function App() {
         setDepartmentsGeo(null);
       });
   }, []);
+
+  // Charger la geojson pour la vue active (national / regional / departmental / domtom)
+  useEffect(() => {
+    const fileForMode = {
+      national: "./data/metropole.geojson",
+      regional: "./data/regions.geojson",
+      departmental: "./data/departements.geojson",
+      domtom: "./data/departements.geojson",
+    }[viewMode];
+
+    if (!fileForMode) {
+      setViewGeojson(null);
+      return;
+    }
+
+    let cancelled = false;
+    fetch(fileForMode)
+      .then((res) => {
+        if (!res.ok) throw new Error("view geojson not found");
+        return res.json();
+      })
+      .then((g) => {
+        if (!cancelled) setViewGeojson(g);
+      })
+      .catch((_) => {
+        if (!cancelled) setViewGeojson(null);
+      });
+
+    return () => { cancelled = true; };
+  }, [viewMode]);
 
   // Charger le mock des statistiques départementales (optionnel)
   useEffect(() => {
@@ -171,6 +205,8 @@ export default function App() {
 
   const [selectedDepartment, setSelectedDepartment] = useState(null);
   const [selectedDepartmentStats, setSelectedDepartmentStats] = useState(null);
+  const [selectedArea, setSelectedArea] = useState(null);
+  const [selectedAreaData, setSelectedAreaData] = useState(null);
 
   // Helper: try to read a department code (INSEE) from a geojson feature's properties
   const readDepCode = (feature) => {
@@ -204,6 +240,30 @@ export default function App() {
     setSelectedDepartmentStats(stats);
   };
 
+  // Simple area click handler: set selected area and fill with hard-coded mock data
+  const handleAreaClick = (feature) => {
+    if (!feature) return;
+    setSelectedArea(feature);
+    const p = feature.properties || {};
+    const name = p.nom || p.name || p.NOM || p.LIBELLE || p.label || "Zone";
+
+    // Very small heuristic to vary mock values per name
+    const isIle = String(name).toLowerCase().includes("ile") || String(name).toLowerCase().includes("île");
+
+    const mock = {
+      vaccination_rate_pct: isIle ? 72.4 : 64.1,
+      cases_per_100k: isIle ? 420 : 312,
+      incidence_rate: isIle ? 152.3 : 145.2,
+      positivity_rate: isIle ? 7.2 : 6.8,
+      icu_occupancy_pct: isIle ? 78.1 : 72.3,
+      pharmacies_partners: isIle ? 48 : 27,
+      vaccination_centers: isIle ? 24 : 12,
+      last_update: new Date().toISOString().slice(0, 10),
+    };
+
+    setSelectedAreaData(mock);
+  };
+
   return (
     <div className="app">
       {/* --- HEADER --- */}
@@ -230,6 +290,9 @@ export default function App() {
             pharmacies={pharmacies}
             departments={departmentsGeo}
             departmentsStatsMap={departmentsStatsMap}
+            viewGeojson={viewGeojson}
+            viewMode={viewMode}
+            onAreaClick={handleAreaClick}
             showDepartments={filters.departments}
             onDepartmentClick={handleDepartmentClick}
             mapStyle={import.meta.env.VITE_MAPBOX_STYLE}
@@ -238,16 +301,39 @@ export default function App() {
             showPharmacies={filters.pharmacies}
           />
 
-          <FilterPanel
-            filters={filters}
-            onToggle={(key) => setFilters((p) => ({ ...p, [key]: !p[key] }))}
-          />
+          {/* Left column: View selector above Filter panel with 24px gap */}
+          <div
+            style={{
+              position: "absolute",
+              left: 12,
+              top: 12,
+              zIndex: 1200,
+              display: "flex",
+              flexDirection: "column",
+              gap: 24,
+            }}
+          >
+            <ViewSelector value={viewMode} onChange={setViewMode} />
+
+            <FilterPanel
+              filters={filters}
+              onToggle={(key) => setFilters((p) => ({ ...p, [key]: !p[key] }))}
+            />
+          </div>
 
           <DepartmentModal
             open={!!selectedDepartment}
             feature={selectedDepartment}
             stats={selectedDepartmentStats}
             onClose={() => { setSelectedDepartment(null); setSelectedDepartmentStats(null); }}
+          />
+
+          <AreaModal
+            open={!!selectedArea}
+            feature={selectedArea}
+            data={selectedAreaData}
+            viewMode={viewMode}
+            onClose={() => { setSelectedArea(null); setSelectedAreaData(null); }}
           />
 
           {/* single legend card that expands vertically depending on active layers */}
@@ -266,7 +352,7 @@ export default function App() {
       {/* --- SLIDER & DATE --- */}
       <footer className="footer">
         <div className="panel">
-          {filters.heatmap ? (
+          {((filters.heatmap || filters.hospitals) ? (
             <div style={{ display: "flex", alignItems: "center", gap: 12 }}>
               <div className="slider-wrap">
                 <TimeSlider
@@ -292,12 +378,12 @@ export default function App() {
               </div>
 
               <div style={{ position: "absolute", right: "24px" }}>
-                <DatasetSelector value={dataset} onChange={setDataset} />
+                {filters.heatmap && <DatasetSelector value={dataset} onChange={setDataset} />}
               </div>
             </div>
           ) : (
             <div style={{ height: 0 }} />
-          )}
+          ))}
         </div>
       </footer>
     </div>

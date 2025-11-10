@@ -3,6 +3,7 @@ import { PolygonLayer, ScatterplotLayer, GeoJsonLayer } from "@deck.gl/layers";
 import { buildHex } from "./utils/geo";
 import { bucketColor } from "./utils/colors";
 import { color } from "@deck.gl/core";
+import { createViewLayers } from "./createViewLayers";
 
 export function createLayers({
   points = [],
@@ -14,13 +15,30 @@ export function createLayers({
   showPharmacies = false,
   showDepartments = false,
   onDepartmentClick = null,
-  scaling = { radiusMeters: 1500, elevationMultiplier: 6000, heatmapRadiusPixels: 100 },
+  scaling = {
+    radiusMeters: 1500,
+    elevationMultiplier: 6000,
+    heatmapRadiusPixels: 100,
+  },
 }) {
   const layers = [];
   // If the caller passed a departmentsStatsMap in the options object, use it;
   // we avoid adding it directly to the destructured params to keep compatibility
   // with older parsers. Access via arguments[0].
-  const departmentsStatsMapLocal = (arguments[0] && arguments[0].departmentsStatsMap) || {};
+  const departmentsStatsMapLocal =
+    (arguments[0] && arguments[0].departmentsStatsMap) || {};
+  const viewGeojsonLocal = (arguments[0] && arguments[0].viewGeojson) || null;
+  const viewModeLocal = (arguments[0] && arguments[0].viewMode) || "national";
+  const onAreaClickLocal = (arguments[0] && arguments[0].onAreaClick) || null;
+  // View boundary layers (draw underneath analytic layers) - built by separate factory
+  if (viewGeojsonLocal) {
+    const v = createViewLayers({
+      viewGeojson: viewGeojsonLocal,
+      viewMode: viewModeLocal,
+      onAreaClick: onAreaClickLocal,
+    });
+    if (Array.isArray(v) && v.length) layers.push(...v);
+  }
 
   if (showHeatmap && points && points.length) {
     layers.push(
@@ -39,7 +57,10 @@ export function createLayers({
   }
 
   if (showHospitals && hospitals && hospitals.length) {
-    const polys = hospitals.map((h) => ({ ...h, polygon: buildHex(h.lon, h.lat, scaling.radiusMeters) }));
+    const polys = hospitals.map((h) => ({
+      ...h,
+      polygon: buildHex(h.lon, h.lat, scaling.radiusMeters),
+    }));
     layers.push(
       new PolygonLayer({
         id: "hospital-saturation",
@@ -48,7 +69,8 @@ export function createLayers({
         pickable: true,
         wireframe: false,
         getPolygon: (d) => d.polygon,
-        getElevation: (d) => (Number(d.saturation) || 0) / 100 * scaling.elevationMultiplier,
+        getElevation: (d) =>
+          ((Number(d.saturation) || 0) / 100) * scaling.elevationMultiplier,
         getFillColor: (d) => bucketColor(d.saturation),
         getLineColor: [20, 20, 20],
         lineWidthMinPixels: 1,
@@ -82,7 +104,13 @@ export function createLayers({
 
     const readSaturation = (feature) => {
       const p = (feature && feature.properties) || {};
-      const candidates = [p.saturation_pct, p.saturation, p.saturationPct, p.sat, p.SATURATION];
+      const candidates = [
+        p.saturation_pct,
+        p.saturation,
+        p.saturationPct,
+        p.sat,
+        p.SATURATION,
+      ];
       for (const v of candidates) {
         if (v == null) continue;
         const n = Number(v);
@@ -91,26 +119,44 @@ export function createLayers({
 
       // fallback: try to lookup by department code in the provided stats map
       try {
-        const codeCandidates = [p.code, p.CODE, p.COD_DEP, p.cod_dep, p.insee, p.INSEE, p.code_insee, p.dep, p.DEP];
+        const codeCandidates = [
+          p.code,
+          p.CODE,
+          p.COD_DEP,
+          p.cod_dep,
+          p.insee,
+          p.INSEE,
+          p.code_insee,
+          p.dep,
+          p.DEP,
+        ];
         for (const c of codeCandidates) {
           if (c == null) continue;
           const raw = String(c);
           const num = String(Number(raw.replace(/^0+/, "")));
           if (departmentsStatsMapLocal[num]) {
-            const v = departmentsStatsMapLocal[num].saturation_pct ?? departmentsStatsMapLocal[num].saturation;
+            const v =
+              departmentsStatsMapLocal[num].saturation_pct ??
+              departmentsStatsMapLocal[num].saturation;
             if (v != null) return Number(v);
           }
           if (departmentsStatsMapLocal[raw]) {
-            const v = departmentsStatsMapLocal[raw].saturation_pct ?? departmentsStatsMapLocal[raw].saturation;
+            const v =
+              departmentsStatsMapLocal[raw].saturation_pct ??
+              departmentsStatsMapLocal[raw].saturation;
             if (v != null) return Number(v);
           }
           if (departmentsStatsMapLocal[raw.toUpperCase()]) {
-            const v = departmentsStatsMapLocal[raw.toUpperCase()].saturation_pct ?? departmentsStatsMapLocal[raw.toUpperCase()].saturation;
+            const v =
+              departmentsStatsMapLocal[raw.toUpperCase()].saturation_pct ??
+              departmentsStatsMapLocal[raw.toUpperCase()].saturation;
             if (v != null) return Number(v);
           }
           const padded = String(Number(raw)).padStart(2, "0");
           if (departmentsStatsMapLocal[padded]) {
-            const v = departmentsStatsMapLocal[padded].saturation_pct ?? departmentsStatsMapLocal[padded].saturation;
+            const v =
+              departmentsStatsMapLocal[padded].saturation_pct ??
+              departmentsStatsMapLocal[padded].saturation;
             if (v != null) return Number(v);
           }
         }
@@ -121,18 +167,44 @@ export function createLayers({
 
     const readCritical = (feature) => {
       const p = (feature && feature.properties) || {};
-      const cand = (p.critical_state || p.etat || p.etat_critique || p.critical || p.state || null);
+      const cand =
+        p.critical_state ||
+        p.etat ||
+        p.etat_critique ||
+        p.critical ||
+        p.state ||
+        null;
       if (cand) return String(cand);
 
       // fallback to stats map
       try {
-        const codeCandidates = [p.code, p.CODE, p.COD_DEP, p.cod_dep, p.insee, p.INSEE, p.code_insee, p.dep, p.DEP];
+        const codeCandidates = [
+          p.code,
+          p.CODE,
+          p.COD_DEP,
+          p.cod_dep,
+          p.insee,
+          p.INSEE,
+          p.code_insee,
+          p.dep,
+          p.DEP,
+        ];
         for (const c of codeCandidates) {
           if (c == null) continue;
           const raw = String(c);
           const num = String(Number(raw.replace(/^0+/, "")));
-          const s = departmentsStatsMapLocal[num] || departmentsStatsMapLocal[raw] || departmentsStatsMapLocal[raw.toUpperCase()] || departmentsStatsMapLocal[String(Number(raw)).padStart(2, "0")];
-          if (s && (s.critical_state || s.etat || s.etat_critique || s.critical)) return String(s.critical_state || s.etat || s.etat_critique || s.critical);
+          const s =
+            departmentsStatsMapLocal[num] ||
+            departmentsStatsMapLocal[raw] ||
+            departmentsStatsMapLocal[raw.toUpperCase()] ||
+            departmentsStatsMapLocal[String(Number(raw)).padStart(2, "0")];
+          if (
+            s &&
+            (s.critical_state || s.etat || s.etat_critique || s.critical)
+          )
+            return String(
+              s.critical_state || s.etat || s.etat_critique || s.critical
+            );
         }
       } catch (e) {}
 
@@ -142,9 +214,21 @@ export function createLayers({
     const colorForCritical = (s) => {
       if (!s) return [150, 200, 255, 160];
       const lower = s.toLowerCase();
-      if (lower.includes("élev") || lower.includes("elev") || lower.includes("haut") || lower.includes("fort")) return [220, 45, 45, 220];
-      if (lower.includes("moy") || lower.includes("medium") || lower.includes("mod")) return [250, 160, 60, 200];
-      if (lower.includes("faibl") || lower.includes("low")) return [70, 180, 100, 180];
+      if (
+        lower.includes("élev") ||
+        lower.includes("elev") ||
+        lower.includes("haut") ||
+        lower.includes("fort")
+      )
+        return [220, 45, 45, 220];
+      if (
+        lower.includes("moy") ||
+        lower.includes("medium") ||
+        lower.includes("mod")
+      )
+        return [250, 160, 60, 200];
+      if (lower.includes("faibl") || lower.includes("low"))
+        return [70, 180, 100, 180];
       return [150, 200, 255, 160];
     };
 
@@ -157,9 +241,9 @@ export function createLayers({
       const sat = readSaturation(feature);
       if (sat == null || Number.isNaN(sat)) return 20;
       const clamped = Math.max(0, Math.min(100, Number(sat)));
-      if (clamped < 33) return 200;
-      if (clamped < 66) return 3000;
-      return 10000;
+      if (clamped < 33) return 200; // petit
+      if (clamped < 66) return 1500; // moyen
+      return 5000; // élevé
     };
 
     const getDeptFillColor = (feature) => {
@@ -194,7 +278,11 @@ export function createLayers({
           if (onDepartmentClick && object) onDepartmentClick(object);
         },
         updateTriggers: {
-          getElevation: [scaling.elevationMultiplier, departments, departmentsStatsMapLocal],
+          getElevation: [
+            scaling.elevationMultiplier,
+            departments,
+            departmentsStatsMapLocal,
+          ],
           getFillColor: [departments, departmentsStatsMapLocal],
         },
       })

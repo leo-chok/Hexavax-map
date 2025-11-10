@@ -12,13 +12,10 @@ export default function FilterPanel({ filters, onToggle }) {
     <Paper
       elevation={3}
       sx={{
-        position: "absolute",
-        left: 12,
-        top: 80,
         padding: 2,
         borderRadius: 2,
-        zIndex: 1200,
         background: "rgba(255,255,255,0.95)",
+        width: 260,
       }}
     >
       <Typography variant="subtitle1" sx={{ fontWeight: 700, marginBottom: 1 }}>

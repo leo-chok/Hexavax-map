@@ -14,7 +14,7 @@ const INITIAL_VIEW_STATE = {
   longitude: 2.5,
   latitude: 46.5,
   zoom: 5,
-  pitch: 40,
+  pitch: 20,
   bearing: 0,
 };
 
@@ -30,6 +30,9 @@ export default function EpidemicMap({
   showDepartments = false,
   onDepartmentClick = null,
   departmentsStatsMap = {},
+  viewGeojson = null,
+  viewMode = "national",
+  onAreaClick = null,
 }) {
   const lastUpdateRef = useRef(0);
 
@@ -50,6 +53,9 @@ export default function EpidemicMap({
       pharmacies,
       departments,
       departmentsStatsMap,
+      viewGeojson,
+      viewMode,
+      onAreaClick,
       showHeatmap,
       showHospitals,
       showPharmacies,
@@ -58,7 +64,24 @@ export default function EpidemicMap({
       scaling,
     }),
     // depend on counts + flags + scaling values to avoid deep comparisons
-    [points?.length, hospitals?.length, pharmacies?.length, (departments && departments.features)?.length, Object.keys(departmentsStatsMap || {}).length, showHeatmap, showHospitals, showPharmacies, showDepartments, onDepartmentClick, scaling.radiusMeters, scaling.elevationMultiplier, scaling.heatmapRadiusPixels]
+    [
+      points?.length,
+      hospitals?.length,
+      pharmacies?.length,
+      (departments && departments.features)?.length,
+      Object.keys(departmentsStatsMap || {}).length,
+      showHeatmap,
+      showHospitals,
+      showPharmacies,
+      showDepartments,
+      onDepartmentClick,
+      scaling.radiusMeters,
+      scaling.elevationMultiplier,
+      scaling.heatmapRadiusPixels,
+      viewMode,
+      onAreaClick,
+      (viewGeojson && viewGeojson.features) ? viewGeojson.features.length : 0,
+    ]
   );
 
   return (
@@ -71,9 +94,11 @@ export default function EpidemicMap({
           setZoom(viewState.zoom);
         }
       }}
+      // show pointer cursor when hovering pickable layers (indicates clickable)
+      getCursor={({ isHovering }) => (isHovering ? "pointer" : "default")}
       controller={true}
-      layers={layers}
-      getTooltip={getTooltipContent}
+  layers={layers}
+  getTooltip={(info) => getTooltipContent({ ...info, viewMode })}
     >
       <Map
         reuseMaps
