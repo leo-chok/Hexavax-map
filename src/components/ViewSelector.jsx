@@ -11,10 +11,10 @@ export default function ViewSelector({ value, onChange, disabled = false }) {
         label="Vue"
         onChange={(e) => onChange && onChange(e.target.value)}
       >
-        <MenuItem value="national">Vue Nationale</MenuItem>
-        <MenuItem value="regional">Vue Régionale</MenuItem>
-        <MenuItem value="departmental">Vue Départementale</MenuItem>
-        <MenuItem value="domtom">Vue DOM-TOM</MenuItem>
+        <MenuItem value="national">Nationale</MenuItem>
+        <MenuItem value="regional">Régionale</MenuItem>
+        <MenuItem value="departmental">Départementale</MenuItem>
+        <MenuItem value="domtom">DROM-COM</MenuItem>
       </Select>
     </FormControl>
   );

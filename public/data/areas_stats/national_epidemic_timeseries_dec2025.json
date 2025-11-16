@@ -1,0 +1,254 @@
+{
+  "2025-11-15": {
+    "vaccination_rate_pct": 67.9625,
+    "cases_per_100k": 94.13020833333337,
+    "incidence_rate": 43.856249999999996,
+    "positivity_rate": 1.9013541666666665,
+    "icu_occupancy_pct": 22.053125000000012,
+    "pharmacies_partners": 7681,
+    "vaccination_centers": 1795
+  },
+  "2025-11-16": {
+    "vaccination_rate_pct": 68.06249999999999,
+    "cases_per_100k": 97.30312499999998,
+    "incidence_rate": 45.33020833333337,
+    "positivity_rate": 1.9241666666666664,
+    "icu_occupancy_pct": 22.614583333333343,
+    "pharmacies_partners": 7681,
+    "vaccination_centers": 1795
+  },
+  "2025-11-17": {
+    "vaccination_rate_pct": 68.16250000000001,
+    "cases_per_100k": 101.78020833333335,
+    "incidence_rate": 47.42395833333331,
+    "positivity_rate": 1.961770833333331,
+    "icu_occupancy_pct": 23.371875000000006,
+    "pharmacies_partners": 7681,
+    "vaccination_centers": 1795
+  },
+  "2025-11-18": {
+    "vaccination_rate_pct": 68.2625,
+    "cases_per_100k": 107.92812499999998,
+    "incidence_rate": 50.28958333333333,
+    "positivity_rate": 2.024270833333332,
+    "icu_occupancy_pct": 24.40104166666667,
+    "pharmacies_partners": 7681,
+    "vaccination_centers": 1795
+  },
+  "2025-11-19": {
+    "vaccination_rate_pct": 68.3625,
+    "cases_per_100k": 116.10937500000004,
+    "incidence_rate": 54.10104166666667,
+    "positivity_rate": 2.1214583333333343,
+    "icu_occupancy_pct": 25.72812499999999,
+    "pharmacies_partners": 7681,
+    "vaccination_centers": 1795
+  },
+  "2025-11-20": {
+    "vaccination_rate_pct": 68.56249999999999,
+    "cases_per_100k": 126.61145833333336,
+    "incidence_rate": 58.996874999999996,
+    "positivity_rate": 2.2640624999999988,
+    "icu_occupancy_pct": 27.40833333333333,
+    "pharmacies_partners": 7681,
+    "vaccination_centers": 1795
+  },
+  "2025-11-21": {
+    "vaccination_rate_pct": 68.66250000000001,
+    "cases_per_100k": 139.58645833333335,
+    "incidence_rate": 65.04479166666668,
+    "positivity_rate": 2.4676041666666673,
+    "icu_occupancy_pct": 29.49270833333335,
+    "pharmacies_partners": 7681,
+    "vaccination_centers": 1795
+  },
+  "2025-11-22": {
+    "vaccination_rate_pct": 68.7625,
+    "cases_per_100k": 155.08854166666666,
+    "incidence_rate": 72.26875000000003,
+    "positivity_rate": 2.7414583333333336,
+    "icu_occupancy_pct": 32.01562500000001,
+    "pharmacies_partners": 7681,
+    "vaccination_centers": 1795
+  },
+  "2025-11-23": {
+    "vaccination_rate_pct": 68.8625,
+    "cases_per_100k": 172.89270833333327,
+    "incidence_rate": 80.56041666666668,
+    "positivity_rate": 3.0921874999999996,
+    "icu_occupancy_pct": 34.972916666666656,
+    "pharmacies_partners": 7681,
+    "vaccination_centers": 1795
+  },
+  "2025-11-24": {
+    "vaccination_rate_pct": 68.9625,
+    "cases_per_100k": 192.50104166666668,
+    "incidence_rate": 89.69375000000001,
+    "positivity_rate": 3.5174999999999987,
+    "icu_occupancy_pct": 38.347916666666684,
+    "pharmacies_partners": 7681,
+    "vaccination_centers": 1795
+  },
+  "2025-11-25": {
+    "vaccination_rate_pct": 69.06249999999999,
+    "cases_per_100k": 213.12812500000007,
+    "incidence_rate": 99.31041666666668,
+    "positivity_rate": 4.005520833333334,
+    "icu_occupancy_pct": 42.10937500000001,
+    "pharmacies_partners": 7681,
+    "vaccination_centers": 1795
+  },
+  "2025-11-26": {
+    "vaccination_rate_pct": 69.16250000000001,
+    "cases_per_100k": 233.74479166666666,
+    "incidence_rate": 108.9177083333333,
+    "positivity_rate": 4.528958333333333,
+    "icu_occupancy_pct": 46.12500000000005,
+    "pharmacies_partners": 7681,
+    "vaccination_centers": 1795
+  },
+  "2025-11-27": {
+    "vaccination_rate_pct": 69.2625,
+    "cases_per_100k": 253.11354166666663,
+    "incidence_rate": 117.94479166666672,
+    "positivity_rate": 5.052812499999999,
+    "icu_occupancy_pct": 50.309374999999996,
+    "pharmacies_partners": 7681,
+    "vaccination_centers": 1795
+  },
+  "2025-11-28": {
+    "vaccination_rate_pct": 69.3625,
+    "cases_per_100k": 269.94895833333334,
+    "incidence_rate": 125.78645833333326,
+    "positivity_rate": 5.530208333333333,
+    "icu_occupancy_pct": 54.495833333333316,
+    "pharmacies_partners": 7681,
+    "vaccination_centers": 1795
+  },
+  "2025-11-29": {
+    "vaccination_rate_pct": 69.56249999999999,
+    "cases_per_100k": 283.01874999999995,
+    "incidence_rate": 131.88125,
+    "positivity_rate": 5.914270833333334,
+    "icu_occupancy_pct": 58.49270833333333,
+    "pharmacies_partners": 7681,
+    "vaccination_centers": 1795
+  },
+  "2025-11-30": {
+    "vaccination_rate_pct": 69.66250000000001,
+    "cases_per_100k": 291.3020833333333,
+    "incidence_rate": 135.73750000000004,
+    "positivity_rate": 6.164583333333333,
+    "icu_occupancy_pct": 62.1166666666667,
+    "pharmacies_partners": 7681,
+    "vaccination_centers": 1795
+  },
+  "2025-12-01": {
+    "vaccination_rate_pct": 69.7625,
+    "cases_per_100k": 294.1458333333333,
+    "incidence_rate": 137.06145833333332,
+    "positivity_rate": 6.251041666666666,
+    "icu_occupancy_pct": 65.18437499999997,
+    "pharmacies_partners": 7681,
+    "vaccination_centers": 1795
+  },
+  "2025-12-02": {
+    "vaccination_rate_pct": 69.8625,
+    "cases_per_100k": 291.3020833333333,
+    "incidence_rate": 135.73750000000004,
+    "positivity_rate": 6.164583333333333,
+    "icu_occupancy_pct": 67.49479166666666,
+    "pharmacies_partners": 7681,
+    "vaccination_centers": 1795
+  },
+  "2025-12-03": {
+    "vaccination_rate_pct": 69.96250000000002,
+    "cases_per_100k": 283.01874999999995,
+    "incidence_rate": 131.88125,
+    "positivity_rate": 5.914270833333334,
+    "icu_occupancy_pct": 68.94166666666663,
+    "pharmacies_partners": 7681,
+    "vaccination_centers": 1795
+  },
+  "2025-12-04": {
+    "vaccination_rate_pct": 70.06249999999999,
+    "cases_per_100k": 269.94895833333334,
+    "incidence_rate": 125.78645833333326,
+    "positivity_rate": 5.530208333333333,
+    "icu_occupancy_pct": 69.4395833333333,
+    "pharmacies_partners": 7681,
+    "vaccination_centers": 1795
+  },
+  "2025-12-05": {
+    "vaccination_rate_pct": 70.16250000000001,
+    "cases_per_100k": 253.11354166666663,
+    "incidence_rate": 117.94479166666672,
+    "positivity_rate": 5.052812499999999,
+    "icu_occupancy_pct": 68.94166666666663,
+    "pharmacies_partners": 7681,
+    "vaccination_centers": 1795
+  },
+  "2025-12-06": {
+    "vaccination_rate_pct": 70.2625,
+    "cases_per_100k": 233.74479166666666,
+    "incidence_rate": 108.9177083333333,
+    "positivity_rate": 4.528958333333333,
+    "icu_occupancy_pct": 67.49479166666666,
+    "pharmacies_partners": 7681,
+    "vaccination_centers": 1795
+  },
+  "2025-12-07": {
+    "vaccination_rate_pct": 70.3625,
+    "cases_per_100k": 213.12812500000007,
+    "incidence_rate": 99.31041666666668,
+    "positivity_rate": 4.005520833333334,
+    "icu_occupancy_pct": 65.18437499999997,
+    "pharmacies_partners": 7681,
+    "vaccination_centers": 1795
+  },
+  "2025-12-08": {
+    "vaccination_rate_pct": 70.56249999999999,
+    "cases_per_100k": 192.50104166666668,
+    "incidence_rate": 89.69375000000001,
+    "positivity_rate": 3.5174999999999987,
+    "icu_occupancy_pct": 62.1166666666667,
+    "pharmacies_partners": 7681,
+    "vaccination_centers": 1795
+  },
+  "2025-12-09": {
+    "vaccination_rate_pct": 70.66250000000001,
+    "cases_per_100k": 172.89270833333327,
+    "incidence_rate": 80.56041666666668,
+    "positivity_rate": 3.0921874999999996,
+    "icu_occupancy_pct": 58.49270833333333,
+    "pharmacies_partners": 7681,
+    "vaccination_centers": 1795
+  },
+  "2025-12-10": {
+    "vaccination_rate_pct": 70.7625,
+    "cases_per_100k": 155.08854166666666,
+    "incidence_rate": 72.26875000000003,
+    "positivity_rate": 2.7414583333333336,
+    "icu_occupancy_pct": 54.495833333333316,
+    "pharmacies_partners": 7681,
+    "vaccination_centers": 1795
+  },
+  "2025-12-11": {
+    "vaccination_rate_pct": 70.8625,
+    "cases_per_100k": 139.58645833333335,
+    "incidence_rate": 65.04479166666668,
+    "positivity_rate": 2.4676041666666673,
+    "icu_occupancy_pct": 50.309374999999996,
+    "pharmacies_partners": 7681,
+    "vaccination_centers": 1795
+  },
+  "2025-12-12": {
+    "vaccination_rate_pct": 70.9625,
+    "cases_per_100k": 126.61145833333336,
+    "incidence_rate": 58.996874999999996,
+    "positivity_rate": 2.2640624999999988,
+    "icu_occupancy_pct": 46.12500000000005,
+    "pharmacies_partners": 7681,
+    "vaccination_centers": 1795
+  }
+}

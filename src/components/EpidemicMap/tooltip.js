@@ -57,7 +57,7 @@ export function getTooltipContent({ object, layer, viewMode }) {
 
   // View / administrative boundaries hover: show the region/department name
   // MAIS seulement si ce n'est pas un autre layer plus prioritaire (pharmacies, hôpitaux, etc.)
-  if (layer.id && (layer.id.startsWith("view-layer") || layer.id === "departments-layer")) {
+  if (layer.id && layer.id.startsWith("view-layer")) {
     // Ne pas afficher si l'objet a une propriété `points` (c'est un HexagonLayer)
     if (object && object.points) return null;
     

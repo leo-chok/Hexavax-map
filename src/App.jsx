@@ -1,11 +1,10 @@
-import React, { useMemo, useState, useEffect } from "react";
+import { useMemo, useState, useEffect } from "react";
 import EpidemicMap from "./components/EpidemicMap.jsx";
 import TimeSlider from "./components/TimeSlider.jsx";
 import Legend from "./components/Legend.jsx";
-import DatasetSelector from "./components/DatasetSelector.jsx";
 import SidePanel from "./components/SidePanel.jsx";
-import DepartmentModal from "./components/DepartmentModal.jsx";
-import AreaModal from "./components/AreaModal.jsx";
+import AreaPanel from "./components/AreaPanel.jsx";
+import { DATA_SOURCES, DEFAULT_FILTERS, STORAGE_KEYS } from "./config/constants";
 
 export default function App() {
   const [dataset, setDataset] = useState("france");
@@ -13,16 +12,20 @@ export default function App() {
   const [hospitalData, setHospitalData] = useState([]);
   const [dateIndex, setDateIndex] = useState(0);
   const [pharmacies, setPharmacies] = useState([]);
-  const [departmentsGeo, setDepartmentsGeo] = useState(null);
-  const [departmentsStatsMap, setDepartmentsStatsMap] = useState({});
+  const [departmentsAreaStatsMap, setDepartmentsAreaStatsMap] = useState({});
+  const [departmentsAreaTimeseries, setDepartmentsAreaTimeseries] = useState({});
+  const [regionsStatsMap, setRegionsStatsMap] = useState({});
+  const [regionsTimeseries, setRegionsTimeseries] = useState({});
+  const [nationalTimeseries, setNationalTimeseries] = useState({});
   const [viewMode, setViewMode] = useState("national");
   const [viewGeojson, setViewGeojson] = useState(null);
   const [sidePanelOpen, setSidePanelOpen] = useState(true);
   const [showAdminBoundaries, setShowAdminBoundaries] = useState(true);
+  const [domTomCoords, setDomTomCoords] = useState(null);
   // load persisted filters from localStorage if present (sanitise stored object)
   const [filters, setFilters] = useState(() => {
     try {
-      const raw = localStorage.getItem("hexavax_filters");
+      const raw = localStorage.getItem(STORAGE_KEYS.filters);
       if (raw) {
         const parsed = JSON.parse(raw);
         return {
@@ -34,25 +37,12 @@ export default function App() {
     } catch (e) {
       console.warn("Erreur lecture filters depuis localStorage", e);
     }
-    return {
-      heatmap: false,
-      hospitals: false,
-      pharmacies: false,
-      departments: false,
-    };
+    return DEFAULT_FILTERS;
   });
-
-  // Datasets disponibles
-  const dataMap = {
-    france: "./data/mockData_france_daily.json",
-    idf: "./data/mockData_iledefrance_daily.json",
-  };
-
-  const hospitalDataset = "./data/mockData_saturation_hopitaux_france.json";
 
   // Charger le dataset sélectionné
   useEffect(() => {
-    fetch(dataMap[dataset])
+    fetch(DATA_SOURCES.datasets[dataset])
       .then((res) => res.json())
       .then((data) => setRawData(data))
       .catch((err) => console.error("Erreur chargement dataset :", err));
@@ -60,7 +50,7 @@ export default function App() {
 
   // Charger la data hospitalière (fixe)
   useEffect(() => {
-    fetch(hospitalDataset)
+    fetch(DATA_SOURCES.hospitals)
       .then((res) => res.json())
       .then((data) => setHospitalData(data))
       .catch((err) => console.error("Erreur chargement hôpitaux :", err));
@@ -68,40 +58,55 @@ export default function App() {
 
   // Charger les données des pharmacies (fixe)
   useEffect(() => {
-    fetch("./data/pharmacies_france_v1.json")
+    fetch(DATA_SOURCES.pharmacies)
       .then(res => res.json())
       .then(setPharmacies)
       .catch(err => console.error("Erreur chargement pharmacies :", err));
   }, []);
 
-  // Charger la geojson des départements (fichier fourni par l'utilisateur)
+  // Charger les stats des régions
   useEffect(() => {
-    fetch("./data/departements.geojson")
-      .then((res) => {
-        if (!res.ok) throw new Error("departements.geojson not found");
-        return res.json();
-      })
-      .then((g) => {
-        setDepartmentsGeo(g);
-        try {
-          const count = g.features ? g.features.length : 0;
-          console.info(`Loaded departments geojson './data/departements.geojson' with ${count} features`);
-        } catch (e) {}
-      })
-      .catch(() => {
-        // no departments file available — silently continue with departmentsGeo = null
-        setDepartmentsGeo(null);
-      });
+    fetch(DATA_SOURCES.regions.stats)
+      .then(res => res.json())
+      .then(setRegionsStatsMap)
+      .catch(err => console.error("Erreur chargement stats régions :", err));
+  }, []);
+
+  // Charger les stats area des départements
+  useEffect(() => {
+    fetch(DATA_SOURCES.departments.area_stats)
+      .then(res => res.json())
+      .then(setDepartmentsAreaStatsMap)
+      .catch(err => console.error("Erreur chargement stats area départements :", err));
+  }, []);
+
+  // Charger les données temporelles des départements (timeseries)
+  useEffect(() => {
+    fetch(DATA_SOURCES.departments.area_timeseries)
+      .then(res => res.json())
+      .then(setDepartmentsAreaTimeseries)
+      .catch(err => console.error("Erreur chargement timeseries départements :", err));
+  }, []);
+
+  // Charger les données temporelles des régions
+  useEffect(() => {
+    fetch(DATA_SOURCES.regions.timeseries)
+      .then(res => res.json())
+      .then(setRegionsTimeseries)
+      .catch(err => console.error("Erreur chargement timeseries régions :", err));
+  }, []);
+
+  // Charger les données temporelles nationales
+  useEffect(() => {
+    fetch(DATA_SOURCES.national.timeseries)
+      .then(res => res.json())
+      .then(setNationalTimeseries)
+      .catch(err => console.error("Erreur chargement timeseries national :", err));
   }, []);
 
   // Charger la geojson pour la vue active (national / regional / departmental / domtom)
   useEffect(() => {
-    const fileForMode = {
-      national: "./data/metropole.geojson",
-      regional: "./data/regions.geojson",
-      departmental: "./data/departements.geojson",
-      domtom: "./data/departements.geojson",
-    }[viewMode];
+    const fileForMode = DATA_SOURCES.views[viewMode];
 
     if (!fileForMode) {
       setViewGeojson(null);
@@ -124,36 +129,12 @@ export default function App() {
     return () => { cancelled = true; };
   }, [viewMode]);
 
-  // Charger le mock des statistiques départementales (optionnel)
+  // Réinitialiser domTomCoords quand on quitte le mode DOM-TOM
   useEffect(() => {
-    fetch("./data/departments_mock.json")
-      .then((res) => {
-        if (!res.ok) throw new Error("departments_mock.json not found");
-        return res.json();
-      })
-      .then((arr) => {
-        if (!Array.isArray(arr)) return;
-        const map = {};
-        arr.forEach((o) => {
-          try {
-            const raw = String(o.code || "");
-            // numeric key (e.g. "1", "21")
-            const num = Number(raw.replace(/^0+/, ""));
-            if (!Number.isNaN(num)) map[String(num)] = o;
-            // original forms (uppercased and as-is) to match codes like "2A"/"2B" or "01"
-            map[raw] = o;
-            map[raw.toUpperCase()] = o;
-            // two-digit zero-padded ("01")
-            if (!Number.isNaN(num)) map[String(num).padStart(2, "0")] = o;
-          } catch (e) {}
-        });
-        setDepartmentsStatsMap(map);
-        console.info(`Loaded departments mock, entries=${Object.keys(map).length}`);
-      })
-      .catch(() => {
-        setDepartmentsStatsMap({});
-      });
-  }, []);
+    if (viewMode !== "domtom") {
+      setDomTomCoords(null);
+    }
+  }, [viewMode]);
 
   // Extraire les dates uniques triées
   const dates = useMemo(() => {
@@ -161,6 +142,16 @@ export default function App() {
     s.sort((a, b) => new Date(a) - new Date(b));
     return s;
   }, [rawData]);
+
+  // Définir l'index par défaut au 1er décembre lors du chargement initial des dates
+  useEffect(() => {
+    if (dates.length > 0 && dateIndex === 0) {
+      const dec1Index = dates.findIndex(d => d === "2025-12-01");
+      if (dec1Index !== -1) {
+        setDateIndex(dec1Index);
+      }
+    }
+  }, [dates]);
 
   const currentDate = dates[dateIndex] || null;
 
@@ -183,9 +174,8 @@ export default function App() {
         heatmap: !!filters.heatmap,
         hospitals: !!filters.hospitals,
         pharmacies: !!filters.pharmacies,
-        departments: !!filters.departments,
       };
-      localStorage.setItem("hexavax_filters", JSON.stringify(toStore));
+      localStorage.setItem(STORAGE_KEYS.filters, JSON.stringify(toStore));
     } catch (e) {
       console.warn("Erreur sauvegarde filters dans localStorage", e);
     }
@@ -204,8 +194,6 @@ export default function App() {
       }));
   }, [currentDate, hospitalData]);
 
-  const [selectedDepartment, setSelectedDepartment] = useState(null);
-  const [selectedDepartmentStats, setSelectedDepartmentStats] = useState(null);
   const [selectedArea, setSelectedArea] = useState(null);
   const [selectedAreaData, setSelectedAreaData] = useState(null);
 
@@ -234,35 +222,112 @@ export default function App() {
     return null;
   };
 
-  const handleDepartmentClick = (feature) => {
-    const code = readDepCode(feature);
-    const stats = code ? departmentsStatsMap[String(Number(code))] || null : null;
-    setSelectedDepartment(feature);
-    setSelectedDepartmentStats(stats);
+  // Mettre à jour les données du AreaPanel quand la date change (si une zone est sélectionnée)
+  useEffect(() => {
+    if (!selectedArea || !currentDate) return;
+
+    let updatedData = null;
+
+    if (viewMode === "national") {
+      // National view - use national timeseries
+      updatedData = nationalTimeseries[currentDate] || null;
+    } else if (viewMode === "departmental") {
+      // Departmental view - use departments timeseries
+      const code = readDepCode(selectedArea);
+      if (code && departmentsAreaTimeseries[currentDate]) {
+        updatedData = departmentsAreaTimeseries[currentDate][code] || null;
+      }
+    } else if (viewMode === "regional") {
+      // Regional view - use regions timeseries by name
+      const p = selectedArea.properties || {};
+      const regionName = p.nom || p.name || p.NOM || p.LIBELLE || p.label || null;
+      if (regionName && regionsTimeseries[currentDate]) {
+        updatedData = regionsTimeseries[currentDate][regionName] || null;
+      }
+    }
+
+    if (updatedData) {
+      setSelectedAreaData(updatedData);
+    }
+  }, [currentDate, departmentsAreaTimeseries, regionsTimeseries, nationalTimeseries, selectedArea, viewMode]);
+
+  const handleDomTomChange = (domTomData) => {
+    setDomTomCoords({
+      longitude: domTomData.longitude,
+      latitude: domTomData.latitude,
+      zoom: domTomData.zoom,
+    });
   };
 
-  // Simple area click handler: set selected area and fill with hard-coded mock data
+  // Helper: read region code from feature properties
+  const readRegionCode = (feature) => {
+    if (!feature) return null;
+    const p = feature.properties || {};
+    // Try common property names for region code
+    const candidates = [
+      p.code,
+      p.CODE,
+      p.code_region,
+      p.CODE_REG,
+      p.reg,
+      p.REG,
+      p.insee,
+      p.INSEE,
+    ];
+    for (const c of candidates) {
+      if (c != null) {
+        const s = String(c).trim();
+        if (s) return s;
+      }
+    }
+    return null;
+  };
+
+  // Area click handler: use regions or departments stats from JSON (avec timeseries si disponible)
   const handleAreaClick = (feature) => {
     if (!feature) return;
     setSelectedArea(feature);
-    const p = feature.properties || {};
-    const name = p.nom || p.name || p.NOM || p.LIBELLE || p.label || "Zone";
 
-    // Very small heuristic to vary mock values per name
-    const isIle = String(name).toLowerCase().includes("ile") || String(name).toLowerCase().includes("île");
+    let areaData = null;
 
-    const mock = {
-      vaccination_rate_pct: isIle ? 72.4 : 64.1,
-      cases_per_100k: isIle ? 420 : 312,
-      incidence_rate: isIle ? 152.3 : 145.2,
-      positivity_rate: isIle ? 7.2 : 6.8,
-      icu_occupancy_pct: isIle ? 78.1 : 72.3,
-      pharmacies_partners: isIle ? 48 : 27,
-      vaccination_centers: isIle ? 24 : 12,
-      last_update: new Date().toISOString().slice(0, 10),
-    };
+    if (viewMode === "national") {
+      // For national view, use timeseries data for current date
+      if (currentDate && nationalTimeseries[currentDate]) {
+        areaData = nationalTimeseries[currentDate];
+      } else {
+        // Fallback to static data
+        areaData = regionsStatsMap["nationale"] || null;
+      }
+    } else if (viewMode === "departmental") {
+      // For departmental view, use department area stats from timeseries if available
+      const code = readDepCode(feature);
+      if (code && currentDate && departmentsAreaTimeseries[currentDate]) {
+        // Use timeseries data for the current date
+        areaData = departmentsAreaTimeseries[currentDate][code] || null;
+      }
+      // Fallback to static data if timeseries not available
+      if (!areaData && code) {
+        areaData = departmentsAreaStatsMap[code] || null;
+      }
+    } else {
+      // For regional view, use region stats from timeseries if available
+      const p = feature.properties || {};
+      const regionName = p.nom || p.name || p.NOM || p.LIBELLE || p.label || null;
+      
+      if (regionName && currentDate && regionsTimeseries[currentDate]) {
+        areaData = regionsTimeseries[currentDate][regionName] || null;
+      }
+      
+      // Fallback to static data
+      if (!areaData) {
+        const code = readRegionCode(feature);
+        if (code) {
+          areaData = regionsStatsMap[code] || null;
+        }
+      }
+    }
 
-    setSelectedAreaData(mock);
+    setSelectedAreaData(areaData);
   };
 
   return (
@@ -281,17 +346,22 @@ export default function App() {
             points={dataForDate}
             hospitals={hospitalsForDate}
             pharmacies={pharmacies}
-            departments={departmentsGeo}
-            departmentsStatsMap={departmentsStatsMap}
             viewGeojson={showAdminBoundaries ? viewGeojson : null}
             viewMode={viewMode}
+            domTomCoords={domTomCoords}
             onAreaClick={handleAreaClick}
-            showDepartments={filters.departments}
-            onDepartmentClick={handleDepartmentClick}
             mapStyle={import.meta.env.VITE_MAPBOX_STYLE}
             showHeatmap={filters.heatmap}
             showHospitals={filters.hospitals}
             showPharmacies={filters.pharmacies}
+            areaTimeseries={
+              viewMode === "departmental"
+                ? departmentsAreaTimeseries
+                : viewMode === "regional"
+                ? regionsTimeseries
+                : {}
+            }
+            currentDate={currentDate}
           />
 
           {/* Panneau latéral gauche */}
@@ -304,16 +374,10 @@ export default function App() {
             onViewModeChange={setViewMode}
             filters={filters}
             onFiltersChange={(newFilters) => setFilters(newFilters)}
+            onDomTomChange={handleDomTomChange}
           />
 
-          <DepartmentModal
-            open={!!selectedDepartment}
-            feature={selectedDepartment}
-            stats={selectedDepartmentStats}
-            onClose={() => { setSelectedDepartment(null); setSelectedDepartmentStats(null); }}
-          />
-
-          <AreaModal
+          <AreaPanel
             open={!!selectedArea}
             feature={selectedArea}
             data={selectedAreaData}
@@ -321,14 +385,10 @@ export default function App() {
             onClose={() => { setSelectedArea(null); setSelectedAreaData(null); }}
           />
 
-          {/* single legend card that expands vertically depending on active layers */}
-          {(filters.heatmap || filters.hospitals || filters.departments) && (
+          {/* Légende dynamique qui s'affiche si au moins un calque est actif */}
+          {(filters.heatmap || filters.hospitals || filters.pharmacies) && (
             <div className="legend">
-              <Legend variants={[
-                ...(filters.heatmap ? ["heatmap"] : []),
-                ...(filters.hospitals ? ["hospitals"] : []),
-                ...(filters.departments ? ["departments"] : []),
-              ]} />
+              <Legend filters={filters} />
             </div>
           )}
         </div>
@@ -337,35 +397,37 @@ export default function App() {
       {/* --- SLIDER & DATE --- */}
       <footer className="footer">
         <div className="panel" style={{ width: "100%" }}>
-          {(filters.heatmap || filters.hospitals) && (
-            <div style={{ display: "flex", alignItems: "center", gap: 12, width: "100%" }}>
-              <div className="slider-wrap">
-                <TimeSlider
-                  dates={dates}
-                  value={dateIndex}
-                  onChange={setDateIndex}
-                />
-              </div>
-
-              <div
-                className="badge"
-                style={{
-                  background: "#6E6BF3",
-                  color: "white",
-                  padding: "6px 10px",
-                  borderRadius: "12px",
-                  fontWeight: 600,
-                  marginLeft: "8px",
-                }}
-              >
-                {currentDate || "Chargement..."}
-              </div>
-
-              <div style={{ position: "absolute", right: "24px" }}>
-                {filters.heatmap && <DatasetSelector value={dataset} onChange={setDataset} />}
-              </div>
+          <div style={{ display: "flex", alignItems: "center", gap: 12, width: "100%" }}>
+            <div className="slider-wrap">
+              <TimeSlider
+                dates={dates}
+                value={dateIndex}
+                onChange={setDateIndex}
+              />
             </div>
-          )}
+
+            <div
+              className="badge"
+              style={{
+                background: "#6E6BF3",
+                color: "white",
+                padding: "6px 16px",
+                borderRadius: "12px",
+                fontWeight: 600,
+                marginLeft: "8px",
+                minWidth: "180px",
+                textAlign: "center",
+              }}
+            >
+              {currentDate 
+                ? new Date(currentDate).toLocaleDateString('fr-FR', { 
+                    day: 'numeric', 
+                    month: 'long', 
+                    year: 'numeric' 
+                  })
+                : "Chargement..."}
+            </div>
+          </div>
         </div>
       </footer>
     </div>

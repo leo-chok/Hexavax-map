@@ -26,20 +26,7 @@ export default function FilterPanel({ filters, onFiltersChange }) {
         label="Propagation virale"
       />
 
-      <FormControlLabel
-        control={
-          <Checkbox
-            checked={!!filters.departments}
-            onChange={() => handleToggle("departments")}
-            sx={{
-              color: "#1976d2",
-              "&.Mui-checked": { color: "#1976d2" },
-            }}
-          />
-        }
-        label="Alertes départementales"
-      />
-
+      
       <FormControlLabel
         control={
           <Checkbox

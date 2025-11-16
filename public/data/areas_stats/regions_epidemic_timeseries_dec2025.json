@@ -1,0 +1,3334 @@
+{
+  "2025-11-15": {
+    "Grand Est": {
+      "vaccination_rate_pct": 66.74444444444445,
+      "cases_per_100k": 95.33333333333334,
+      "incidence_rate": 44.43333333333333,
+      "positivity_rate": 1.9344444444444444,
+      "icu_occupancy_pct": 22.311111111111114,
+      "pharmacies_partners": 678,
+      "vaccination_centers": 158
+    },
+    "Occitanie": {
+      "vaccination_rate_pct": 67.825,
+      "cases_per_100k": 88.43333333333334,
+      "incidence_rate": 41.208333333333336,
+      "positivity_rate": 1.781666666666667,
+      "icu_occupancy_pct": 21.341666666666665,
+      "pharmacies_partners": 679,
+      "vaccination_centers": 162
+    },
+    "Provence-Alpes-Côte d'Azur": {
+      "vaccination_rate_pct": 68.03333333333335,
+      "cases_per_100k": 108.93333333333332,
+      "incidence_rate": 50.76666666666667,
+      "positivity_rate": 2.21,
+      "icu_occupancy_pct": 23.900000000000002,
+      "pharmacies_partners": 530,
+      "vaccination_centers": 120
+    },
+    "Normandie": {
+      "vaccination_rate_pct": 68.14000000000001,
+      "cases_per_100k": 90.56,
+      "incidence_rate": 42.18,
+      "positivity_rate": 1.83,
+      "icu_occupancy_pct": 21.639999999999997,
+      "pharmacies_partners": 304,
+      "vaccination_centers": 73
+    },
+    "Auvergne-Rhône-Alpes": {
+      "vaccination_rate_pct": 68.6888888888889,
+      "cases_per_100k": 92.4,
+      "incidence_rate": 43.05555555555556,
+      "positivity_rate": 1.8711111111111112,
+      "icu_occupancy_pct": 21.933333333333334,
+      "pharmacies_partners": 790,
+      "vaccination_centers": 183
+    },
+    "Nouvelle-Aquitaine": {
+      "vaccination_rate_pct": 68.43333333333334,
+      "cases_per_100k": 86.58333333333333,
+      "incidence_rate": 40.333333333333336,
+      "positivity_rate": 1.7416666666666665,
+      "icu_occupancy_pct": 21.075,
+      "pharmacies_partners": 669,
+      "vaccination_centers": 158
+    },
+    "Centre-Val de Loire": {
+      "vaccination_rate_pct": 66.76666666666667,
+      "cases_per_100k": 91.41666666666667,
+      "incidence_rate": 42.583333333333336,
+      "positivity_rate": 1.8516666666666666,
+      "icu_occupancy_pct": 21.816666666666666,
+      "pharmacies_partners": 251,
+      "vaccination_centers": 61
+    },
+    "Bourgogne-Franche-Comté": {
+      "vaccination_rate_pct": 66.85,
+      "cases_per_100k": 90.00000000000001,
+      "incidence_rate": 41.925,
+      "positivity_rate": 1.8175,
+      "icu_occupancy_pct": 21.5875,
+      "pharmacies_partners": 306,
+      "vaccination_centers": 77
+    },
+    "Bretagne": {
+      "vaccination_rate_pct": 72.17500000000001,
+      "cases_per_100k": 81.85,
+      "incidence_rate": 38.15,
+      "positivity_rate": 1.64,
+      "icu_occupancy_pct": 20.425,
+      "pharmacies_partners": 332,
+      "vaccination_centers": 78
+    },
+    "Pays de la Loire": {
+      "vaccination_rate_pct": 70.53999999999999,
+      "cases_per_100k": 88.00000000000001,
+      "incidence_rate": 41.0,
+      "positivity_rate": 1.7759999999999998,
+      "icu_occupancy_pct": 21.32,
+      "pharmacies_partners": 382,
+      "vaccination_centers": 88
+    },
+    "Hauts-de-France": {
+      "vaccination_rate_pct": 65.225,
+      "cases_per_100k": 110.94999999999999,
+      "incidence_rate": 51.725,
+      "positivity_rate": 2.2525,
+      "icu_occupancy_pct": 24.099999999999998,
+      "pharmacies_partners": 712,
+      "vaccination_centers": 162
+    },
+    "Île-de-France": {
+      "vaccination_rate_pct": 70.0,
+      "cases_per_100k": 116.25000000000001,
+      "incidence_rate": 54.1875,
+      "positivity_rate": 2.34625,
+      "icu_occupancy_pct": 24.575,
+      "pharmacies_partners": 1660,
+      "vaccination_centers": 378
+    },
+    "Corse": {
+      "vaccination_rate_pct": 64.3,
+      "cases_per_100k": 103.4,
+      "incidence_rate": 48.15,
+      "positivity_rate": 2.0999999999999996,
+      "icu_occupancy_pct": 23.4,
+      "pharmacies_partners": 40,
+      "vaccination_centers": 10
+    }
+  },
+  "2025-11-16": {
+    "Grand Est": {
+      "vaccination_rate_pct": 66.84444444444445,
+      "cases_per_100k": 98.54444444444444,
+      "incidence_rate": 45.91111111111111,
+      "positivity_rate": 1.9544444444444444,
+      "icu_occupancy_pct": 22.888888888888893,
+      "pharmacies_partners": 678,
+      "vaccination_centers": 158
+    },
+    "Occitanie": {
+      "vaccination_rate_pct": 67.925,
+      "cases_per_100k": 91.39166666666667,
+      "incidence_rate": 42.59166666666667,
+      "positivity_rate": 1.803333333333333,
+      "icu_occupancy_pct": 21.900000000000002,
+      "pharmacies_partners": 679,
+      "vaccination_centers": 162
+    },
+    "Provence-Alpes-Côte d'Azur": {
+      "vaccination_rate_pct": 68.13333333333334,
+      "cases_per_100k": 112.56666666666668,
+      "incidence_rate": 52.46666666666667,
+      "positivity_rate": 2.233333333333333,
+      "icu_occupancy_pct": 24.53333333333333,
+      "pharmacies_partners": 530,
+      "vaccination_centers": 120
+    },
+    "Normandie": {
+      "vaccination_rate_pct": 68.24,
+      "cases_per_100k": 93.64,
+      "incidence_rate": 43.599999999999994,
+      "positivity_rate": 1.8519999999999999,
+      "icu_occupancy_pct": 22.16,
+      "pharmacies_partners": 304,
+      "vaccination_centers": 73
+    },
+    "Auvergne-Rhône-Alpes": {
+      "vaccination_rate_pct": 68.78888888888889,
+      "cases_per_100k": 95.53333333333333,
+      "incidence_rate": 44.49999999999999,
+      "positivity_rate": 1.892222222222222,
+      "icu_occupancy_pct": 22.477777777777778,
+      "pharmacies_partners": 790,
+      "vaccination_centers": 183
+    },
+    "Nouvelle-Aquitaine": {
+      "vaccination_rate_pct": 68.53333333333335,
+      "cases_per_100k": 89.52499999999999,
+      "incidence_rate": 41.68333333333333,
+      "positivity_rate": 1.765,
+      "icu_occupancy_pct": 21.599999999999998,
+      "pharmacies_partners": 669,
+      "vaccination_centers": 158
+    },
+    "Centre-Val de Loire": {
+      "vaccination_rate_pct": 66.86666666666666,
+      "cases_per_100k": 94.51666666666667,
+      "incidence_rate": 44.0,
+      "positivity_rate": 1.875,
+      "icu_occupancy_pct": 22.383333333333336,
+      "pharmacies_partners": 251,
+      "vaccination_centers": 61
+    },
+    "Bourgogne-Franche-Comté": {
+      "vaccination_rate_pct": 66.95,
+      "cases_per_100k": 93.05,
+      "incidence_rate": 43.3625,
+      "positivity_rate": 1.8399999999999999,
+      "icu_occupancy_pct": 22.15,
+      "pharmacies_partners": 306,
+      "vaccination_centers": 77
+    },
+    "Bretagne": {
+      "vaccination_rate_pct": 72.275,
+      "cases_per_100k": 84.575,
+      "incidence_rate": 39.4,
+      "positivity_rate": 1.66,
+      "icu_occupancy_pct": 20.925,
+      "pharmacies_partners": 332,
+      "vaccination_centers": 78
+    },
+    "Pays de la Loire": {
+      "vaccination_rate_pct": 70.64000000000001,
+      "cases_per_100k": 90.97999999999999,
+      "incidence_rate": 42.400000000000006,
+      "positivity_rate": 1.798,
+      "icu_occupancy_pct": 21.86,
+      "pharmacies_partners": 382,
+      "vaccination_centers": 88
+    },
+    "Hauts-de-France": {
+      "vaccination_rate_pct": 65.32499999999999,
+      "cases_per_100k": 114.67500000000001,
+      "incidence_rate": 53.475,
+      "positivity_rate": 2.2775,
+      "icu_occupancy_pct": 24.7,
+      "pharmacies_partners": 712,
+      "vaccination_centers": 162
+    },
+    "Île-de-France": {
+      "vaccination_rate_pct": 70.1,
+      "cases_per_100k": 120.14999999999999,
+      "incidence_rate": 56.0125,
+      "positivity_rate": 2.3750000000000004,
+      "icu_occupancy_pct": 25.200000000000003,
+      "pharmacies_partners": 1660,
+      "vaccination_centers": 378
+    },
+    "Corse": {
+      "vaccination_rate_pct": 64.4,
+      "cases_per_100k": 106.85,
+      "incidence_rate": 49.8,
+      "positivity_rate": 2.12,
+      "icu_occupancy_pct": 24.0,
+      "pharmacies_partners": 40,
+      "vaccination_centers": 10
+    }
+  },
+  "2025-11-17": {
+    "Grand Est": {
+      "vaccination_rate_pct": 66.94444444444444,
+      "cases_per_100k": 103.07777777777778,
+      "incidence_rate": 48.03333333333333,
+      "positivity_rate": 1.9944444444444445,
+      "icu_occupancy_pct": 23.677777777777774,
+      "pharmacies_partners": 678,
+      "vaccination_centers": 158
+    },
+    "Occitanie": {
+      "vaccination_rate_pct": 68.025,
+      "cases_per_100k": 95.60000000000001,
+      "incidence_rate": 44.550000000000004,
+      "positivity_rate": 1.8374999999999997,
+      "icu_occupancy_pct": 22.608333333333334,
+      "pharmacies_partners": 679,
+      "vaccination_centers": 162
+    },
+    "Provence-Alpes-Côte d'Azur": {
+      "vaccination_rate_pct": 68.23333333333333,
+      "cases_per_100k": 117.76666666666665,
+      "incidence_rate": 54.9,
+      "positivity_rate": 2.28,
+      "icu_occupancy_pct": 25.366666666666664,
+      "pharmacies_partners": 530,
+      "vaccination_centers": 120
+    },
+    "Normandie": {
+      "vaccination_rate_pct": 68.34,
+      "cases_per_100k": 97.94,
+      "incidence_rate": 45.620000000000005,
+      "positivity_rate": 1.89,
+      "icu_occupancy_pct": 22.9,
+      "pharmacies_partners": 304,
+      "vaccination_centers": 73
+    },
+    "Auvergne-Rhône-Alpes": {
+      "vaccination_rate_pct": 68.88888888888887,
+      "cases_per_100k": 99.9111111111111,
+      "incidence_rate": 46.58888888888889,
+      "positivity_rate": 1.927777777777778,
+      "icu_occupancy_pct": 23.233333333333334,
+      "pharmacies_partners": 790,
+      "vaccination_centers": 183
+    },
+    "Nouvelle-Aquitaine": {
+      "vaccination_rate_pct": 68.63333333333333,
+      "cases_per_100k": 93.63333333333333,
+      "incidence_rate": 43.60833333333333,
+      "positivity_rate": 1.8000000000000005,
+      "icu_occupancy_pct": 22.325,
+      "pharmacies_partners": 669,
+      "vaccination_centers": 158
+    },
+    "Centre-Val de Loire": {
+      "vaccination_rate_pct": 66.96666666666668,
+      "cases_per_100k": 98.83333333333333,
+      "incidence_rate": 46.06666666666667,
+      "positivity_rate": 1.9083333333333332,
+      "icu_occupancy_pct": 23.13333333333333,
+      "pharmacies_partners": 251,
+      "vaccination_centers": 61
+    },
+    "Bourgogne-Franche-Comté": {
+      "vaccination_rate_pct": 67.05,
+      "cases_per_100k": 97.3375,
+      "incidence_rate": 45.35,
+      "positivity_rate": 1.875,
+      "icu_occupancy_pct": 22.887500000000003,
+      "pharmacies_partners": 306,
+      "vaccination_centers": 77
+    },
+    "Bretagne": {
+      "vaccination_rate_pct": 72.375,
+      "cases_per_100k": 88.475,
+      "incidence_rate": 41.225,
+      "positivity_rate": 1.6925,
+      "icu_occupancy_pct": 21.650000000000002,
+      "pharmacies_partners": 332,
+      "vaccination_centers": 78
+    },
+    "Pays de la Loire": {
+      "vaccination_rate_pct": 70.74000000000001,
+      "cases_per_100k": 95.17999999999999,
+      "incidence_rate": 44.339999999999996,
+      "positivity_rate": 1.834,
+      "icu_occupancy_pct": 22.6,
+      "pharmacies_partners": 382,
+      "vaccination_centers": 88
+    },
+    "Hauts-de-France": {
+      "vaccination_rate_pct": 65.425,
+      "cases_per_100k": 119.975,
+      "incidence_rate": 55.925,
+      "positivity_rate": 2.3225,
+      "icu_occupancy_pct": 25.5,
+      "pharmacies_partners": 712,
+      "vaccination_centers": 162
+    },
+    "Île-de-France": {
+      "vaccination_rate_pct": 70.2,
+      "cases_per_100k": 125.6875,
+      "incidence_rate": 58.575,
+      "positivity_rate": 2.4225,
+      "icu_occupancy_pct": 26.037499999999998,
+      "pharmacies_partners": 1660,
+      "vaccination_centers": 378
+    },
+    "Corse": {
+      "vaccination_rate_pct": 64.5,
+      "cases_per_100k": 111.75,
+      "incidence_rate": 52.099999999999994,
+      "positivity_rate": 2.165,
+      "icu_occupancy_pct": 24.799999999999997,
+      "pharmacies_partners": 40,
+      "vaccination_centers": 10
+    }
+  },
+  "2025-11-18": {
+    "Grand Est": {
+      "vaccination_rate_pct": 67.04444444444444,
+      "cases_per_100k": 109.30000000000001,
+      "incidence_rate": 50.93333333333333,
+      "positivity_rate": 2.057777777777778,
+      "icu_occupancy_pct": 24.72222222222222,
+      "pharmacies_partners": 678,
+      "vaccination_centers": 158
+    },
+    "Occitanie": {
+      "vaccination_rate_pct": 68.12499999999999,
+      "cases_per_100k": 101.39166666666667,
+      "incidence_rate": 47.24166666666667,
+      "positivity_rate": 1.8966666666666667,
+      "icu_occupancy_pct": 23.63333333333333,
+      "pharmacies_partners": 679,
+      "vaccination_centers": 162
+    },
+    "Provence-Alpes-Côte d'Azur": {
+      "vaccination_rate_pct": 68.33333333333333,
+      "cases_per_100k": 124.90000000000002,
+      "incidence_rate": 58.20000000000001,
+      "positivity_rate": 2.356666666666667,
+      "icu_occupancy_pct": 26.46666666666667,
+      "pharmacies_partners": 530,
+      "vaccination_centers": 120
+    },
+    "Normandie": {
+      "vaccination_rate_pct": 68.44,
+      "cases_per_100k": 103.81999999999998,
+      "incidence_rate": 48.400000000000006,
+      "positivity_rate": 1.948,
+      "icu_occupancy_pct": 23.919999999999998,
+      "pharmacies_partners": 304,
+      "vaccination_centers": 73
+    },
+    "Auvergne-Rhône-Alpes": {
+      "vaccination_rate_pct": 68.98888888888888,
+      "cases_per_100k": 105.95555555555556,
+      "incidence_rate": 49.36666666666667,
+      "positivity_rate": 1.99,
+      "icu_occupancy_pct": 24.255555555555553,
+      "pharmacies_partners": 790,
+      "vaccination_centers": 183
+    },
+    "Nouvelle-Aquitaine": {
+      "vaccination_rate_pct": 68.73333333333333,
+      "cases_per_100k": 99.28333333333332,
+      "incidence_rate": 46.25833333333333,
+      "positivity_rate": 1.8566666666666665,
+      "icu_occupancy_pct": 23.299999999999997,
+      "pharmacies_partners": 669,
+      "vaccination_centers": 158
+    },
+    "Centre-Val de Loire": {
+      "vaccination_rate_pct": 67.06666666666666,
+      "cases_per_100k": 104.8,
+      "incidence_rate": 48.833333333333336,
+      "positivity_rate": 1.9716666666666667,
+      "icu_occupancy_pct": 24.13333333333333,
+      "pharmacies_partners": 251,
+      "vaccination_centers": 61
+    },
+    "Bourgogne-Franche-Comté": {
+      "vaccination_rate_pct": 67.15,
+      "cases_per_100k": 103.1875,
+      "incidence_rate": 48.0875,
+      "positivity_rate": 1.935,
+      "icu_occupancy_pct": 23.9,
+      "pharmacies_partners": 306,
+      "vaccination_centers": 77
+    },
+    "Bretagne": {
+      "vaccination_rate_pct": 72.475,
+      "cases_per_100k": 93.85,
+      "incidence_rate": 43.725,
+      "positivity_rate": 1.7499999999999998,
+      "icu_occupancy_pct": 22.575000000000003,
+      "pharmacies_partners": 332,
+      "vaccination_centers": 78
+    },
+    "Pays de la Loire": {
+      "vaccination_rate_pct": 70.84,
+      "cases_per_100k": 100.9,
+      "incidence_rate": 47.02,
+      "positivity_rate": 1.89,
+      "icu_occupancy_pct": 23.6,
+      "pharmacies_partners": 382,
+      "vaccination_centers": 88
+    },
+    "Hauts-de-France": {
+      "vaccination_rate_pct": 65.525,
+      "cases_per_100k": 127.225,
+      "incidence_rate": 59.3,
+      "positivity_rate": 2.395,
+      "icu_occupancy_pct": 26.65,
+      "pharmacies_partners": 712,
+      "vaccination_centers": 162
+    },
+    "Île-de-France": {
+      "vaccination_rate_pct": 70.3,
+      "cases_per_100k": 133.3,
+      "incidence_rate": 62.137499999999996,
+      "positivity_rate": 2.4975,
+      "icu_occupancy_pct": 27.175,
+      "pharmacies_partners": 1660,
+      "vaccination_centers": 378
+    },
+    "Corse": {
+      "vaccination_rate_pct": 64.6,
+      "cases_per_100k": 118.55000000000001,
+      "incidence_rate": 55.25,
+      "positivity_rate": 2.2350000000000003,
+      "icu_occupancy_pct": 25.9,
+      "pharmacies_partners": 40,
+      "vaccination_centers": 10
+    }
+  },
+  "2025-11-19": {
+    "Grand Est": {
+      "vaccination_rate_pct": 67.14444444444445,
+      "cases_per_100k": 117.5888888888889,
+      "incidence_rate": 54.79999999999999,
+      "positivity_rate": 2.156666666666667,
+      "icu_occupancy_pct": 26.04444444444444,
+      "pharmacies_partners": 678,
+      "vaccination_centers": 158
+    },
+    "Occitanie": {
+      "vaccination_rate_pct": 68.225,
+      "cases_per_100k": 109.08333333333333,
+      "incidence_rate": 50.824999999999996,
+      "positivity_rate": 1.9866666666666666,
+      "icu_occupancy_pct": 24.916666666666668,
+      "pharmacies_partners": 679,
+      "vaccination_centers": 162
+    },
+    "Provence-Alpes-Côte d'Azur": {
+      "vaccination_rate_pct": 68.43333333333334,
+      "cases_per_100k": 134.36666666666667,
+      "incidence_rate": 62.633333333333326,
+      "positivity_rate": 2.466666666666667,
+      "icu_occupancy_pct": 27.899999999999995,
+      "pharmacies_partners": 530,
+      "vaccination_centers": 120
+    },
+    "Normandie": {
+      "vaccination_rate_pct": 68.54,
+      "cases_per_100k": 111.72,
+      "incidence_rate": 52.04,
+      "positivity_rate": 2.042,
+      "icu_occupancy_pct": 25.220000000000002,
+      "pharmacies_partners": 304,
+      "vaccination_centers": 73
+    },
+    "Auvergne-Rhône-Alpes": {
+      "vaccination_rate_pct": 69.08888888888889,
+      "cases_per_100k": 113.98888888888888,
+      "incidence_rate": 53.111111111111114,
+      "positivity_rate": 2.085555555555556,
+      "icu_occupancy_pct": 25.577777777777776,
+      "pharmacies_partners": 790,
+      "vaccination_centers": 183
+    },
+    "Nouvelle-Aquitaine": {
+      "vaccination_rate_pct": 68.83333333333333,
+      "cases_per_100k": 106.80833333333334,
+      "incidence_rate": 49.76666666666667,
+      "positivity_rate": 1.9466666666666665,
+      "icu_occupancy_pct": 24.575,
+      "pharmacies_partners": 669,
+      "vaccination_centers": 158
+    },
+    "Centre-Val de Loire": {
+      "vaccination_rate_pct": 67.16666666666666,
+      "cases_per_100k": 112.76666666666667,
+      "incidence_rate": 52.51666666666667,
+      "positivity_rate": 2.063333333333333,
+      "icu_occupancy_pct": 25.45,
+      "pharmacies_partners": 251,
+      "vaccination_centers": 61
+    },
+    "Bourgogne-Franche-Comté": {
+      "vaccination_rate_pct": 67.25,
+      "cases_per_100k": 111.02499999999999,
+      "incidence_rate": 51.7375,
+      "positivity_rate": 2.02875,
+      "icu_occupancy_pct": 25.187500000000004,
+      "pharmacies_partners": 306,
+      "vaccination_centers": 77
+    },
+    "Bretagne": {
+      "vaccination_rate_pct": 72.575,
+      "cases_per_100k": 100.97500000000001,
+      "incidence_rate": 47.025000000000006,
+      "positivity_rate": 1.8299999999999998,
+      "icu_occupancy_pct": 23.799999999999997,
+      "pharmacies_partners": 332,
+      "vaccination_centers": 78
+    },
+    "Pays de la Loire": {
+      "vaccination_rate_pct": 70.94,
+      "cases_per_100k": 108.52000000000001,
+      "incidence_rate": 50.58,
+      "positivity_rate": 1.9840000000000004,
+      "icu_occupancy_pct": 24.88,
+      "pharmacies_partners": 382,
+      "vaccination_centers": 88
+    },
+    "Hauts-de-France": {
+      "vaccination_rate_pct": 65.625,
+      "cases_per_100k": 136.875,
+      "incidence_rate": 63.8,
+      "positivity_rate": 2.51,
+      "icu_occupancy_pct": 28.125,
+      "pharmacies_partners": 712,
+      "vaccination_centers": 162
+    },
+    "Île-de-France": {
+      "vaccination_rate_pct": 70.39999999999999,
+      "cases_per_100k": 143.375,
+      "incidence_rate": 66.85,
+      "positivity_rate": 2.61875,
+      "icu_occupancy_pct": 28.649999999999995,
+      "pharmacies_partners": 1660,
+      "vaccination_centers": 378
+    },
+    "Corse": {
+      "vaccination_rate_pct": 64.69999999999999,
+      "cases_per_100k": 127.5,
+      "incidence_rate": 59.45,
+      "positivity_rate": 2.3449999999999998,
+      "icu_occupancy_pct": 27.299999999999997,
+      "pharmacies_partners": 40,
+      "vaccination_centers": 10
+    }
+  },
+  "2025-11-20": {
+    "Grand Est": {
+      "vaccination_rate_pct": 67.34444444444445,
+      "cases_per_100k": 128.23333333333332,
+      "incidence_rate": 59.76666666666668,
+      "positivity_rate": 2.301111111111111,
+      "icu_occupancy_pct": 27.755555555555553,
+      "pharmacies_partners": 678,
+      "vaccination_centers": 158
+    },
+    "Occitanie": {
+      "vaccination_rate_pct": 68.425,
+      "cases_per_100k": 118.93333333333334,
+      "incidence_rate": 55.425000000000004,
+      "positivity_rate": 2.121666666666667,
+      "icu_occupancy_pct": 26.54166666666666,
+      "pharmacies_partners": 679,
+      "vaccination_centers": 162
+    },
+    "Provence-Alpes-Côte d'Azur": {
+      "vaccination_rate_pct": 68.63333333333334,
+      "cases_per_100k": 146.5,
+      "incidence_rate": 68.26666666666667,
+      "positivity_rate": 2.6333333333333333,
+      "icu_occupancy_pct": 29.73333333333333,
+      "pharmacies_partners": 530,
+      "vaccination_centers": 120
+    },
+    "Normandie": {
+      "vaccination_rate_pct": 68.74,
+      "cases_per_100k": 121.84,
+      "incidence_rate": 56.78000000000001,
+      "positivity_rate": 2.1819999999999995,
+      "icu_occupancy_pct": 26.860000000000003,
+      "pharmacies_partners": 304,
+      "vaccination_centers": 73
+    },
+    "Auvergne-Rhône-Alpes": {
+      "vaccination_rate_pct": 69.28888888888889,
+      "cases_per_100k": 124.3111111111111,
+      "incidence_rate": 57.93333333333333,
+      "positivity_rate": 2.2255555555555557,
+      "icu_occupancy_pct": 27.255555555555553,
+      "pharmacies_partners": 790,
+      "vaccination_centers": 183
+    },
+    "Nouvelle-Aquitaine": {
+      "vaccination_rate_pct": 69.03333333333335,
+      "cases_per_100k": 116.46666666666664,
+      "incidence_rate": 54.25833333333335,
+      "positivity_rate": 2.076666666666667,
+      "icu_occupancy_pct": 26.166666666666668,
+      "pharmacies_partners": 669,
+      "vaccination_centers": 158
+    },
+    "Centre-Val de Loire": {
+      "vaccination_rate_pct": 67.36666666666666,
+      "cases_per_100k": 122.96666666666665,
+      "incidence_rate": 57.28333333333333,
+      "positivity_rate": 2.205,
+      "icu_occupancy_pct": 27.11666666666667,
+      "pharmacies_partners": 251,
+      "vaccination_centers": 61
+    },
+    "Bourgogne-Franche-Comté": {
+      "vaccination_rate_pct": 67.45,
+      "cases_per_100k": 121.07499999999999,
+      "incidence_rate": 56.425000000000004,
+      "positivity_rate": 2.1625,
+      "icu_occupancy_pct": 26.837500000000002,
+      "pharmacies_partners": 306,
+      "vaccination_centers": 77
+    },
+    "Bretagne": {
+      "vaccination_rate_pct": 72.775,
+      "cases_per_100k": 110.05,
+      "incidence_rate": 51.3,
+      "positivity_rate": 1.955,
+      "icu_occupancy_pct": 25.375,
+      "pharmacies_partners": 332,
+      "vaccination_centers": 78
+    },
+    "Pays de la Loire": {
+      "vaccination_rate_pct": 71.14000000000001,
+      "cases_per_100k": 118.35999999999999,
+      "incidence_rate": 55.160000000000004,
+      "positivity_rate": 2.114,
+      "icu_occupancy_pct": 26.5,
+      "pharmacies_partners": 382,
+      "vaccination_centers": 88
+    },
+    "Hauts-de-France": {
+      "vaccination_rate_pct": 65.82499999999999,
+      "cases_per_100k": 149.25,
+      "incidence_rate": 69.575,
+      "positivity_rate": 2.6799999999999997,
+      "icu_occupancy_pct": 29.95,
+      "pharmacies_partners": 712,
+      "vaccination_centers": 162
+    },
+    "Île-de-France": {
+      "vaccination_rate_pct": 70.6,
+      "cases_per_100k": 156.35000000000002,
+      "incidence_rate": 72.875,
+      "positivity_rate": 2.79375,
+      "icu_occupancy_pct": 30.525000000000002,
+      "pharmacies_partners": 1660,
+      "vaccination_centers": 378
+    },
+    "Corse": {
+      "vaccination_rate_pct": 64.9,
+      "cases_per_100k": 139.05,
+      "incidence_rate": 64.8,
+      "positivity_rate": 2.5,
+      "icu_occupancy_pct": 29.1,
+      "pharmacies_partners": 40,
+      "vaccination_centers": 10
+    }
+  },
+  "2025-11-21": {
+    "Grand Est": {
+      "vaccination_rate_pct": 67.44444444444444,
+      "cases_per_100k": 141.35555555555553,
+      "incidence_rate": 65.86666666666666,
+      "positivity_rate": 2.51,
+      "icu_occupancy_pct": 29.86666666666666,
+      "pharmacies_partners": 678,
+      "vaccination_centers": 158
+    },
+    "Occitanie": {
+      "vaccination_rate_pct": 68.525,
+      "cases_per_100k": 131.14166666666668,
+      "incidence_rate": 61.09999999999999,
+      "positivity_rate": 2.3116666666666665,
+      "icu_occupancy_pct": 28.541666666666668,
+      "pharmacies_partners": 679,
+      "vaccination_centers": 162
+    },
+    "Provence-Alpes-Côte d'Azur": {
+      "vaccination_rate_pct": 68.73333333333333,
+      "cases_per_100k": 161.53333333333333,
+      "incidence_rate": 75.26666666666667,
+      "positivity_rate": 2.8699999999999997,
+      "icu_occupancy_pct": 31.96666666666667,
+      "pharmacies_partners": 530,
+      "vaccination_centers": 120
+    },
+    "Normandie": {
+      "vaccination_rate_pct": 68.84,
+      "cases_per_100k": 134.32,
+      "incidence_rate": 62.58,
+      "positivity_rate": 2.3760000000000003,
+      "icu_occupancy_pct": 28.919999999999998,
+      "pharmacies_partners": 304,
+      "vaccination_centers": 73
+    },
+    "Auvergne-Rhône-Alpes": {
+      "vaccination_rate_pct": 69.38888888888887,
+      "cases_per_100k": 137.02222222222224,
+      "incidence_rate": 63.85555555555556,
+      "positivity_rate": 2.4266666666666667,
+      "icu_occupancy_pct": 29.322222222222226,
+      "pharmacies_partners": 790,
+      "vaccination_centers": 183
+    },
+    "Nouvelle-Aquitaine": {
+      "vaccination_rate_pct": 69.13333333333333,
+      "cases_per_100k": 128.40833333333333,
+      "incidence_rate": 59.83333333333334,
+      "positivity_rate": 2.2624999999999997,
+      "icu_occupancy_pct": 28.183333333333334,
+      "pharmacies_partners": 669,
+      "vaccination_centers": 158
+    },
+    "Centre-Val de Loire": {
+      "vaccination_rate_pct": 67.46666666666668,
+      "cases_per_100k": 135.54999999999998,
+      "incidence_rate": 63.166666666666664,
+      "positivity_rate": 2.4033333333333333,
+      "icu_occupancy_pct": 29.183333333333334,
+      "pharmacies_partners": 251,
+      "vaccination_centers": 61
+    },
+    "Bourgogne-Franche-Comté": {
+      "vaccination_rate_pct": 67.55,
+      "cases_per_100k": 133.475,
+      "incidence_rate": 62.2125,
+      "positivity_rate": 2.3600000000000003,
+      "icu_occupancy_pct": 28.875,
+      "pharmacies_partners": 306,
+      "vaccination_centers": 77
+    },
+    "Bretagne": {
+      "vaccination_rate_pct": 72.875,
+      "cases_per_100k": 121.375,
+      "incidence_rate": 56.55,
+      "positivity_rate": 2.13,
+      "icu_occupancy_pct": 27.299999999999997,
+      "pharmacies_partners": 332,
+      "vaccination_centers": 78
+    },
+    "Pays de la Loire": {
+      "vaccination_rate_pct": 71.24000000000001,
+      "cases_per_100k": 130.48,
+      "incidence_rate": 60.81999999999999,
+      "positivity_rate": 2.306,
+      "icu_occupancy_pct": 28.52,
+      "pharmacies_partners": 382,
+      "vaccination_centers": 88
+    },
+    "Hauts-de-France": {
+      "vaccination_rate_pct": 65.925,
+      "cases_per_100k": 164.55,
+      "incidence_rate": 76.69999999999999,
+      "positivity_rate": 2.9225000000000003,
+      "icu_occupancy_pct": 32.2,
+      "pharmacies_partners": 712,
+      "vaccination_centers": 162
+    },
+    "Île-de-France": {
+      "vaccination_rate_pct": 70.7,
+      "cases_per_100k": 172.3875,
+      "incidence_rate": 80.3625,
+      "positivity_rate": 3.0425,
+      "icu_occupancy_pct": 32.85,
+      "pharmacies_partners": 1660,
+      "vaccination_centers": 378
+    },
+    "Corse": {
+      "vaccination_rate_pct": 65.0,
+      "cases_per_100k": 153.3,
+      "incidence_rate": 71.44999999999999,
+      "positivity_rate": 2.7199999999999998,
+      "icu_occupancy_pct": 31.299999999999997,
+      "pharmacies_partners": 40,
+      "vaccination_centers": 10
+    }
+  },
+  "2025-11-22": {
+    "Grand Est": {
+      "vaccination_rate_pct": 67.54444444444444,
+      "cases_per_100k": 157.0666666666667,
+      "incidence_rate": 73.2,
+      "positivity_rate": 2.7877777777777784,
+      "icu_occupancy_pct": 32.422222222222224,
+      "pharmacies_partners": 678,
+      "vaccination_centers": 158
+    },
+    "Occitanie": {
+      "vaccination_rate_pct": 68.62499999999999,
+      "cases_per_100k": 145.70833333333334,
+      "incidence_rate": 67.89999999999999,
+      "positivity_rate": 2.569166666666667,
+      "icu_occupancy_pct": 31.0,
+      "pharmacies_partners": 679,
+      "vaccination_centers": 162
+    },
+    "Provence-Alpes-Côte d'Azur": {
+      "vaccination_rate_pct": 68.83333333333333,
+      "cases_per_100k": 179.4333333333333,
+      "incidence_rate": 83.63333333333333,
+      "positivity_rate": 3.186666666666667,
+      "icu_occupancy_pct": 34.699999999999996,
+      "pharmacies_partners": 530,
+      "vaccination_centers": 120
+    },
+    "Normandie": {
+      "vaccination_rate_pct": 68.94,
+      "cases_per_100k": 149.2,
+      "incidence_rate": 69.52,
+      "positivity_rate": 2.642,
+      "icu_occupancy_pct": 31.4,
+      "pharmacies_partners": 304,
+      "vaccination_centers": 73
+    },
+    "Auvergne-Rhône-Alpes": {
+      "vaccination_rate_pct": 69.48888888888888,
+      "cases_per_100k": 152.25555555555556,
+      "incidence_rate": 70.94444444444444,
+      "positivity_rate": 2.6955555555555555,
+      "icu_occupancy_pct": 31.84444444444445,
+      "pharmacies_partners": 790,
+      "vaccination_centers": 183
+    },
+    "Nouvelle-Aquitaine": {
+      "vaccination_rate_pct": 69.23333333333333,
+      "cases_per_100k": 142.65833333333333,
+      "incidence_rate": 66.47499999999998,
+      "positivity_rate": 2.513333333333333,
+      "icu_occupancy_pct": 30.566666666666666,
+      "pharmacies_partners": 669,
+      "vaccination_centers": 158
+    },
+    "Centre-Val de Loire": {
+      "vaccination_rate_pct": 67.56666666666666,
+      "cases_per_100k": 150.63333333333333,
+      "incidence_rate": 70.18333333333334,
+      "positivity_rate": 2.67,
+      "icu_occupancy_pct": 31.7,
+      "pharmacies_partners": 251,
+      "vaccination_centers": 61
+    },
+    "Bourgogne-Franche-Comté": {
+      "vaccination_rate_pct": 67.65,
+      "cases_per_100k": 148.28750000000002,
+      "incidence_rate": 69.10000000000001,
+      "positivity_rate": 2.61875,
+      "icu_occupancy_pct": 31.349999999999998,
+      "pharmacies_partners": 306,
+      "vaccination_centers": 77
+    },
+    "Bretagne": {
+      "vaccination_rate_pct": 72.975,
+      "cases_per_100k": 134.875,
+      "incidence_rate": 62.85,
+      "positivity_rate": 2.3675,
+      "icu_occupancy_pct": 29.6,
+      "pharmacies_partners": 332,
+      "vaccination_centers": 78
+    },
+    "Pays de la Loire": {
+      "vaccination_rate_pct": 71.34,
+      "cases_per_100k": 144.98,
+      "incidence_rate": 67.58,
+      "positivity_rate": 2.56,
+      "icu_occupancy_pct": 30.959999999999997,
+      "pharmacies_partners": 382,
+      "vaccination_centers": 88
+    },
+    "Hauts-de-France": {
+      "vaccination_rate_pct": 66.025,
+      "cases_per_100k": 182.8,
+      "incidence_rate": 85.225,
+      "positivity_rate": 3.2449999999999997,
+      "icu_occupancy_pct": 34.949999999999996,
+      "pharmacies_partners": 712,
+      "vaccination_centers": 162
+    },
+    "Île-de-France": {
+      "vaccination_rate_pct": 70.8,
+      "cases_per_100k": 191.525,
+      "incidence_rate": 89.2875,
+      "positivity_rate": 3.3825,
+      "icu_occupancy_pct": 35.65,
+      "pharmacies_partners": 1660,
+      "vaccination_centers": 378
+    },
+    "Corse": {
+      "vaccination_rate_pct": 65.1,
+      "cases_per_100k": 170.3,
+      "incidence_rate": 79.35,
+      "positivity_rate": 3.025,
+      "icu_occupancy_pct": 34.0,
+      "pharmacies_partners": 40,
+      "vaccination_centers": 10
+    }
+  },
+  "2025-11-23": {
+    "Grand Est": {
+      "vaccination_rate_pct": 67.64444444444445,
+      "cases_per_100k": 175.07777777777778,
+      "incidence_rate": 81.6,
+      "positivity_rate": 3.1433333333333326,
+      "icu_occupancy_pct": 35.422222222222224,
+      "pharmacies_partners": 678,
+      "vaccination_centers": 158
+    },
+    "Occitanie": {
+      "vaccination_rate_pct": 68.725,
+      "cases_per_100k": 162.41666666666666,
+      "incidence_rate": 75.68333333333332,
+      "positivity_rate": 2.8974999999999995,
+      "icu_occupancy_pct": 33.87499999999999,
+      "pharmacies_partners": 679,
+      "vaccination_centers": 162
+    },
+    "Provence-Alpes-Côte d'Azur": {
+      "vaccination_rate_pct": 68.93333333333334,
+      "cases_per_100k": 200.03333333333333,
+      "incidence_rate": 93.23333333333335,
+      "positivity_rate": 3.5933333333333333,
+      "icu_occupancy_pct": 37.9,
+      "pharmacies_partners": 530,
+      "vaccination_centers": 120
+    },
+    "Normandie": {
+      "vaccination_rate_pct": 69.04,
+      "cases_per_100k": 166.35999999999999,
+      "incidence_rate": 77.52,
+      "positivity_rate": 2.978,
+      "icu_occupancy_pct": 34.28,
+      "pharmacies_partners": 304,
+      "vaccination_centers": 73
+    },
+    "Auvergne-Rhône-Alpes": {
+      "vaccination_rate_pct": 69.58888888888889,
+      "cases_per_100k": 169.73333333333335,
+      "incidence_rate": 79.1,
+      "positivity_rate": 3.041111111111111,
+      "icu_occupancy_pct": 34.77777777777778,
+      "pharmacies_partners": 790,
+      "vaccination_centers": 183
+    },
+    "Nouvelle-Aquitaine": {
+      "vaccination_rate_pct": 69.33333333333333,
+      "cases_per_100k": 159.05000000000004,
+      "incidence_rate": 74.10000000000001,
+      "positivity_rate": 2.835833333333333,
+      "icu_occupancy_pct": 33.375,
+      "pharmacies_partners": 669,
+      "vaccination_centers": 158
+    },
+    "Centre-Val de Loire": {
+      "vaccination_rate_pct": 67.66666666666666,
+      "cases_per_100k": 167.91666666666666,
+      "incidence_rate": 78.23333333333333,
+      "positivity_rate": 3.0116666666666667,
+      "icu_occupancy_pct": 34.61666666666667,
+      "pharmacies_partners": 251,
+      "vaccination_centers": 61
+    },
+    "Bourgogne-Franche-Comté": {
+      "vaccination_rate_pct": 67.75,
+      "cases_per_100k": 165.31249999999997,
+      "incidence_rate": 77.01249999999999,
+      "positivity_rate": 2.95625,
+      "icu_occupancy_pct": 34.25000000000001,
+      "pharmacies_partners": 306,
+      "vaccination_centers": 77
+    },
+    "Bretagne": {
+      "vaccination_rate_pct": 73.075,
+      "cases_per_100k": 150.32500000000002,
+      "incidence_rate": 70.05000000000001,
+      "positivity_rate": 2.67,
+      "icu_occupancy_pct": 32.35,
+      "pharmacies_partners": 332,
+      "vaccination_centers": 78
+    },
+    "Pays de la Loire": {
+      "vaccination_rate_pct": 71.44,
+      "cases_per_100k": 161.64000000000001,
+      "incidence_rate": 75.32,
+      "positivity_rate": 2.89,
+      "icu_occupancy_pct": 33.82000000000001,
+      "pharmacies_partners": 382,
+      "vaccination_centers": 88
+    },
+    "Hauts-de-France": {
+      "vaccination_rate_pct": 66.125,
+      "cases_per_100k": 203.825,
+      "incidence_rate": 95.0,
+      "positivity_rate": 3.66,
+      "icu_occupancy_pct": 38.2,
+      "pharmacies_partners": 712,
+      "vaccination_centers": 162
+    },
+    "Île-de-France": {
+      "vaccination_rate_pct": 70.89999999999999,
+      "cases_per_100k": 213.51250000000002,
+      "incidence_rate": 99.5375,
+      "positivity_rate": 3.8137500000000006,
+      "icu_occupancy_pct": 38.95,
+      "pharmacies_partners": 1660,
+      "vaccination_centers": 378
+    },
+    "Corse": {
+      "vaccination_rate_pct": 65.19999999999999,
+      "cases_per_100k": 189.85000000000002,
+      "incidence_rate": 88.5,
+      "positivity_rate": 3.41,
+      "icu_occupancy_pct": 37.1,
+      "pharmacies_partners": 40,
+      "vaccination_centers": 10
+    }
+  },
+  "2025-11-24": {
+    "Grand Est": {
+      "vaccination_rate_pct": 67.74444444444445,
+      "cases_per_100k": 194.95555555555555,
+      "incidence_rate": 90.84444444444445,
+      "positivity_rate": 3.5755555555555554,
+      "icu_occupancy_pct": 38.84444444444445,
+      "pharmacies_partners": 678,
+      "vaccination_centers": 158
+    },
+    "Occitanie": {
+      "vaccination_rate_pct": 68.825,
+      "cases_per_100k": 180.84166666666667,
+      "incidence_rate": 84.26666666666667,
+      "positivity_rate": 3.2983333333333333,
+      "icu_occupancy_pct": 37.12499999999999,
+      "pharmacies_partners": 679,
+      "vaccination_centers": 162
+    },
+    "Provence-Alpes-Côte d'Azur": {
+      "vaccination_rate_pct": 69.03333333333335,
+      "cases_per_100k": 222.76666666666665,
+      "incidence_rate": 103.83333333333333,
+      "positivity_rate": 4.086666666666667,
+      "icu_occupancy_pct": 41.56666666666667,
+      "pharmacies_partners": 530,
+      "vaccination_centers": 120
+    },
+    "Normandie": {
+      "vaccination_rate_pct": 69.14000000000001,
+      "cases_per_100k": 185.2,
+      "incidence_rate": 86.3,
+      "positivity_rate": 3.386,
+      "icu_occupancy_pct": 37.58,
+      "pharmacies_partners": 304,
+      "vaccination_centers": 73
+    },
+    "Auvergne-Rhône-Alpes": {
+      "vaccination_rate_pct": 69.6888888888889,
+      "cases_per_100k": 188.97777777777776,
+      "incidence_rate": 88.06666666666666,
+      "positivity_rate": 3.457777777777778,
+      "icu_occupancy_pct": 38.13333333333334,
+      "pharmacies_partners": 790,
+      "vaccination_centers": 183
+    },
+    "Nouvelle-Aquitaine": {
+      "vaccination_rate_pct": 69.43333333333334,
+      "cases_per_100k": 177.08333333333334,
+      "incidence_rate": 82.49166666666667,
+      "positivity_rate": 3.2249999999999996,
+      "icu_occupancy_pct": 36.62500000000001,
+      "pharmacies_partners": 669,
+      "vaccination_centers": 158
+    },
+    "Centre-Val de Loire": {
+      "vaccination_rate_pct": 67.76666666666667,
+      "cases_per_100k": 186.9333333333333,
+      "incidence_rate": 87.10000000000001,
+      "positivity_rate": 3.421666666666667,
+      "icu_occupancy_pct": 37.96666666666666,
+      "pharmacies_partners": 251,
+      "vaccination_centers": 61
+    },
+    "Bourgogne-Franche-Comté": {
+      "vaccination_rate_pct": 67.85,
+      "cases_per_100k": 184.08749999999998,
+      "incidence_rate": 85.75,
+      "positivity_rate": 3.3625,
+      "icu_occupancy_pct": 37.537499999999994,
+      "pharmacies_partners": 306,
+      "vaccination_centers": 77
+    },
+    "Bretagne": {
+      "vaccination_rate_pct": 73.17500000000001,
+      "cases_per_100k": 167.375,
+      "incidence_rate": 77.975,
+      "positivity_rate": 3.04,
+      "icu_occupancy_pct": 35.475,
+      "pharmacies_partners": 332,
+      "vaccination_centers": 78
+    },
+    "Pays de la Loire": {
+      "vaccination_rate_pct": 71.53999999999999,
+      "cases_per_100k": 179.98,
+      "incidence_rate": 83.85999999999999,
+      "positivity_rate": 3.286,
+      "icu_occupancy_pct": 37.08,
+      "pharmacies_partners": 382,
+      "vaccination_centers": 88
+    },
+    "Hauts-de-France": {
+      "vaccination_rate_pct": 66.225,
+      "cases_per_100k": 226.925,
+      "incidence_rate": 105.8,
+      "positivity_rate": 4.165,
+      "icu_occupancy_pct": 41.875,
+      "pharmacies_partners": 712,
+      "vaccination_centers": 162
+    },
+    "Île-de-France": {
+      "vaccination_rate_pct": 71.0,
+      "cases_per_100k": 237.71250000000003,
+      "incidence_rate": 110.81250000000001,
+      "positivity_rate": 4.34,
+      "icu_occupancy_pct": 42.7,
+      "pharmacies_partners": 1660,
+      "vaccination_centers": 378
+    },
+    "Corse": {
+      "vaccination_rate_pct": 65.30000000000001,
+      "cases_per_100k": 211.39999999999998,
+      "incidence_rate": 98.55,
+      "positivity_rate": 3.885,
+      "icu_occupancy_pct": 40.7,
+      "pharmacies_partners": 40,
+      "vaccination_centers": 10
+    }
+  },
+  "2025-11-25": {
+    "Grand Est": {
+      "vaccination_rate_pct": 67.84444444444445,
+      "cases_per_100k": 215.84444444444446,
+      "incidence_rate": 100.57777777777778,
+      "positivity_rate": 4.072222222222221,
+      "icu_occupancy_pct": 42.65555555555556,
+      "pharmacies_partners": 678,
+      "vaccination_centers": 158
+    },
+    "Occitanie": {
+      "vaccination_rate_pct": 68.925,
+      "cases_per_100k": 200.225,
+      "incidence_rate": 93.30833333333334,
+      "positivity_rate": 3.7533333333333334,
+      "icu_occupancy_pct": 40.775,
+      "pharmacies_partners": 679,
+      "vaccination_centers": 162
+    },
+    "Provence-Alpes-Côte d'Azur": {
+      "vaccination_rate_pct": 69.13333333333334,
+      "cases_per_100k": 246.63333333333335,
+      "incidence_rate": 114.93333333333334,
+      "positivity_rate": 4.656666666666667,
+      "icu_occupancy_pct": 45.666666666666664,
+      "pharmacies_partners": 530,
+      "vaccination_centers": 120
+    },
+    "Normandie": {
+      "vaccination_rate_pct": 69.24,
+      "cases_per_100k": 205.06,
+      "incidence_rate": 95.55999999999999,
+      "positivity_rate": 3.8579999999999997,
+      "icu_occupancy_pct": 41.3,
+      "pharmacies_partners": 304,
+      "vaccination_centers": 73
+    },
+    "Auvergne-Rhône-Alpes": {
+      "vaccination_rate_pct": 69.78888888888889,
+      "cases_per_100k": 209.23333333333335,
+      "incidence_rate": 97.50000000000001,
+      "positivity_rate": 3.9377777777777774,
+      "icu_occupancy_pct": 41.86666666666667,
+      "pharmacies_partners": 790,
+      "vaccination_centers": 183
+    },
+    "Nouvelle-Aquitaine": {
+      "vaccination_rate_pct": 69.53333333333335,
+      "cases_per_100k": 196.04999999999998,
+      "incidence_rate": 91.34166666666665,
+      "positivity_rate": 3.674166666666667,
+      "icu_occupancy_pct": 40.19999999999999,
+      "pharmacies_partners": 669,
+      "vaccination_centers": 158
+    },
+    "Centre-Val de Loire": {
+      "vaccination_rate_pct": 67.86666666666666,
+      "cases_per_100k": 206.98333333333335,
+      "incidence_rate": 96.41666666666667,
+      "positivity_rate": 3.8983333333333334,
+      "icu_occupancy_pct": 41.666666666666664,
+      "pharmacies_partners": 251,
+      "vaccination_centers": 61
+    },
+    "Bourgogne-Franche-Comté": {
+      "vaccination_rate_pct": 67.95,
+      "cases_per_100k": 203.7875,
+      "incidence_rate": 94.95,
+      "positivity_rate": 3.82875,
+      "icu_occupancy_pct": 41.237500000000004,
+      "pharmacies_partners": 306,
+      "vaccination_centers": 77
+    },
+    "Bretagne": {
+      "vaccination_rate_pct": 73.275,
+      "cases_per_100k": 185.32500000000002,
+      "incidence_rate": 86.375,
+      "positivity_rate": 3.46,
+      "icu_occupancy_pct": 38.974999999999994,
+      "pharmacies_partners": 332,
+      "vaccination_centers": 78
+    },
+    "Pays de la Loire": {
+      "vaccination_rate_pct": 71.64000000000001,
+      "cases_per_100k": 199.21999999999997,
+      "incidence_rate": 92.84,
+      "positivity_rate": 3.7399999999999998,
+      "icu_occupancy_pct": 40.7,
+      "pharmacies_partners": 382,
+      "vaccination_centers": 88
+    },
+    "Hauts-de-France": {
+      "vaccination_rate_pct": 66.32499999999999,
+      "cases_per_100k": 251.25,
+      "incidence_rate": 117.125,
+      "positivity_rate": 4.74,
+      "icu_occupancy_pct": 45.974999999999994,
+      "pharmacies_partners": 712,
+      "vaccination_centers": 162
+    },
+    "Île-de-France": {
+      "vaccination_rate_pct": 71.1,
+      "cases_per_100k": 263.2,
+      "incidence_rate": 122.7125,
+      "positivity_rate": 4.9425,
+      "icu_occupancy_pct": 46.875,
+      "pharmacies_partners": 1660,
+      "vaccination_centers": 378
+    },
+    "Corse": {
+      "vaccination_rate_pct": 65.4,
+      "cases_per_100k": 234.05,
+      "incidence_rate": 109.1,
+      "positivity_rate": 4.425000000000001,
+      "icu_occupancy_pct": 44.7,
+      "pharmacies_partners": 40,
+      "vaccination_centers": 10
+    }
+  },
+  "2025-11-26": {
+    "Grand Est": {
+      "vaccination_rate_pct": 67.94444444444444,
+      "cases_per_100k": 236.7444444444444,
+      "incidence_rate": 110.3111111111111,
+      "positivity_rate": 4.605555555555556,
+      "icu_occupancy_pct": 46.73333333333334,
+      "pharmacies_partners": 678,
+      "vaccination_centers": 158
+    },
+    "Occitanie": {
+      "vaccination_rate_pct": 69.025,
+      "cases_per_100k": 219.58333333333334,
+      "incidence_rate": 102.34166666666668,
+      "positivity_rate": 4.2441666666666675,
+      "icu_occupancy_pct": 44.65,
+      "pharmacies_partners": 679,
+      "vaccination_centers": 162
+    },
+    "Provence-Alpes-Côte d'Azur": {
+      "vaccination_rate_pct": 69.23333333333333,
+      "cases_per_100k": 270.43333333333334,
+      "incidence_rate": 126.06666666666668,
+      "positivity_rate": 5.2633333333333345,
+      "icu_occupancy_pct": 50.03333333333334,
+      "pharmacies_partners": 530,
+      "vaccination_centers": 120
+    },
+    "Normandie": {
+      "vaccination_rate_pct": 69.34,
+      "cases_per_100k": 224.88000000000002,
+      "incidence_rate": 104.78,
+      "positivity_rate": 4.361999999999999,
+      "icu_occupancy_pct": 45.2,
+      "pharmacies_partners": 304,
+      "vaccination_centers": 73
+    },
+    "Auvergne-Rhône-Alpes": {
+      "vaccination_rate_pct": 69.88888888888887,
+      "cases_per_100k": 229.4888888888889,
+      "incidence_rate": 106.92222222222223,
+      "positivity_rate": 4.452222222222222,
+      "icu_occupancy_pct": 45.87777777777778,
+      "pharmacies_partners": 790,
+      "vaccination_centers": 183
+    },
+    "Nouvelle-Aquitaine": {
+      "vaccination_rate_pct": 69.63333333333333,
+      "cases_per_100k": 215.01666666666668,
+      "incidence_rate": 100.175,
+      "positivity_rate": 4.154166666666668,
+      "icu_occupancy_pct": 44.025000000000006,
+      "pharmacies_partners": 669,
+      "vaccination_centers": 158
+    },
+    "Centre-Val de Loire": {
+      "vaccination_rate_pct": 67.96666666666668,
+      "cases_per_100k": 227.0,
+      "incidence_rate": 105.78333333333332,
+      "positivity_rate": 4.406666666666667,
+      "icu_occupancy_pct": 45.650000000000006,
+      "pharmacies_partners": 251,
+      "vaccination_centers": 61
+    },
+    "Bourgogne-Franche-Comté": {
+      "vaccination_rate_pct": 68.05,
+      "cases_per_100k": 223.49999999999997,
+      "incidence_rate": 104.13749999999999,
+      "positivity_rate": 4.32875,
+      "icu_occupancy_pct": 45.162499999999994,
+      "pharmacies_partners": 306,
+      "vaccination_centers": 77
+    },
+    "Bretagne": {
+      "vaccination_rate_pct": 73.375,
+      "cases_per_100k": 203.25,
+      "incidence_rate": 94.72500000000001,
+      "positivity_rate": 3.9124999999999996,
+      "icu_occupancy_pct": 42.7,
+      "pharmacies_partners": 332,
+      "vaccination_centers": 78
+    },
+    "Pays de la Loire": {
+      "vaccination_rate_pct": 71.74000000000001,
+      "cases_per_100k": 218.51999999999998,
+      "incidence_rate": 101.82000000000001,
+      "positivity_rate": 4.232000000000001,
+      "icu_occupancy_pct": 44.580000000000005,
+      "pharmacies_partners": 382,
+      "vaccination_centers": 88
+    },
+    "Hauts-de-France": {
+      "vaccination_rate_pct": 66.425,
+      "cases_per_100k": 275.55,
+      "incidence_rate": 128.425,
+      "positivity_rate": 5.36,
+      "icu_occupancy_pct": 50.35,
+      "pharmacies_partners": 712,
+      "vaccination_centers": 162
+    },
+    "Île-de-France": {
+      "vaccination_rate_pct": 71.2,
+      "cases_per_100k": 288.65,
+      "incidence_rate": 134.575,
+      "positivity_rate": 5.5875,
+      "icu_occupancy_pct": 51.375,
+      "pharmacies_partners": 1660,
+      "vaccination_centers": 378
+    },
+    "Corse": {
+      "vaccination_rate_pct": 65.5,
+      "cases_per_100k": 256.65,
+      "incidence_rate": 119.65,
+      "positivity_rate": 5.0,
+      "icu_occupancy_pct": 48.95,
+      "pharmacies_partners": 40,
+      "vaccination_centers": 10
+    }
+  },
+  "2025-11-27": {
+    "Grand Est": {
+      "vaccination_rate_pct": 68.04444444444444,
+      "cases_per_100k": 256.3333333333333,
+      "incidence_rate": 119.47777777777777,
+      "positivity_rate": 5.136666666666667,
+      "icu_occupancy_pct": 50.955555555555556,
+      "pharmacies_partners": 678,
+      "vaccination_centers": 158
+    },
+    "Occitanie": {
+      "vaccination_rate_pct": 69.12499999999999,
+      "cases_per_100k": 237.7833333333333,
+      "incidence_rate": 110.8,
+      "positivity_rate": 4.735,
+      "icu_occupancy_pct": 48.716666666666676,
+      "pharmacies_partners": 679,
+      "vaccination_centers": 162
+    },
+    "Provence-Alpes-Côte d'Azur": {
+      "vaccination_rate_pct": 69.33333333333333,
+      "cases_per_100k": 292.8333333333333,
+      "incidence_rate": 136.53333333333333,
+      "positivity_rate": 5.873333333333332,
+      "icu_occupancy_pct": 54.53333333333333,
+      "pharmacies_partners": 530,
+      "vaccination_centers": 120
+    },
+    "Normandie": {
+      "vaccination_rate_pct": 69.44,
+      "cases_per_100k": 243.5,
+      "incidence_rate": 113.47999999999999,
+      "positivity_rate": 4.868,
+      "icu_occupancy_pct": 49.34,
+      "pharmacies_partners": 304,
+      "vaccination_centers": 73
+    },
+    "Auvergne-Rhône-Alpes": {
+      "vaccination_rate_pct": 69.98888888888888,
+      "cases_per_100k": 248.5,
+      "incidence_rate": 115.79999999999998,
+      "positivity_rate": 4.964444444444445,
+      "icu_occupancy_pct": 50.0111111111111,
+      "pharmacies_partners": 790,
+      "vaccination_centers": 183
+    },
+    "Nouvelle-Aquitaine": {
+      "vaccination_rate_pct": 69.73333333333333,
+      "cases_per_100k": 232.84999999999994,
+      "incidence_rate": 108.48333333333333,
+      "positivity_rate": 4.635833333333333,
+      "icu_occupancy_pct": 48.04166666666666,
+      "pharmacies_partners": 669,
+      "vaccination_centers": 158
+    },
+    "Centre-Val de Loire": {
+      "vaccination_rate_pct": 68.06666666666666,
+      "cases_per_100k": 245.8166666666667,
+      "incidence_rate": 114.51666666666667,
+      "positivity_rate": 4.916666666666667,
+      "icu_occupancy_pct": 49.78333333333334,
+      "pharmacies_partners": 251,
+      "vaccination_centers": 61
+    },
+    "Bourgogne-Franche-Comté": {
+      "vaccination_rate_pct": 68.15,
+      "cases_per_100k": 242.0125,
+      "incidence_rate": 112.775,
+      "positivity_rate": 4.83,
+      "icu_occupancy_pct": 49.275000000000006,
+      "pharmacies_partners": 306,
+      "vaccination_centers": 77
+    },
+    "Bretagne": {
+      "vaccination_rate_pct": 73.475,
+      "cases_per_100k": 220.075,
+      "incidence_rate": 102.55,
+      "positivity_rate": 4.362500000000001,
+      "icu_occupancy_pct": 46.575,
+      "pharmacies_partners": 332,
+      "vaccination_centers": 78
+    },
+    "Pays de la Loire": {
+      "vaccination_rate_pct": 71.84,
+      "cases_per_100k": 236.66,
+      "incidence_rate": 110.25999999999999,
+      "positivity_rate": 4.7219999999999995,
+      "icu_occupancy_pct": 48.64000000000001,
+      "pharmacies_partners": 382,
+      "vaccination_centers": 88
+    },
+    "Hauts-de-France": {
+      "vaccination_rate_pct": 66.525,
+      "cases_per_100k": 298.4,
+      "incidence_rate": 139.075,
+      "positivity_rate": 5.9825,
+      "icu_occupancy_pct": 54.95,
+      "pharmacies_partners": 712,
+      "vaccination_centers": 162
+    },
+    "Île-de-France": {
+      "vaccination_rate_pct": 71.3,
+      "cases_per_100k": 312.58750000000003,
+      "incidence_rate": 145.7375,
+      "positivity_rate": 6.2337500000000015,
+      "icu_occupancy_pct": 56.0,
+      "pharmacies_partners": 1660,
+      "vaccination_centers": 378
+    },
+    "Corse": {
+      "vaccination_rate_pct": 65.6,
+      "cases_per_100k": 277.9,
+      "incidence_rate": 129.55,
+      "positivity_rate": 5.58,
+      "icu_occupancy_pct": 53.4,
+      "pharmacies_partners": 40,
+      "vaccination_centers": 10
+    }
+  },
+  "2025-11-28": {
+    "Grand Est": {
+      "vaccination_rate_pct": 68.14444444444445,
+      "cases_per_100k": 273.4,
+      "incidence_rate": 127.40000000000002,
+      "positivity_rate": 5.622222222222223,
+      "icu_occupancy_pct": 55.2,
+      "pharmacies_partners": 678,
+      "vaccination_centers": 158
+    },
+    "Occitanie": {
+      "vaccination_rate_pct": 69.225,
+      "cases_per_100k": 253.6,
+      "incidence_rate": 118.175,
+      "positivity_rate": 5.183333333333334,
+      "icu_occupancy_pct": 52.76666666666667,
+      "pharmacies_partners": 679,
+      "vaccination_centers": 162
+    },
+    "Provence-Alpes-Côte d'Azur": {
+      "vaccination_rate_pct": 69.43333333333334,
+      "cases_per_100k": 312.3333333333333,
+      "incidence_rate": 145.56666666666666,
+      "positivity_rate": 6.426666666666667,
+      "icu_occupancy_pct": 59.1,
+      "pharmacies_partners": 530,
+      "vaccination_centers": 120
+    },
+    "Normandie": {
+      "vaccination_rate_pct": 69.54,
+      "cases_per_100k": 259.71999999999997,
+      "incidence_rate": 121.02000000000001,
+      "positivity_rate": 5.324,
+      "icu_occupancy_pct": 53.4,
+      "pharmacies_partners": 304,
+      "vaccination_centers": 73
+    },
+    "Auvergne-Rhône-Alpes": {
+      "vaccination_rate_pct": 70.08888888888889,
+      "cases_per_100k": 265.0444444444445,
+      "incidence_rate": 123.5,
+      "positivity_rate": 5.435555555555556,
+      "icu_occupancy_pct": 54.17777777777778,
+      "pharmacies_partners": 790,
+      "vaccination_centers": 183
+    },
+    "Nouvelle-Aquitaine": {
+      "vaccination_rate_pct": 69.83333333333333,
+      "cases_per_100k": 248.3083333333333,
+      "incidence_rate": 115.69166666666666,
+      "positivity_rate": 5.072500000000001,
+      "icu_occupancy_pct": 52.04999999999999,
+      "pharmacies_partners": 669,
+      "vaccination_centers": 158
+    },
+    "Centre-Val de Loire": {
+      "vaccination_rate_pct": 68.16666666666666,
+      "cases_per_100k": 262.1666666666667,
+      "incidence_rate": 122.14999999999999,
+      "positivity_rate": 5.383333333333333,
+      "icu_occupancy_pct": 53.93333333333333,
+      "pharmacies_partners": 251,
+      "vaccination_centers": 61
+    },
+    "Bourgogne-Franche-Comté": {
+      "vaccination_rate_pct": 68.25,
+      "cases_per_100k": 258.125,
+      "incidence_rate": 120.275,
+      "positivity_rate": 5.285,
+      "icu_occupancy_pct": 53.35000000000001,
+      "pharmacies_partners": 306,
+      "vaccination_centers": 77
+    },
+    "Bretagne": {
+      "vaccination_rate_pct": 73.575,
+      "cases_per_100k": 234.72500000000002,
+      "incidence_rate": 109.35,
+      "positivity_rate": 4.7775,
+      "icu_occupancy_pct": 50.449999999999996,
+      "pharmacies_partners": 332,
+      "vaccination_centers": 78
+    },
+    "Pays de la Loire": {
+      "vaccination_rate_pct": 71.94,
+      "cases_per_100k": 252.35999999999999,
+      "incidence_rate": 117.6,
+      "positivity_rate": 5.168,
+      "icu_occupancy_pct": 52.7,
+      "pharmacies_partners": 382,
+      "vaccination_centers": 88
+    },
+    "Hauts-de-France": {
+      "vaccination_rate_pct": 66.625,
+      "cases_per_100k": 318.225,
+      "incidence_rate": 148.3,
+      "positivity_rate": 6.547499999999999,
+      "icu_occupancy_pct": 59.5,
+      "pharmacies_partners": 712,
+      "vaccination_centers": 162
+    },
+    "Île-de-France": {
+      "vaccination_rate_pct": 71.39999999999999,
+      "cases_per_100k": 333.3625,
+      "incidence_rate": 155.45000000000002,
+      "positivity_rate": 6.8225,
+      "icu_occupancy_pct": 60.675,
+      "pharmacies_partners": 1660,
+      "vaccination_centers": 378
+    },
+    "Corse": {
+      "vaccination_rate_pct": 65.69999999999999,
+      "cases_per_100k": 296.4,
+      "incidence_rate": 138.15,
+      "positivity_rate": 6.105,
+      "icu_occupancy_pct": 57.85,
+      "pharmacies_partners": 40,
+      "vaccination_centers": 10
+    }
+  },
+  "2025-11-29": {
+    "Grand Est": {
+      "vaccination_rate_pct": 68.34444444444445,
+      "cases_per_100k": 286.6222222222222,
+      "incidence_rate": 133.58888888888887,
+      "positivity_rate": 6.012222222222222,
+      "icu_occupancy_pct": 59.25555555555555,
+      "pharmacies_partners": 678,
+      "vaccination_centers": 158
+    },
+    "Occitanie": {
+      "vaccination_rate_pct": 69.425,
+      "cases_per_100k": 265.8916666666667,
+      "incidence_rate": 123.90000000000002,
+      "positivity_rate": 5.543333333333333,
+      "icu_occupancy_pct": 56.633333333333326,
+      "pharmacies_partners": 679,
+      "vaccination_centers": 162
+    },
+    "Provence-Alpes-Côte d'Azur": {
+      "vaccination_rate_pct": 69.63333333333334,
+      "cases_per_100k": 327.43333333333334,
+      "incidence_rate": 152.63333333333333,
+      "positivity_rate": 6.873333333333332,
+      "icu_occupancy_pct": 63.46666666666667,
+      "pharmacies_partners": 530,
+      "vaccination_centers": 120
+    },
+    "Normandie": {
+      "vaccination_rate_pct": 69.74,
+      "cases_per_100k": 272.3,
+      "incidence_rate": 126.88,
+      "positivity_rate": 5.698,
+      "icu_occupancy_pct": 57.35999999999999,
+      "pharmacies_partners": 304,
+      "vaccination_centers": 73
+    },
+    "Auvergne-Rhône-Alpes": {
+      "vaccination_rate_pct": 70.28888888888889,
+      "cases_per_100k": 277.85555555555555,
+      "incidence_rate": 129.48888888888888,
+      "positivity_rate": 5.814444444444444,
+      "icu_occupancy_pct": 58.13333333333334,
+      "pharmacies_partners": 790,
+      "vaccination_centers": 183
+    },
+    "Nouvelle-Aquitaine": {
+      "vaccination_rate_pct": 70.03333333333335,
+      "cases_per_100k": 260.3583333333333,
+      "incidence_rate": 121.3,
+      "positivity_rate": 5.423333333333333,
+      "icu_occupancy_pct": 55.85833333333333,
+      "pharmacies_partners": 669,
+      "vaccination_centers": 158
+    },
+    "Centre-Val de Loire": {
+      "vaccination_rate_pct": 68.36666666666666,
+      "cases_per_100k": 274.8666666666667,
+      "incidence_rate": 128.06666666666666,
+      "positivity_rate": 5.756666666666668,
+      "icu_occupancy_pct": 57.88333333333333,
+      "pharmacies_partners": 251,
+      "vaccination_centers": 61
+    },
+    "Bourgogne-Franche-Comté": {
+      "vaccination_rate_pct": 68.45,
+      "cases_per_100k": 270.59999999999997,
+      "incidence_rate": 126.09999999999998,
+      "positivity_rate": 5.6537500000000005,
+      "icu_occupancy_pct": 57.2875,
+      "pharmacies_partners": 306,
+      "vaccination_centers": 77
+    },
+    "Bretagne": {
+      "vaccination_rate_pct": 73.775,
+      "cases_per_100k": 246.1,
+      "incidence_rate": 114.675,
+      "positivity_rate": 5.1075,
+      "icu_occupancy_pct": 54.125,
+      "pharmacies_partners": 332,
+      "vaccination_centers": 78
+    },
+    "Pays de la Loire": {
+      "vaccination_rate_pct": 72.14000000000001,
+      "cases_per_100k": 264.58,
+      "incidence_rate": 123.3,
+      "positivity_rate": 5.524,
+      "icu_occupancy_pct": 56.54,
+      "pharmacies_partners": 382,
+      "vaccination_centers": 88
+    },
+    "Hauts-de-France": {
+      "vaccination_rate_pct": 66.82499999999999,
+      "cases_per_100k": 333.625,
+      "incidence_rate": 155.5,
+      "positivity_rate": 7.0,
+      "icu_occupancy_pct": 63.875,
+      "pharmacies_partners": 712,
+      "vaccination_centers": 162
+    },
+    "Île-de-France": {
+      "vaccination_rate_pct": 71.6,
+      "cases_per_100k": 349.50000000000006,
+      "incidence_rate": 162.9375,
+      "positivity_rate": 7.297499999999999,
+      "icu_occupancy_pct": 65.125,
+      "pharmacies_partners": 1660,
+      "vaccination_centers": 378
+    },
+    "Corse": {
+      "vaccination_rate_pct": 65.9,
+      "cases_per_100k": 310.8,
+      "incidence_rate": 144.85,
+      "positivity_rate": 6.525,
+      "icu_occupancy_pct": 62.099999999999994,
+      "pharmacies_partners": 40,
+      "vaccination_centers": 10
+    }
+  },
+  "2025-11-30": {
+    "Grand Est": {
+      "vaccination_rate_pct": 68.44444444444444,
+      "cases_per_100k": 295.0111111111111,
+      "incidence_rate": 137.46666666666667,
+      "positivity_rate": 6.267777777777777,
+      "icu_occupancy_pct": 62.91111111111112,
+      "pharmacies_partners": 678,
+      "vaccination_centers": 158
+    },
+    "Occitanie": {
+      "vaccination_rate_pct": 69.525,
+      "cases_per_100k": 273.6666666666667,
+      "incidence_rate": 127.53333333333336,
+      "positivity_rate": 5.778333333333333,
+      "icu_occupancy_pct": 60.133333333333326,
+      "pharmacies_partners": 679,
+      "vaccination_centers": 162
+    },
+    "Provence-Alpes-Côte d'Azur": {
+      "vaccination_rate_pct": 69.73333333333333,
+      "cases_per_100k": 337.03333333333336,
+      "incidence_rate": 157.1,
+      "positivity_rate": 7.166666666666667,
+      "icu_occupancy_pct": 67.36666666666667,
+      "pharmacies_partners": 530,
+      "vaccination_centers": 120
+    },
+    "Normandie": {
+      "vaccination_rate_pct": 69.84,
+      "cases_per_100k": 280.24,
+      "incidence_rate": 130.62,
+      "positivity_rate": 5.935999999999999,
+      "icu_occupancy_pct": 60.9,
+      "pharmacies_partners": 304,
+      "vaccination_centers": 73
+    },
+    "Auvergne-Rhône-Alpes": {
+      "vaccination_rate_pct": 70.38888888888887,
+      "cases_per_100k": 285.9888888888888,
+      "incidence_rate": 133.26666666666665,
+      "positivity_rate": 6.0600000000000005,
+      "icu_occupancy_pct": 61.75555555555556,
+      "pharmacies_partners": 790,
+      "vaccination_centers": 183
+    },
+    "Nouvelle-Aquitaine": {
+      "vaccination_rate_pct": 70.13333333333333,
+      "cases_per_100k": 267.9750000000001,
+      "incidence_rate": 124.84166666666665,
+      "positivity_rate": 5.653333333333333,
+      "icu_occupancy_pct": 59.32500000000001,
+      "pharmacies_partners": 669,
+      "vaccination_centers": 158
+    },
+    "Centre-Val de Loire": {
+      "vaccination_rate_pct": 68.46666666666668,
+      "cases_per_100k": 282.90000000000003,
+      "incidence_rate": 131.81666666666666,
+      "positivity_rate": 6.0,
+      "icu_occupancy_pct": 61.48333333333333,
+      "pharmacies_partners": 251,
+      "vaccination_centers": 61
+    },
+    "Bourgogne-Franche-Comté": {
+      "vaccination_rate_pct": 68.55,
+      "cases_per_100k": 278.52500000000003,
+      "incidence_rate": 129.7875,
+      "positivity_rate": 5.8925,
+      "icu_occupancy_pct": 60.82500000000001,
+      "pharmacies_partners": 306,
+      "vaccination_centers": 77
+    },
+    "Bretagne": {
+      "vaccination_rate_pct": 73.875,
+      "cases_per_100k": 253.275,
+      "incidence_rate": 118.05,
+      "positivity_rate": 5.327500000000001,
+      "icu_occupancy_pct": 57.5,
+      "pharmacies_partners": 332,
+      "vaccination_centers": 78
+    },
+    "Pays de la Loire": {
+      "vaccination_rate_pct": 72.24000000000001,
+      "cases_per_100k": 272.36,
+      "incidence_rate": 126.88,
+      "positivity_rate": 5.758,
+      "icu_occupancy_pct": 60.06,
+      "pharmacies_partners": 382,
+      "vaccination_centers": 88
+    },
+    "Hauts-de-France": {
+      "vaccination_rate_pct": 66.925,
+      "cases_per_100k": 343.42499999999995,
+      "incidence_rate": 160.05,
+      "positivity_rate": 7.2975,
+      "icu_occupancy_pct": 67.85,
+      "pharmacies_partners": 712,
+      "vaccination_centers": 162
+    },
+    "Île-de-France": {
+      "vaccination_rate_pct": 71.7,
+      "cases_per_100k": 359.7375,
+      "incidence_rate": 167.7125,
+      "positivity_rate": 7.60375,
+      "icu_occupancy_pct": 69.1625,
+      "pharmacies_partners": 1660,
+      "vaccination_centers": 378
+    },
+    "Corse": {
+      "vaccination_rate_pct": 66.0,
+      "cases_per_100k": 319.85,
+      "incidence_rate": 149.10000000000002,
+      "positivity_rate": 6.805,
+      "icu_occupancy_pct": 65.9,
+      "pharmacies_partners": 40,
+      "vaccination_centers": 10
+    }
+  },
+  "2025-12-01": {
+    "Grand Est": {
+      "vaccination_rate_pct": 68.54444444444444,
+      "cases_per_100k": 297.8888888888889,
+      "incidence_rate": 138.8222222222222,
+      "positivity_rate": 6.355555555555556,
+      "icu_occupancy_pct": 66.02222222222223,
+      "pharmacies_partners": 678,
+      "vaccination_centers": 158
+    },
+    "Occitanie": {
+      "vaccination_rate_pct": 69.62499999999999,
+      "cases_per_100k": 276.3333333333333,
+      "incidence_rate": 128.76666666666665,
+      "positivity_rate": 5.858333333333334,
+      "icu_occupancy_pct": 63.10833333333333,
+      "pharmacies_partners": 679,
+      "vaccination_centers": 162
+    },
+    "Provence-Alpes-Côte d'Azur": {
+      "vaccination_rate_pct": 69.83333333333333,
+      "cases_per_100k": 340.3333333333333,
+      "incidence_rate": 158.63333333333333,
+      "positivity_rate": 7.266666666666666,
+      "icu_occupancy_pct": 70.7,
+      "pharmacies_partners": 530,
+      "vaccination_centers": 120
+    },
+    "Normandie": {
+      "vaccination_rate_pct": 69.94,
+      "cases_per_100k": 283.0,
+      "incidence_rate": 131.88,
+      "positivity_rate": 6.02,
+      "icu_occupancy_pct": 63.92,
+      "pharmacies_partners": 304,
+      "vaccination_centers": 73
+    },
+    "Auvergne-Rhône-Alpes": {
+      "vaccination_rate_pct": 70.48888888888888,
+      "cases_per_100k": 288.77777777777777,
+      "incidence_rate": 134.5666666666667,
+      "positivity_rate": 6.144444444444444,
+      "icu_occupancy_pct": 64.80000000000001,
+      "pharmacies_partners": 790,
+      "vaccination_centers": 183
+    },
+    "Nouvelle-Aquitaine": {
+      "vaccination_rate_pct": 70.23333333333333,
+      "cases_per_100k": 270.5833333333333,
+      "incidence_rate": 126.06666666666666,
+      "positivity_rate": 5.733333333333333,
+      "icu_occupancy_pct": 62.25,
+      "pharmacies_partners": 669,
+      "vaccination_centers": 158
+    },
+    "Centre-Val de Loire": {
+      "vaccination_rate_pct": 68.56666666666666,
+      "cases_per_100k": 285.6666666666667,
+      "incidence_rate": 133.1,
+      "positivity_rate": 6.083333333333333,
+      "icu_occupancy_pct": 64.5,
+      "pharmacies_partners": 251,
+      "vaccination_centers": 61
+    },
+    "Bourgogne-Franche-Comté": {
+      "vaccination_rate_pct": 68.65,
+      "cases_per_100k": 281.25,
+      "incidence_rate": 131.04999999999998,
+      "positivity_rate": 5.975,
+      "icu_occupancy_pct": 63.8375,
+      "pharmacies_partners": 306,
+      "vaccination_centers": 77
+    },
+    "Bretagne": {
+      "vaccination_rate_pct": 73.975,
+      "cases_per_100k": 255.75,
+      "incidence_rate": 119.17500000000001,
+      "positivity_rate": 5.4,
+      "icu_occupancy_pct": 60.35,
+      "pharmacies_partners": 332,
+      "vaccination_centers": 78
+    },
+    "Pays de la Loire": {
+      "vaccination_rate_pct": 72.34,
+      "cases_per_100k": 275.0,
+      "incidence_rate": 128.14,
+      "positivity_rate": 5.840000000000001,
+      "icu_occupancy_pct": 63.02,
+      "pharmacies_partners": 382,
+      "vaccination_centers": 88
+    },
+    "Hauts-de-France": {
+      "vaccination_rate_pct": 67.025,
+      "cases_per_100k": 346.75,
+      "incidence_rate": 161.625,
+      "positivity_rate": 7.4,
+      "icu_occupancy_pct": 71.2,
+      "pharmacies_partners": 712,
+      "vaccination_centers": 162
+    },
+    "Île-de-France": {
+      "vaccination_rate_pct": 71.8,
+      "cases_per_100k": 363.25,
+      "incidence_rate": 169.35,
+      "positivity_rate": 7.7125,
+      "icu_occupancy_pct": 72.5625,
+      "pharmacies_partners": 1660,
+      "vaccination_centers": 378
+    },
+    "Corse": {
+      "vaccination_rate_pct": 66.1,
+      "cases_per_100k": 323.0,
+      "incidence_rate": 150.55,
+      "positivity_rate": 6.9,
+      "icu_occupancy_pct": 69.2,
+      "pharmacies_partners": 40,
+      "vaccination_centers": 10
+    }
+  },
+  "2025-12-02": {
+    "Grand Est": {
+      "vaccination_rate_pct": 68.64444444444445,
+      "cases_per_100k": 295.0111111111111,
+      "incidence_rate": 137.46666666666667,
+      "positivity_rate": 6.267777777777777,
+      "icu_occupancy_pct": 68.37777777777778,
+      "pharmacies_partners": 678,
+      "vaccination_centers": 158
+    },
+    "Occitanie": {
+      "vaccination_rate_pct": 69.725,
+      "cases_per_100k": 273.6666666666667,
+      "incidence_rate": 127.53333333333336,
+      "positivity_rate": 5.778333333333333,
+      "icu_occupancy_pct": 65.35,
+      "pharmacies_partners": 679,
+      "vaccination_centers": 162
+    },
+    "Provence-Alpes-Côte d'Azur": {
+      "vaccination_rate_pct": 69.93333333333334,
+      "cases_per_100k": 337.03333333333336,
+      "incidence_rate": 157.1,
+      "positivity_rate": 7.166666666666667,
+      "icu_occupancy_pct": 73.2,
+      "pharmacies_partners": 530,
+      "vaccination_centers": 120
+    },
+    "Normandie": {
+      "vaccination_rate_pct": 70.04,
+      "cases_per_100k": 280.24,
+      "incidence_rate": 130.62,
+      "positivity_rate": 5.935999999999999,
+      "icu_occupancy_pct": 66.18,
+      "pharmacies_partners": 304,
+      "vaccination_centers": 73
+    },
+    "Auvergne-Rhône-Alpes": {
+      "vaccination_rate_pct": 70.58888888888889,
+      "cases_per_100k": 285.9888888888888,
+      "incidence_rate": 133.26666666666665,
+      "positivity_rate": 6.0600000000000005,
+      "icu_occupancy_pct": 67.1,
+      "pharmacies_partners": 790,
+      "vaccination_centers": 183
+    },
+    "Nouvelle-Aquitaine": {
+      "vaccination_rate_pct": 70.33333333333333,
+      "cases_per_100k": 267.9750000000001,
+      "incidence_rate": 124.84166666666665,
+      "positivity_rate": 5.653333333333333,
+      "icu_occupancy_pct": 64.45,
+      "pharmacies_partners": 669,
+      "vaccination_centers": 158
+    },
+    "Centre-Val de Loire": {
+      "vaccination_rate_pct": 68.66666666666666,
+      "cases_per_100k": 282.90000000000003,
+      "incidence_rate": 131.81666666666666,
+      "positivity_rate": 6.0,
+      "icu_occupancy_pct": 66.78333333333335,
+      "pharmacies_partners": 251,
+      "vaccination_centers": 61
+    },
+    "Bourgogne-Franche-Comté": {
+      "vaccination_rate_pct": 68.75,
+      "cases_per_100k": 278.52500000000003,
+      "incidence_rate": 129.7875,
+      "positivity_rate": 5.8925,
+      "icu_occupancy_pct": 66.1,
+      "pharmacies_partners": 306,
+      "vaccination_centers": 77
+    },
+    "Bretagne": {
+      "vaccination_rate_pct": 74.075,
+      "cases_per_100k": 253.275,
+      "incidence_rate": 118.05,
+      "positivity_rate": 5.327500000000001,
+      "icu_occupancy_pct": 62.475,
+      "pharmacies_partners": 332,
+      "vaccination_centers": 78
+    },
+    "Pays de la Loire": {
+      "vaccination_rate_pct": 72.44,
+      "cases_per_100k": 272.36,
+      "incidence_rate": 126.88,
+      "positivity_rate": 5.758,
+      "icu_occupancy_pct": 65.25999999999999,
+      "pharmacies_partners": 382,
+      "vaccination_centers": 88
+    },
+    "Hauts-de-France": {
+      "vaccination_rate_pct": 67.125,
+      "cases_per_100k": 343.42499999999995,
+      "incidence_rate": 160.05,
+      "positivity_rate": 7.2975,
+      "icu_occupancy_pct": 73.725,
+      "pharmacies_partners": 712,
+      "vaccination_centers": 162
+    },
+    "Île-de-France": {
+      "vaccination_rate_pct": 71.89999999999999,
+      "cases_per_100k": 359.7375,
+      "incidence_rate": 167.7125,
+      "positivity_rate": 7.60375,
+      "icu_occupancy_pct": 75.1375,
+      "pharmacies_partners": 1660,
+      "vaccination_centers": 378
+    },
+    "Corse": {
+      "vaccination_rate_pct": 66.19999999999999,
+      "cases_per_100k": 319.85,
+      "incidence_rate": 149.10000000000002,
+      "positivity_rate": 6.805,
+      "icu_occupancy_pct": 71.6,
+      "pharmacies_partners": 40,
+      "vaccination_centers": 10
+    }
+  },
+  "2025-12-03": {
+    "Grand Est": {
+      "vaccination_rate_pct": 68.74444444444445,
+      "cases_per_100k": 286.6222222222222,
+      "incidence_rate": 133.58888888888887,
+      "positivity_rate": 6.012222222222222,
+      "icu_occupancy_pct": 69.83333333333333,
+      "pharmacies_partners": 678,
+      "vaccination_centers": 158
+    },
+    "Occitanie": {
+      "vaccination_rate_pct": 69.825,
+      "cases_per_100k": 265.8916666666667,
+      "incidence_rate": 123.90000000000002,
+      "positivity_rate": 5.543333333333333,
+      "icu_occupancy_pct": 66.75833333333333,
+      "pharmacies_partners": 679,
+      "vaccination_centers": 162
+    },
+    "Provence-Alpes-Côte d'Azur": {
+      "vaccination_rate_pct": 70.03333333333335,
+      "cases_per_100k": 327.43333333333334,
+      "incidence_rate": 152.63333333333333,
+      "positivity_rate": 6.873333333333332,
+      "icu_occupancy_pct": 74.76666666666667,
+      "pharmacies_partners": 530,
+      "vaccination_centers": 120
+    },
+    "Normandie": {
+      "vaccination_rate_pct": 70.14000000000001,
+      "cases_per_100k": 272.3,
+      "incidence_rate": 126.88,
+      "positivity_rate": 5.698,
+      "icu_occupancy_pct": 67.58000000000001,
+      "pharmacies_partners": 304,
+      "vaccination_centers": 73
+    },
+    "Auvergne-Rhône-Alpes": {
+      "vaccination_rate_pct": 70.6888888888889,
+      "cases_per_100k": 277.85555555555555,
+      "incidence_rate": 129.48888888888888,
+      "positivity_rate": 5.814444444444444,
+      "icu_occupancy_pct": 68.54444444444444,
+      "pharmacies_partners": 790,
+      "vaccination_centers": 183
+    },
+    "Nouvelle-Aquitaine": {
+      "vaccination_rate_pct": 70.43333333333334,
+      "cases_per_100k": 260.3583333333333,
+      "incidence_rate": 121.3,
+      "positivity_rate": 5.423333333333333,
+      "icu_occupancy_pct": 65.81666666666666,
+      "pharmacies_partners": 669,
+      "vaccination_centers": 158
+    },
+    "Centre-Val de Loire": {
+      "vaccination_rate_pct": 68.76666666666667,
+      "cases_per_100k": 274.8666666666667,
+      "incidence_rate": 128.06666666666666,
+      "positivity_rate": 5.756666666666668,
+      "icu_occupancy_pct": 68.21666666666665,
+      "pharmacies_partners": 251,
+      "vaccination_centers": 61
+    },
+    "Bourgogne-Franche-Comté": {
+      "vaccination_rate_pct": 68.85,
+      "cases_per_100k": 270.59999999999997,
+      "incidence_rate": 126.09999999999998,
+      "positivity_rate": 5.6537500000000005,
+      "icu_occupancy_pct": 67.5,
+      "pharmacies_partners": 306,
+      "vaccination_centers": 77
+    },
+    "Bretagne": {
+      "vaccination_rate_pct": 74.17500000000001,
+      "cases_per_100k": 246.1,
+      "incidence_rate": 114.675,
+      "positivity_rate": 5.1075,
+      "icu_occupancy_pct": 63.8,
+      "pharmacies_partners": 332,
+      "vaccination_centers": 78
+    },
+    "Pays de la Loire": {
+      "vaccination_rate_pct": 72.53999999999999,
+      "cases_per_100k": 264.58,
+      "incidence_rate": 123.3,
+      "positivity_rate": 5.524,
+      "icu_occupancy_pct": 66.64,
+      "pharmacies_partners": 382,
+      "vaccination_centers": 88
+    },
+    "Hauts-de-France": {
+      "vaccination_rate_pct": 67.225,
+      "cases_per_100k": 333.625,
+      "incidence_rate": 155.5,
+      "positivity_rate": 7.0,
+      "icu_occupancy_pct": 75.3,
+      "pharmacies_partners": 712,
+      "vaccination_centers": 162
+    },
+    "Île-de-France": {
+      "vaccination_rate_pct": 72.0,
+      "cases_per_100k": 349.50000000000006,
+      "incidence_rate": 162.9375,
+      "positivity_rate": 7.297499999999999,
+      "icu_occupancy_pct": 76.7875,
+      "pharmacies_partners": 1660,
+      "vaccination_centers": 378
+    },
+    "Corse": {
+      "vaccination_rate_pct": 66.30000000000001,
+      "cases_per_100k": 310.8,
+      "incidence_rate": 144.85,
+      "positivity_rate": 6.525,
+      "icu_occupancy_pct": 73.2,
+      "pharmacies_partners": 40,
+      "vaccination_centers": 10
+    }
+  },
+  "2025-12-04": {
+    "Grand Est": {
+      "vaccination_rate_pct": 68.84444444444445,
+      "cases_per_100k": 273.4,
+      "incidence_rate": 127.40000000000002,
+      "positivity_rate": 5.622222222222223,
+      "icu_occupancy_pct": 70.33333333333333,
+      "pharmacies_partners": 678,
+      "vaccination_centers": 158
+    },
+    "Occitanie": {
+      "vaccination_rate_pct": 69.925,
+      "cases_per_100k": 253.6,
+      "incidence_rate": 118.175,
+      "positivity_rate": 5.183333333333334,
+      "icu_occupancy_pct": 67.23333333333333,
+      "pharmacies_partners": 679,
+      "vaccination_centers": 162
+    },
+    "Provence-Alpes-Côte d'Azur": {
+      "vaccination_rate_pct": 70.13333333333334,
+      "cases_per_100k": 312.3333333333333,
+      "incidence_rate": 145.56666666666666,
+      "positivity_rate": 6.426666666666667,
+      "icu_occupancy_pct": 75.3,
+      "pharmacies_partners": 530,
+      "vaccination_centers": 120
+    },
+    "Normandie": {
+      "vaccination_rate_pct": 70.24,
+      "cases_per_100k": 259.71999999999997,
+      "incidence_rate": 121.02000000000001,
+      "positivity_rate": 5.324,
+      "icu_occupancy_pct": 68.08000000000001,
+      "pharmacies_partners": 304,
+      "vaccination_centers": 73
+    },
+    "Auvergne-Rhône-Alpes": {
+      "vaccination_rate_pct": 70.78888888888889,
+      "cases_per_100k": 265.0444444444445,
+      "incidence_rate": 123.5,
+      "positivity_rate": 5.435555555555556,
+      "icu_occupancy_pct": 69.03333333333335,
+      "pharmacies_partners": 790,
+      "vaccination_centers": 183
+    },
+    "Nouvelle-Aquitaine": {
+      "vaccination_rate_pct": 70.53333333333335,
+      "cases_per_100k": 248.3083333333333,
+      "incidence_rate": 115.69166666666666,
+      "positivity_rate": 5.072500000000001,
+      "icu_occupancy_pct": 66.30833333333332,
+      "pharmacies_partners": 669,
+      "vaccination_centers": 158
+    },
+    "Centre-Val de Loire": {
+      "vaccination_rate_pct": 68.86666666666666,
+      "cases_per_100k": 262.1666666666667,
+      "incidence_rate": 122.14999999999999,
+      "positivity_rate": 5.383333333333333,
+      "icu_occupancy_pct": 68.71666666666665,
+      "pharmacies_partners": 251,
+      "vaccination_centers": 61
+    },
+    "Bourgogne-Franche-Comté": {
+      "vaccination_rate_pct": 68.95,
+      "cases_per_100k": 258.125,
+      "incidence_rate": 120.275,
+      "positivity_rate": 5.285,
+      "icu_occupancy_pct": 68.0,
+      "pharmacies_partners": 306,
+      "vaccination_centers": 77
+    },
+    "Bretagne": {
+      "vaccination_rate_pct": 74.275,
+      "cases_per_100k": 234.72500000000002,
+      "incidence_rate": 109.35,
+      "positivity_rate": 4.7775,
+      "icu_occupancy_pct": 64.275,
+      "pharmacies_partners": 332,
+      "vaccination_centers": 78
+    },
+    "Pays de la Loire": {
+      "vaccination_rate_pct": 72.64000000000001,
+      "cases_per_100k": 252.35999999999999,
+      "incidence_rate": 117.6,
+      "positivity_rate": 5.168,
+      "icu_occupancy_pct": 67.14,
+      "pharmacies_partners": 382,
+      "vaccination_centers": 88
+    },
+    "Hauts-de-France": {
+      "vaccination_rate_pct": 67.32499999999999,
+      "cases_per_100k": 318.225,
+      "incidence_rate": 148.3,
+      "positivity_rate": 6.547499999999999,
+      "icu_occupancy_pct": 75.85,
+      "pharmacies_partners": 712,
+      "vaccination_centers": 162
+    },
+    "Île-de-France": {
+      "vaccination_rate_pct": 72.1,
+      "cases_per_100k": 333.3625,
+      "incidence_rate": 155.45000000000002,
+      "positivity_rate": 6.8225,
+      "icu_occupancy_pct": 77.31249999999999,
+      "pharmacies_partners": 1660,
+      "vaccination_centers": 378
+    },
+    "Corse": {
+      "vaccination_rate_pct": 66.4,
+      "cases_per_100k": 296.4,
+      "incidence_rate": 138.15,
+      "positivity_rate": 6.105,
+      "icu_occupancy_pct": 73.7,
+      "pharmacies_partners": 40,
+      "vaccination_centers": 10
+    }
+  },
+  "2025-12-05": {
+    "Grand Est": {
+      "vaccination_rate_pct": 68.94444444444444,
+      "cases_per_100k": 256.3333333333333,
+      "incidence_rate": 119.47777777777777,
+      "positivity_rate": 5.136666666666667,
+      "icu_occupancy_pct": 69.83333333333333,
+      "pharmacies_partners": 678,
+      "vaccination_centers": 158
+    },
+    "Occitanie": {
+      "vaccination_rate_pct": 70.025,
+      "cases_per_100k": 237.7833333333333,
+      "incidence_rate": 110.8,
+      "positivity_rate": 4.735,
+      "icu_occupancy_pct": 66.75833333333333,
+      "pharmacies_partners": 679,
+      "vaccination_centers": 162
+    },
+    "Provence-Alpes-Côte d'Azur": {
+      "vaccination_rate_pct": 70.23333333333333,
+      "cases_per_100k": 292.8333333333333,
+      "incidence_rate": 136.53333333333333,
+      "positivity_rate": 5.873333333333332,
+      "icu_occupancy_pct": 74.76666666666667,
+      "pharmacies_partners": 530,
+      "vaccination_centers": 120
+    },
+    "Normandie": {
+      "vaccination_rate_pct": 70.34,
+      "cases_per_100k": 243.5,
+      "incidence_rate": 113.47999999999999,
+      "positivity_rate": 4.868,
+      "icu_occupancy_pct": 67.58000000000001,
+      "pharmacies_partners": 304,
+      "vaccination_centers": 73
+    },
+    "Auvergne-Rhône-Alpes": {
+      "vaccination_rate_pct": 70.88888888888887,
+      "cases_per_100k": 248.5,
+      "incidence_rate": 115.79999999999998,
+      "positivity_rate": 4.964444444444445,
+      "icu_occupancy_pct": 68.54444444444444,
+      "pharmacies_partners": 790,
+      "vaccination_centers": 183
+    },
+    "Nouvelle-Aquitaine": {
+      "vaccination_rate_pct": 70.63333333333333,
+      "cases_per_100k": 232.84999999999994,
+      "incidence_rate": 108.48333333333333,
+      "positivity_rate": 4.635833333333333,
+      "icu_occupancy_pct": 65.81666666666666,
+      "pharmacies_partners": 669,
+      "vaccination_centers": 158
+    },
+    "Centre-Val de Loire": {
+      "vaccination_rate_pct": 68.96666666666668,
+      "cases_per_100k": 245.8166666666667,
+      "incidence_rate": 114.51666666666667,
+      "positivity_rate": 4.916666666666667,
+      "icu_occupancy_pct": 68.21666666666665,
+      "pharmacies_partners": 251,
+      "vaccination_centers": 61
+    },
+    "Bourgogne-Franche-Comté": {
+      "vaccination_rate_pct": 69.05,
+      "cases_per_100k": 242.0125,
+      "incidence_rate": 112.775,
+      "positivity_rate": 4.83,
+      "icu_occupancy_pct": 67.5,
+      "pharmacies_partners": 306,
+      "vaccination_centers": 77
+    },
+    "Bretagne": {
+      "vaccination_rate_pct": 74.375,
+      "cases_per_100k": 220.075,
+      "incidence_rate": 102.55,
+      "positivity_rate": 4.362500000000001,
+      "icu_occupancy_pct": 63.8,
+      "pharmacies_partners": 332,
+      "vaccination_centers": 78
+    },
+    "Pays de la Loire": {
+      "vaccination_rate_pct": 72.74000000000001,
+      "cases_per_100k": 236.66,
+      "incidence_rate": 110.25999999999999,
+      "positivity_rate": 4.7219999999999995,
+      "icu_occupancy_pct": 66.64,
+      "pharmacies_partners": 382,
+      "vaccination_centers": 88
+    },
+    "Hauts-de-France": {
+      "vaccination_rate_pct": 67.425,
+      "cases_per_100k": 298.4,
+      "incidence_rate": 139.075,
+      "positivity_rate": 5.9825,
+      "icu_occupancy_pct": 75.3,
+      "pharmacies_partners": 712,
+      "vaccination_centers": 162
+    },
+    "Île-de-France": {
+      "vaccination_rate_pct": 72.2,
+      "cases_per_100k": 312.58750000000003,
+      "incidence_rate": 145.7375,
+      "positivity_rate": 6.2337500000000015,
+      "icu_occupancy_pct": 76.7875,
+      "pharmacies_partners": 1660,
+      "vaccination_centers": 378
+    },
+    "Corse": {
+      "vaccination_rate_pct": 66.5,
+      "cases_per_100k": 277.9,
+      "incidence_rate": 129.55,
+      "positivity_rate": 5.58,
+      "icu_occupancy_pct": 73.2,
+      "pharmacies_partners": 40,
+      "vaccination_centers": 10
+    }
+  },
+  "2025-12-06": {
+    "Grand Est": {
+      "vaccination_rate_pct": 69.04444444444444,
+      "cases_per_100k": 236.7444444444444,
+      "incidence_rate": 110.3111111111111,
+      "positivity_rate": 4.605555555555556,
+      "icu_occupancy_pct": 68.37777777777778,
+      "pharmacies_partners": 678,
+      "vaccination_centers": 158
+    },
+    "Occitanie": {
+      "vaccination_rate_pct": 70.12499999999999,
+      "cases_per_100k": 219.58333333333334,
+      "incidence_rate": 102.34166666666668,
+      "positivity_rate": 4.2441666666666675,
+      "icu_occupancy_pct": 65.35,
+      "pharmacies_partners": 679,
+      "vaccination_centers": 162
+    },
+    "Provence-Alpes-Côte d'Azur": {
+      "vaccination_rate_pct": 70.33333333333333,
+      "cases_per_100k": 270.43333333333334,
+      "incidence_rate": 126.06666666666668,
+      "positivity_rate": 5.2633333333333345,
+      "icu_occupancy_pct": 73.2,
+      "pharmacies_partners": 530,
+      "vaccination_centers": 120
+    },
+    "Normandie": {
+      "vaccination_rate_pct": 70.44,
+      "cases_per_100k": 224.88000000000002,
+      "incidence_rate": 104.78,
+      "positivity_rate": 4.361999999999999,
+      "icu_occupancy_pct": 66.18,
+      "pharmacies_partners": 304,
+      "vaccination_centers": 73
+    },
+    "Auvergne-Rhône-Alpes": {
+      "vaccination_rate_pct": 70.98888888888888,
+      "cases_per_100k": 229.4888888888889,
+      "incidence_rate": 106.92222222222223,
+      "positivity_rate": 4.452222222222222,
+      "icu_occupancy_pct": 67.1,
+      "pharmacies_partners": 790,
+      "vaccination_centers": 183
+    },
+    "Nouvelle-Aquitaine": {
+      "vaccination_rate_pct": 70.73333333333333,
+      "cases_per_100k": 215.01666666666668,
+      "incidence_rate": 100.175,
+      "positivity_rate": 4.154166666666668,
+      "icu_occupancy_pct": 64.45,
+      "pharmacies_partners": 669,
+      "vaccination_centers": 158
+    },
+    "Centre-Val de Loire": {
+      "vaccination_rate_pct": 69.06666666666666,
+      "cases_per_100k": 227.0,
+      "incidence_rate": 105.78333333333332,
+      "positivity_rate": 4.406666666666667,
+      "icu_occupancy_pct": 66.78333333333335,
+      "pharmacies_partners": 251,
+      "vaccination_centers": 61
+    },
+    "Bourgogne-Franche-Comté": {
+      "vaccination_rate_pct": 69.15,
+      "cases_per_100k": 223.49999999999997,
+      "incidence_rate": 104.13749999999999,
+      "positivity_rate": 4.32875,
+      "icu_occupancy_pct": 66.1,
+      "pharmacies_partners": 306,
+      "vaccination_centers": 77
+    },
+    "Bretagne": {
+      "vaccination_rate_pct": 74.475,
+      "cases_per_100k": 203.25,
+      "incidence_rate": 94.72500000000001,
+      "positivity_rate": 3.9124999999999996,
+      "icu_occupancy_pct": 62.475,
+      "pharmacies_partners": 332,
+      "vaccination_centers": 78
+    },
+    "Pays de la Loire": {
+      "vaccination_rate_pct": 72.84,
+      "cases_per_100k": 218.51999999999998,
+      "incidence_rate": 101.82000000000001,
+      "positivity_rate": 4.232000000000001,
+      "icu_occupancy_pct": 65.25999999999999,
+      "pharmacies_partners": 382,
+      "vaccination_centers": 88
+    },
+    "Hauts-de-France": {
+      "vaccination_rate_pct": 67.525,
+      "cases_per_100k": 275.55,
+      "incidence_rate": 128.425,
+      "positivity_rate": 5.36,
+      "icu_occupancy_pct": 73.725,
+      "pharmacies_partners": 712,
+      "vaccination_centers": 162
+    },
+    "Île-de-France": {
+      "vaccination_rate_pct": 72.3,
+      "cases_per_100k": 288.65,
+      "incidence_rate": 134.575,
+      "positivity_rate": 5.5875,
+      "icu_occupancy_pct": 75.1375,
+      "pharmacies_partners": 1660,
+      "vaccination_centers": 378
+    },
+    "Corse": {
+      "vaccination_rate_pct": 66.6,
+      "cases_per_100k": 256.65,
+      "incidence_rate": 119.65,
+      "positivity_rate": 5.0,
+      "icu_occupancy_pct": 71.6,
+      "pharmacies_partners": 40,
+      "vaccination_centers": 10
+    }
+  },
+  "2025-12-07": {
+    "Grand Est": {
+      "vaccination_rate_pct": 69.14444444444445,
+      "cases_per_100k": 215.84444444444446,
+      "incidence_rate": 100.57777777777778,
+      "positivity_rate": 4.072222222222221,
+      "icu_occupancy_pct": 66.02222222222223,
+      "pharmacies_partners": 678,
+      "vaccination_centers": 158
+    },
+    "Occitanie": {
+      "vaccination_rate_pct": 70.225,
+      "cases_per_100k": 200.225,
+      "incidence_rate": 93.30833333333334,
+      "positivity_rate": 3.7533333333333334,
+      "icu_occupancy_pct": 63.10833333333333,
+      "pharmacies_partners": 679,
+      "vaccination_centers": 162
+    },
+    "Provence-Alpes-Côte d'Azur": {
+      "vaccination_rate_pct": 70.43333333333334,
+      "cases_per_100k": 246.63333333333335,
+      "incidence_rate": 114.93333333333334,
+      "positivity_rate": 4.656666666666667,
+      "icu_occupancy_pct": 70.7,
+      "pharmacies_partners": 530,
+      "vaccination_centers": 120
+    },
+    "Normandie": {
+      "vaccination_rate_pct": 70.54,
+      "cases_per_100k": 205.06,
+      "incidence_rate": 95.55999999999999,
+      "positivity_rate": 3.8579999999999997,
+      "icu_occupancy_pct": 63.92,
+      "pharmacies_partners": 304,
+      "vaccination_centers": 73
+    },
+    "Auvergne-Rhône-Alpes": {
+      "vaccination_rate_pct": 71.08888888888889,
+      "cases_per_100k": 209.23333333333335,
+      "incidence_rate": 97.50000000000001,
+      "positivity_rate": 3.9377777777777774,
+      "icu_occupancy_pct": 64.80000000000001,
+      "pharmacies_partners": 790,
+      "vaccination_centers": 183
+    },
+    "Nouvelle-Aquitaine": {
+      "vaccination_rate_pct": 70.83333333333333,
+      "cases_per_100k": 196.04999999999998,
+      "incidence_rate": 91.34166666666665,
+      "positivity_rate": 3.674166666666667,
+      "icu_occupancy_pct": 62.25,
+      "pharmacies_partners": 669,
+      "vaccination_centers": 158
+    },
+    "Centre-Val de Loire": {
+      "vaccination_rate_pct": 69.16666666666666,
+      "cases_per_100k": 206.98333333333335,
+      "incidence_rate": 96.41666666666667,
+      "positivity_rate": 3.8983333333333334,
+      "icu_occupancy_pct": 64.5,
+      "pharmacies_partners": 251,
+      "vaccination_centers": 61
+    },
+    "Bourgogne-Franche-Comté": {
+      "vaccination_rate_pct": 69.25,
+      "cases_per_100k": 203.7875,
+      "incidence_rate": 94.95,
+      "positivity_rate": 3.82875,
+      "icu_occupancy_pct": 63.8375,
+      "pharmacies_partners": 306,
+      "vaccination_centers": 77
+    },
+    "Bretagne": {
+      "vaccination_rate_pct": 74.575,
+      "cases_per_100k": 185.32500000000002,
+      "incidence_rate": 86.375,
+      "positivity_rate": 3.46,
+      "icu_occupancy_pct": 60.35,
+      "pharmacies_partners": 332,
+      "vaccination_centers": 78
+    },
+    "Pays de la Loire": {
+      "vaccination_rate_pct": 72.94,
+      "cases_per_100k": 199.21999999999997,
+      "incidence_rate": 92.84,
+      "positivity_rate": 3.7399999999999998,
+      "icu_occupancy_pct": 63.02,
+      "pharmacies_partners": 382,
+      "vaccination_centers": 88
+    },
+    "Hauts-de-France": {
+      "vaccination_rate_pct": 67.625,
+      "cases_per_100k": 251.25,
+      "incidence_rate": 117.125,
+      "positivity_rate": 4.74,
+      "icu_occupancy_pct": 71.2,
+      "pharmacies_partners": 712,
+      "vaccination_centers": 162
+    },
+    "Île-de-France": {
+      "vaccination_rate_pct": 72.39999999999999,
+      "cases_per_100k": 263.2,
+      "incidence_rate": 122.7125,
+      "positivity_rate": 4.9425,
+      "icu_occupancy_pct": 72.5625,
+      "pharmacies_partners": 1660,
+      "vaccination_centers": 378
+    },
+    "Corse": {
+      "vaccination_rate_pct": 66.69999999999999,
+      "cases_per_100k": 234.05,
+      "incidence_rate": 109.1,
+      "positivity_rate": 4.425000000000001,
+      "icu_occupancy_pct": 69.2,
+      "pharmacies_partners": 40,
+      "vaccination_centers": 10
+    }
+  },
+  "2025-12-08": {
+    "Grand Est": {
+      "vaccination_rate_pct": 69.34444444444445,
+      "cases_per_100k": 194.95555555555555,
+      "incidence_rate": 90.84444444444445,
+      "positivity_rate": 3.5755555555555554,
+      "icu_occupancy_pct": 62.91111111111112,
+      "pharmacies_partners": 678,
+      "vaccination_centers": 158
+    },
+    "Occitanie": {
+      "vaccination_rate_pct": 70.425,
+      "cases_per_100k": 180.84166666666667,
+      "incidence_rate": 84.26666666666667,
+      "positivity_rate": 3.2983333333333333,
+      "icu_occupancy_pct": 60.133333333333326,
+      "pharmacies_partners": 679,
+      "vaccination_centers": 162
+    },
+    "Provence-Alpes-Côte d'Azur": {
+      "vaccination_rate_pct": 70.63333333333334,
+      "cases_per_100k": 222.76666666666665,
+      "incidence_rate": 103.83333333333333,
+      "positivity_rate": 4.086666666666667,
+      "icu_occupancy_pct": 67.36666666666667,
+      "pharmacies_partners": 530,
+      "vaccination_centers": 120
+    },
+    "Normandie": {
+      "vaccination_rate_pct": 70.74,
+      "cases_per_100k": 185.2,
+      "incidence_rate": 86.3,
+      "positivity_rate": 3.386,
+      "icu_occupancy_pct": 60.9,
+      "pharmacies_partners": 304,
+      "vaccination_centers": 73
+    },
+    "Auvergne-Rhône-Alpes": {
+      "vaccination_rate_pct": 71.28888888888889,
+      "cases_per_100k": 188.97777777777776,
+      "incidence_rate": 88.06666666666666,
+      "positivity_rate": 3.457777777777778,
+      "icu_occupancy_pct": 61.75555555555556,
+      "pharmacies_partners": 790,
+      "vaccination_centers": 183
+    },
+    "Nouvelle-Aquitaine": {
+      "vaccination_rate_pct": 71.03333333333335,
+      "cases_per_100k": 177.08333333333334,
+      "incidence_rate": 82.49166666666667,
+      "positivity_rate": 3.2249999999999996,
+      "icu_occupancy_pct": 59.32500000000001,
+      "pharmacies_partners": 669,
+      "vaccination_centers": 158
+    },
+    "Centre-Val de Loire": {
+      "vaccination_rate_pct": 69.36666666666666,
+      "cases_per_100k": 186.9333333333333,
+      "incidence_rate": 87.10000000000001,
+      "positivity_rate": 3.421666666666667,
+      "icu_occupancy_pct": 61.48333333333333,
+      "pharmacies_partners": 251,
+      "vaccination_centers": 61
+    },
+    "Bourgogne-Franche-Comté": {
+      "vaccination_rate_pct": 69.45,
+      "cases_per_100k": 184.08749999999998,
+      "incidence_rate": 85.75,
+      "positivity_rate": 3.3625,
+      "icu_occupancy_pct": 60.82500000000001,
+      "pharmacies_partners": 306,
+      "vaccination_centers": 77
+    },
+    "Bretagne": {
+      "vaccination_rate_pct": 74.775,
+      "cases_per_100k": 167.375,
+      "incidence_rate": 77.975,
+      "positivity_rate": 3.04,
+      "icu_occupancy_pct": 57.5,
+      "pharmacies_partners": 332,
+      "vaccination_centers": 78
+    },
+    "Pays de la Loire": {
+      "vaccination_rate_pct": 73.14000000000001,
+      "cases_per_100k": 179.98,
+      "incidence_rate": 83.85999999999999,
+      "positivity_rate": 3.286,
+      "icu_occupancy_pct": 60.06,
+      "pharmacies_partners": 382,
+      "vaccination_centers": 88
+    },
+    "Hauts-de-France": {
+      "vaccination_rate_pct": 67.82499999999999,
+      "cases_per_100k": 226.925,
+      "incidence_rate": 105.8,
+      "positivity_rate": 4.165,
+      "icu_occupancy_pct": 67.85,
+      "pharmacies_partners": 712,
+      "vaccination_centers": 162
+    },
+    "Île-de-France": {
+      "vaccination_rate_pct": 72.6,
+      "cases_per_100k": 237.71250000000003,
+      "incidence_rate": 110.81250000000001,
+      "positivity_rate": 4.34,
+      "icu_occupancy_pct": 69.1625,
+      "pharmacies_partners": 1660,
+      "vaccination_centers": 378
+    },
+    "Corse": {
+      "vaccination_rate_pct": 66.9,
+      "cases_per_100k": 211.39999999999998,
+      "incidence_rate": 98.55,
+      "positivity_rate": 3.885,
+      "icu_occupancy_pct": 65.9,
+      "pharmacies_partners": 40,
+      "vaccination_centers": 10
+    }
+  },
+  "2025-12-09": {
+    "Grand Est": {
+      "vaccination_rate_pct": 69.44444444444444,
+      "cases_per_100k": 175.07777777777778,
+      "incidence_rate": 81.6,
+      "positivity_rate": 3.1433333333333326,
+      "icu_occupancy_pct": 59.25555555555555,
+      "pharmacies_partners": 678,
+      "vaccination_centers": 158
+    },
+    "Occitanie": {
+      "vaccination_rate_pct": 70.525,
+      "cases_per_100k": 162.41666666666666,
+      "incidence_rate": 75.68333333333332,
+      "positivity_rate": 2.8974999999999995,
+      "icu_occupancy_pct": 56.633333333333326,
+      "pharmacies_partners": 679,
+      "vaccination_centers": 162
+    },
+    "Provence-Alpes-Côte d'Azur": {
+      "vaccination_rate_pct": 70.73333333333333,
+      "cases_per_100k": 200.03333333333333,
+      "incidence_rate": 93.23333333333335,
+      "positivity_rate": 3.5933333333333333,
+      "icu_occupancy_pct": 63.46666666666667,
+      "pharmacies_partners": 530,
+      "vaccination_centers": 120
+    },
+    "Normandie": {
+      "vaccination_rate_pct": 70.84,
+      "cases_per_100k": 166.35999999999999,
+      "incidence_rate": 77.52,
+      "positivity_rate": 2.978,
+      "icu_occupancy_pct": 57.35999999999999,
+      "pharmacies_partners": 304,
+      "vaccination_centers": 73
+    },
+    "Auvergne-Rhône-Alpes": {
+      "vaccination_rate_pct": 71.38888888888887,
+      "cases_per_100k": 169.73333333333335,
+      "incidence_rate": 79.1,
+      "positivity_rate": 3.041111111111111,
+      "icu_occupancy_pct": 58.13333333333334,
+      "pharmacies_partners": 790,
+      "vaccination_centers": 183
+    },
+    "Nouvelle-Aquitaine": {
+      "vaccination_rate_pct": 71.13333333333333,
+      "cases_per_100k": 159.05000000000004,
+      "incidence_rate": 74.10000000000001,
+      "positivity_rate": 2.835833333333333,
+      "icu_occupancy_pct": 55.85833333333333,
+      "pharmacies_partners": 669,
+      "vaccination_centers": 158
+    },
+    "Centre-Val de Loire": {
+      "vaccination_rate_pct": 69.46666666666668,
+      "cases_per_100k": 167.91666666666666,
+      "incidence_rate": 78.23333333333333,
+      "positivity_rate": 3.0116666666666667,
+      "icu_occupancy_pct": 57.88333333333333,
+      "pharmacies_partners": 251,
+      "vaccination_centers": 61
+    },
+    "Bourgogne-Franche-Comté": {
+      "vaccination_rate_pct": 69.55,
+      "cases_per_100k": 165.31249999999997,
+      "incidence_rate": 77.01249999999999,
+      "positivity_rate": 2.95625,
+      "icu_occupancy_pct": 57.2875,
+      "pharmacies_partners": 306,
+      "vaccination_centers": 77
+    },
+    "Bretagne": {
+      "vaccination_rate_pct": 74.875,
+      "cases_per_100k": 150.32500000000002,
+      "incidence_rate": 70.05000000000001,
+      "positivity_rate": 2.67,
+      "icu_occupancy_pct": 54.125,
+      "pharmacies_partners": 332,
+      "vaccination_centers": 78
+    },
+    "Pays de la Loire": {
+      "vaccination_rate_pct": 73.24000000000001,
+      "cases_per_100k": 161.64000000000001,
+      "incidence_rate": 75.32,
+      "positivity_rate": 2.89,
+      "icu_occupancy_pct": 56.54,
+      "pharmacies_partners": 382,
+      "vaccination_centers": 88
+    },
+    "Hauts-de-France": {
+      "vaccination_rate_pct": 67.925,
+      "cases_per_100k": 203.825,
+      "incidence_rate": 95.0,
+      "positivity_rate": 3.66,
+      "icu_occupancy_pct": 63.875,
+      "pharmacies_partners": 712,
+      "vaccination_centers": 162
+    },
+    "Île-de-France": {
+      "vaccination_rate_pct": 72.7,
+      "cases_per_100k": 213.51250000000002,
+      "incidence_rate": 99.5375,
+      "positivity_rate": 3.8137500000000006,
+      "icu_occupancy_pct": 65.125,
+      "pharmacies_partners": 1660,
+      "vaccination_centers": 378
+    },
+    "Corse": {
+      "vaccination_rate_pct": 67.0,
+      "cases_per_100k": 189.85000000000002,
+      "incidence_rate": 88.5,
+      "positivity_rate": 3.41,
+      "icu_occupancy_pct": 62.099999999999994,
+      "pharmacies_partners": 40,
+      "vaccination_centers": 10
+    }
+  },
+  "2025-12-10": {
+    "Grand Est": {
+      "vaccination_rate_pct": 69.54444444444444,
+      "cases_per_100k": 157.0666666666667,
+      "incidence_rate": 73.2,
+      "positivity_rate": 2.7877777777777784,
+      "icu_occupancy_pct": 55.2,
+      "pharmacies_partners": 678,
+      "vaccination_centers": 158
+    },
+    "Occitanie": {
+      "vaccination_rate_pct": 70.62499999999999,
+      "cases_per_100k": 145.70833333333334,
+      "incidence_rate": 67.89999999999999,
+      "positivity_rate": 2.569166666666667,
+      "icu_occupancy_pct": 52.76666666666667,
+      "pharmacies_partners": 679,
+      "vaccination_centers": 162
+    },
+    "Provence-Alpes-Côte d'Azur": {
+      "vaccination_rate_pct": 70.83333333333333,
+      "cases_per_100k": 179.4333333333333,
+      "incidence_rate": 83.63333333333333,
+      "positivity_rate": 3.186666666666667,
+      "icu_occupancy_pct": 59.1,
+      "pharmacies_partners": 530,
+      "vaccination_centers": 120
+    },
+    "Normandie": {
+      "vaccination_rate_pct": 70.94,
+      "cases_per_100k": 149.2,
+      "incidence_rate": 69.52,
+      "positivity_rate": 2.642,
+      "icu_occupancy_pct": 53.4,
+      "pharmacies_partners": 304,
+      "vaccination_centers": 73
+    },
+    "Auvergne-Rhône-Alpes": {
+      "vaccination_rate_pct": 71.48888888888888,
+      "cases_per_100k": 152.25555555555556,
+      "incidence_rate": 70.94444444444444,
+      "positivity_rate": 2.6955555555555555,
+      "icu_occupancy_pct": 54.17777777777778,
+      "pharmacies_partners": 790,
+      "vaccination_centers": 183
+    },
+    "Nouvelle-Aquitaine": {
+      "vaccination_rate_pct": 71.23333333333333,
+      "cases_per_100k": 142.65833333333333,
+      "incidence_rate": 66.47499999999998,
+      "positivity_rate": 2.513333333333333,
+      "icu_occupancy_pct": 52.04999999999999,
+      "pharmacies_partners": 669,
+      "vaccination_centers": 158
+    },
+    "Centre-Val de Loire": {
+      "vaccination_rate_pct": 69.56666666666666,
+      "cases_per_100k": 150.63333333333333,
+      "incidence_rate": 70.18333333333334,
+      "positivity_rate": 2.67,
+      "icu_occupancy_pct": 53.93333333333333,
+      "pharmacies_partners": 251,
+      "vaccination_centers": 61
+    },
+    "Bourgogne-Franche-Comté": {
+      "vaccination_rate_pct": 69.65,
+      "cases_per_100k": 148.28750000000002,
+      "incidence_rate": 69.10000000000001,
+      "positivity_rate": 2.61875,
+      "icu_occupancy_pct": 53.35000000000001,
+      "pharmacies_partners": 306,
+      "vaccination_centers": 77
+    },
+    "Bretagne": {
+      "vaccination_rate_pct": 74.975,
+      "cases_per_100k": 134.875,
+      "incidence_rate": 62.85,
+      "positivity_rate": 2.3675,
+      "icu_occupancy_pct": 50.449999999999996,
+      "pharmacies_partners": 332,
+      "vaccination_centers": 78
+    },
+    "Pays de la Loire": {
+      "vaccination_rate_pct": 73.34,
+      "cases_per_100k": 144.98,
+      "incidence_rate": 67.58,
+      "positivity_rate": 2.56,
+      "icu_occupancy_pct": 52.7,
+      "pharmacies_partners": 382,
+      "vaccination_centers": 88
+    },
+    "Hauts-de-France": {
+      "vaccination_rate_pct": 68.025,
+      "cases_per_100k": 182.8,
+      "incidence_rate": 85.225,
+      "positivity_rate": 3.2449999999999997,
+      "icu_occupancy_pct": 59.5,
+      "pharmacies_partners": 712,
+      "vaccination_centers": 162
+    },
+    "Île-de-France": {
+      "vaccination_rate_pct": 72.8,
+      "cases_per_100k": 191.525,
+      "incidence_rate": 89.2875,
+      "positivity_rate": 3.3825,
+      "icu_occupancy_pct": 60.675,
+      "pharmacies_partners": 1660,
+      "vaccination_centers": 378
+    },
+    "Corse": {
+      "vaccination_rate_pct": 67.1,
+      "cases_per_100k": 170.3,
+      "incidence_rate": 79.35,
+      "positivity_rate": 3.025,
+      "icu_occupancy_pct": 57.85,
+      "pharmacies_partners": 40,
+      "vaccination_centers": 10
+    }
+  },
+  "2025-12-11": {
+    "Grand Est": {
+      "vaccination_rate_pct": 69.64444444444445,
+      "cases_per_100k": 141.35555555555553,
+      "incidence_rate": 65.86666666666666,
+      "positivity_rate": 2.51,
+      "icu_occupancy_pct": 50.955555555555556,
+      "pharmacies_partners": 678,
+      "vaccination_centers": 158
+    },
+    "Occitanie": {
+      "vaccination_rate_pct": 70.725,
+      "cases_per_100k": 131.14166666666668,
+      "incidence_rate": 61.09999999999999,
+      "positivity_rate": 2.3116666666666665,
+      "icu_occupancy_pct": 48.716666666666676,
+      "pharmacies_partners": 679,
+      "vaccination_centers": 162
+    },
+    "Provence-Alpes-Côte d'Azur": {
+      "vaccination_rate_pct": 70.93333333333334,
+      "cases_per_100k": 161.53333333333333,
+      "incidence_rate": 75.26666666666667,
+      "positivity_rate": 2.8699999999999997,
+      "icu_occupancy_pct": 54.53333333333333,
+      "pharmacies_partners": 530,
+      "vaccination_centers": 120
+    },
+    "Normandie": {
+      "vaccination_rate_pct": 71.04,
+      "cases_per_100k": 134.32,
+      "incidence_rate": 62.58,
+      "positivity_rate": 2.3760000000000003,
+      "icu_occupancy_pct": 49.34,
+      "pharmacies_partners": 304,
+      "vaccination_centers": 73
+    },
+    "Auvergne-Rhône-Alpes": {
+      "vaccination_rate_pct": 71.58888888888889,
+      "cases_per_100k": 137.02222222222224,
+      "incidence_rate": 63.85555555555556,
+      "positivity_rate": 2.4266666666666667,
+      "icu_occupancy_pct": 50.0111111111111,
+      "pharmacies_partners": 790,
+      "vaccination_centers": 183
+    },
+    "Nouvelle-Aquitaine": {
+      "vaccination_rate_pct": 71.33333333333333,
+      "cases_per_100k": 128.40833333333333,
+      "incidence_rate": 59.83333333333334,
+      "positivity_rate": 2.2624999999999997,
+      "icu_occupancy_pct": 48.04166666666666,
+      "pharmacies_partners": 669,
+      "vaccination_centers": 158
+    },
+    "Centre-Val de Loire": {
+      "vaccination_rate_pct": 69.66666666666666,
+      "cases_per_100k": 135.54999999999998,
+      "incidence_rate": 63.166666666666664,
+      "positivity_rate": 2.4033333333333333,
+      "icu_occupancy_pct": 49.78333333333334,
+      "pharmacies_partners": 251,
+      "vaccination_centers": 61
+    },
+    "Bourgogne-Franche-Comté": {
+      "vaccination_rate_pct": 69.75,
+      "cases_per_100k": 133.475,
+      "incidence_rate": 62.2125,
+      "positivity_rate": 2.3600000000000003,
+      "icu_occupancy_pct": 49.275000000000006,
+      "pharmacies_partners": 306,
+      "vaccination_centers": 77
+    },
+    "Bretagne": {
+      "vaccination_rate_pct": 75.075,
+      "cases_per_100k": 121.375,
+      "incidence_rate": 56.55,
+      "positivity_rate": 2.13,
+      "icu_occupancy_pct": 46.575,
+      "pharmacies_partners": 332,
+      "vaccination_centers": 78
+    },
+    "Pays de la Loire": {
+      "vaccination_rate_pct": 73.44,
+      "cases_per_100k": 130.48,
+      "incidence_rate": 60.81999999999999,
+      "positivity_rate": 2.306,
+      "icu_occupancy_pct": 48.64000000000001,
+      "pharmacies_partners": 382,
+      "vaccination_centers": 88
+    },
+    "Hauts-de-France": {
+      "vaccination_rate_pct": 68.125,
+      "cases_per_100k": 164.55,
+      "incidence_rate": 76.69999999999999,
+      "positivity_rate": 2.9225000000000003,
+      "icu_occupancy_pct": 54.95,
+      "pharmacies_partners": 712,
+      "vaccination_centers": 162
+    },
+    "Île-de-France": {
+      "vaccination_rate_pct": 72.89999999999999,
+      "cases_per_100k": 172.3875,
+      "incidence_rate": 80.3625,
+      "positivity_rate": 3.0425,
+      "icu_occupancy_pct": 56.0,
+      "pharmacies_partners": 1660,
+      "vaccination_centers": 378
+    },
+    "Corse": {
+      "vaccination_rate_pct": 67.19999999999999,
+      "cases_per_100k": 153.3,
+      "incidence_rate": 71.44999999999999,
+      "positivity_rate": 2.7199999999999998,
+      "icu_occupancy_pct": 53.4,
+      "pharmacies_partners": 40,
+      "vaccination_centers": 10
+    }
+  },
+  "2025-12-12": {
+    "Grand Est": {
+      "vaccination_rate_pct": 69.74444444444445,
+      "cases_per_100k": 128.23333333333332,
+      "incidence_rate": 59.76666666666668,
+      "positivity_rate": 2.301111111111111,
+      "icu_occupancy_pct": 46.73333333333334,
+      "pharmacies_partners": 678,
+      "vaccination_centers": 158
+    },
+    "Occitanie": {
+      "vaccination_rate_pct": 70.825,
+      "cases_per_100k": 118.93333333333334,
+      "incidence_rate": 55.425000000000004,
+      "positivity_rate": 2.121666666666667,
+      "icu_occupancy_pct": 44.65,
+      "pharmacies_partners": 679,
+      "vaccination_centers": 162
+    },
+    "Provence-Alpes-Côte d'Azur": {
+      "vaccination_rate_pct": 71.03333333333335,
+      "cases_per_100k": 146.5,
+      "incidence_rate": 68.26666666666667,
+      "positivity_rate": 2.6333333333333333,
+      "icu_occupancy_pct": 50.03333333333334,
+      "pharmacies_partners": 530,
+      "vaccination_centers": 120
+    },
+    "Normandie": {
+      "vaccination_rate_pct": 71.14000000000001,
+      "cases_per_100k": 121.84,
+      "incidence_rate": 56.78000000000001,
+      "positivity_rate": 2.1819999999999995,
+      "icu_occupancy_pct": 45.2,
+      "pharmacies_partners": 304,
+      "vaccination_centers": 73
+    },
+    "Auvergne-Rhône-Alpes": {
+      "vaccination_rate_pct": 71.6888888888889,
+      "cases_per_100k": 124.3111111111111,
+      "incidence_rate": 57.93333333333333,
+      "positivity_rate": 2.2255555555555557,
+      "icu_occupancy_pct": 45.87777777777778,
+      "pharmacies_partners": 790,
+      "vaccination_centers": 183
+    },
+    "Nouvelle-Aquitaine": {
+      "vaccination_rate_pct": 71.43333333333334,
+      "cases_per_100k": 116.46666666666664,
+      "incidence_rate": 54.25833333333335,
+      "positivity_rate": 2.076666666666667,
+      "icu_occupancy_pct": 44.025000000000006,
+      "pharmacies_partners": 669,
+      "vaccination_centers": 158
+    },
+    "Centre-Val de Loire": {
+      "vaccination_rate_pct": 69.76666666666667,
+      "cases_per_100k": 122.96666666666665,
+      "incidence_rate": 57.28333333333333,
+      "positivity_rate": 2.205,
+      "icu_occupancy_pct": 45.650000000000006,
+      "pharmacies_partners": 251,
+      "vaccination_centers": 61
+    },
+    "Bourgogne-Franche-Comté": {
+      "vaccination_rate_pct": 69.85,
+      "cases_per_100k": 121.07499999999999,
+      "incidence_rate": 56.425000000000004,
+      "positivity_rate": 2.1625,
+      "icu_occupancy_pct": 45.162499999999994,
+      "pharmacies_partners": 306,
+      "vaccination_centers": 77
+    },
+    "Bretagne": {
+      "vaccination_rate_pct": 75.17500000000001,
+      "cases_per_100k": 110.05,
+      "incidence_rate": 51.3,
+      "positivity_rate": 1.955,
+      "icu_occupancy_pct": 42.7,
+      "pharmacies_partners": 332,
+      "vaccination_centers": 78
+    },
+    "Pays de la Loire": {
+      "vaccination_rate_pct": 73.53999999999999,
+      "cases_per_100k": 118.35999999999999,
+      "incidence_rate": 55.160000000000004,
+      "positivity_rate": 2.114,
+      "icu_occupancy_pct": 44.580000000000005,
+      "pharmacies_partners": 382,
+      "vaccination_centers": 88
+    },
+    "Hauts-de-France": {
+      "vaccination_rate_pct": 68.225,
+      "cases_per_100k": 149.25,
+      "incidence_rate": 69.575,
+      "positivity_rate": 2.6799999999999997,
+      "icu_occupancy_pct": 50.35,
+      "pharmacies_partners": 712,
+      "vaccination_centers": 162
+    },
+    "Île-de-France": {
+      "vaccination_rate_pct": 73.0,
+      "cases_per_100k": 156.35000000000002,
+      "incidence_rate": 72.875,
+      "positivity_rate": 2.79375,
+      "icu_occupancy_pct": 51.375,
+      "pharmacies_partners": 1660,
+      "vaccination_centers": 378
+    },
+    "Corse": {
+      "vaccination_rate_pct": 67.30000000000001,
+      "cases_per_100k": 139.05,
+      "incidence_rate": 64.8,
+      "positivity_rate": 2.5,
+      "icu_occupancy_pct": 48.95,
+      "pharmacies_partners": 40,
+      "vaccination_centers": 10
+    }
+  }
+}

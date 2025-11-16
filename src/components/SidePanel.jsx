@@ -13,6 +13,7 @@ import ChevronLeftIcon from "@mui/icons-material/ChevronLeft";
 import ChevronRightIcon from "@mui/icons-material/ChevronRight";
 import ViewSelector from "./ViewSelector";
 import FilterPanel from "./FilterPanel";
+import DomTomNavigator from "./DomTomNavigator";
 
 /**
  * Panneau latéral gauche avec collapse
@@ -34,6 +35,9 @@ export default function SidePanel({
   // Filtres
   filters,
   onFiltersChange,
+
+  // Navigation DOM-TOM
+  onDomTomChange,
 }) {
   return (
     <>
@@ -59,7 +63,6 @@ export default function SidePanel({
             width: "300px",
             display: "flex",
             flexDirection: "column",
-
             overflow: "auto",
           }}
         >
@@ -133,6 +136,11 @@ export default function SidePanel({
                 onChange={onViewModeChange}
                 disabled={!showAdminBoundaries}
               />
+
+              {/* Navigateur DOM-TOM (visible uniquement en mode domtom) */}
+              {viewMode === "domtom" && showAdminBoundaries && (
+                <DomTomNavigator onDomTomChange={onDomTomChange} />
+              )}
             </Box>
 
             <Divider sx={{ my: 2 }} />

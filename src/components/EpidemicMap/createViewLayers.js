@@ -1,17 +1,45 @@
 import { GeoJsonLayer } from "@deck.gl/layers";
 
 /**
+ * Helper: interpolate color based on ICU occupancy percentage
+ * @param {number} occupancy - ICU occupancy percentage (0-100)
+ * @returns {Array} RGBA color [r, g, b, a]
+ */
+function getColorFromOccupancy(occupancy) {
+  if (occupancy == null) return [110, 107, 243, 10]; // Default color with low opacity
+  
+  // Green → Yellow → Orange → Red scale
+  if (occupancy < 50) {
+    // Green zone (low occupancy)
+    return [46, 204, 113, 80]; // #2ecc71
+  } else if (occupancy < 70) {
+    // Yellow zone (moderate)
+    return [241, 196, 15, 100]; // #f1c40f
+  } else if (occupancy < 80) {
+    // Orange zone (high)
+    return [230, 126, 34, 120]; // #e67e22
+  } else {
+    // Red zone (critical)
+    return [231, 76, 60, 150]; // #e74c3c
+  }
+}
+
+/**
  * Build GeoJson view overlay layers (national / regional / departmental).
  *
  * @param {Object} opts
  * @param {Object|null} opts.viewGeojson - GeoJSON to draw for the selected view
  * @param {string} opts.viewMode - one of 'national'|'regional'|'departmental'|'domtom'
+ * @param {Object} opts.areaTimeseries - Timeseries data for areas (departments/regions)
+ * @param {string} opts.currentDate - Current date for timeseries lookup
  * @returns {Array} deck.gl layers
  */
 export function createViewLayers({
   viewGeojson = null,
   viewMode = "national",
   onAreaClick = null,
+  areaTimeseries = {},
+  currentDate = null,
 } = {}) {
   const layers = [];
 
@@ -26,23 +54,45 @@ export function createViewLayers({
       data: viewGeojson,
       pickable: true,
       stroked: true,
-      // keep a faint fill so clicks register for the whole polygon
       filled: true,
-      // fill color using same hue (#6E6BF3) with low opacity (~10%)
-      getFillColor: [110, 107, 243, 1],
+      getFillColor: (feature) => {
+        if (!currentDate || !areaTimeseries[currentDate]) {
+          return [110, 107, 243, 25]; // Default color
+        }
+
+        const props = feature.properties || {};
+        let areaData = null;
+
+        if (viewMode === "departmental") {
+          // Match by department code
+          const code = props.code || props.CODE || props.cod_dep || props.COD_DEP;
+          if (code) {
+            const numCode = String(Number(String(code).replace(/^0+/, "")));
+            areaData = areaTimeseries[currentDate][numCode] || areaTimeseries[currentDate][code];
+          }
+        } else if (viewMode === "regional") {
+          // Match by region name
+          const regionName = props.nom || props.name || props.NOM || props.LIBELLE;
+          if (regionName) {
+            areaData = areaTimeseries[currentDate][regionName];
+          }
+        }
+
+        if (areaData && areaData.icu_occupancy_pct != null) {
+          return getColorFromOccupancy(areaData.icu_occupancy_pct);
+        }
+
+        return [110, 107, 243, 25]; // Default color
+      },
       extruded: false,
-      // vivid pink/violet stroke
-      // stroke color #6E6BF3
       getLineColor: [110, 107, 243],
       lineWidthMinPixels: 2,
       getLineWidth: 1,
-      // forward clicks from the view layer
       onClick: ({ object }) => {
         if (onAreaClick && object) onAreaClick(object);
       },
-      // ensure the layer updates when the geojson or view mode changes
       updateTriggers: {
-        data: [viewGeojson],
+        getFillColor: [areaTimeseries, currentDate, viewMode],
       },
     })
   );

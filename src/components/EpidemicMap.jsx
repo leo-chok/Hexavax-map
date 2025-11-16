@@ -1,4 +1,4 @@
-import React, { useMemo, useState, useRef } from "react";
+import React, { useMemo, useState, useRef, useEffect } from "react";
 import DeckGL from "@deck.gl/react";
 import { Map } from "react-map-gl";
 import "mapbox-gl/dist/mapbox-gl.css";
@@ -6,17 +6,10 @@ import "mapbox-gl/dist/mapbox-gl.css";
 import useViewScaling from "./EpidemicMap/hooks/useViewScaling";
 import { createLayers } from "./EpidemicMap/layers";
 import { getTooltipContent } from "./EpidemicMap/tooltip";
+import { VIEW_STATES } from "../config/constants";
+
 // 🔑 Mapbox token (depuis .env)
 const MAPBOX_TOKEN = import.meta.env.VITE_MAPBOX_TOKEN;
-
-// 🎯 Vue initiale centrée sur la France
-const INITIAL_VIEW_STATE = {
-  longitude: 2.5,
-  latitude: 46.5,
-  zoom: 5,
-  pitch: 20,
-  bearing: 0,
-};
 
 export default function EpidemicMap({
   points = [],
@@ -26,17 +19,28 @@ export default function EpidemicMap({
   showHeatmap = true,
   showHospitals = true,
   showPharmacies = true,
-  departments = null,
-  showDepartments = false,
-  onDepartmentClick = null,
-  departmentsStatsMap = {},
   viewGeojson = null,
   viewMode = "national",
+  domTomCoords = null,
   onAreaClick = null,
+  areaTimeseries = {},
+  currentDate = null,
 }) {
   const lastUpdateRef = useRef(0);
 
-  const [zoom, setZoom] = useState(INITIAL_VIEW_STATE.zoom);
+  const [zoom, setZoom] = useState(VIEW_STATES.national.zoom);
+
+  // Forcer le rerender de DeckGL quand viewMode ou domTomCoords changent
+  const [viewKey, setViewKey] = useState(0);
+
+  useEffect(() => {
+    setViewKey(prev => prev + 1);
+    if (domTomCoords) {
+      setZoom(domTomCoords.zoom);
+    } else {
+      setZoom(VIEW_STATES[viewMode]?.zoom || 5);
+    }
+  }, [viewMode, domTomCoords]);
 
   // compute scaling based on zoom
   const { radiusMeters, elevationMultiplier, heatmapRadiusPixels } = useViewScaling(zoom);
@@ -51,31 +55,25 @@ export default function EpidemicMap({
       points,
       hospitals,
       pharmacies,
-      departments,
-      departmentsStatsMap,
       viewGeojson,
       viewMode,
       onAreaClick,
       showHeatmap,
       showHospitals,
       showPharmacies,
-      showDepartments,
-      onDepartmentClick,
       scaling,
       zoom,
+      areaTimeseries,
+      currentDate,
     }),
     // depend on counts + flags + scaling values to avoid deep comparisons
     [
       points?.length,
       hospitals?.length,
       pharmacies?.length,
-      (departments && departments.features)?.length,
-      Object.keys(departmentsStatsMap || {}).length,
       showHeatmap,
       showHospitals,
       showPharmacies,
-      showDepartments,
-      onDepartmentClick,
       scaling.radiusMeters,
       scaling.elevationMultiplier,
       scaling.heatmapRadiusPixels,
@@ -83,24 +81,27 @@ export default function EpidemicMap({
       onAreaClick,
       (viewGeojson && viewGeojson.features) ? viewGeojson.features.length : 0,
       zoom,
+      areaTimeseries,
+      currentDate,
     ]
   );
 
   return (
     <DeckGL
-      initialViewState={INITIAL_VIEW_STATE}
-      onViewStateChange={({ viewState }) => {
+      key={viewKey}
+      initialViewState={domTomCoords || VIEW_STATES[viewMode] || VIEW_STATES.national}
+      onViewStateChange={({ viewState: newViewState }) => {
         const now = Date.now();
         if (now - lastUpdateRef.current > 120) {
           lastUpdateRef.current = now;
-          setZoom(viewState.zoom);
+          setZoom(newViewState.zoom);
         }
       }}
       // show pointer cursor when hovering pickable layers (indicates clickable)
       getCursor={({ isHovering }) => (isHovering ? "pointer" : "default")}
       controller={true}
-  layers={layers}
-  getTooltip={(info) => getTooltipContent({ ...info, viewMode, pharmacies })}
+      layers={layers}
+      getTooltip={(info) => getTooltipContent({ ...info, viewMode, pharmacies })}
     >
       <Map
         reuseMaps

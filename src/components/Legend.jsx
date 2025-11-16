@@ -1,9 +1,13 @@
 import React from "react";
+import { LAYER_ORDER } from "../config/constants";
 
-// Legend component with variants: 'heatmap' (default) or 'hospitals'
-export default function Legend({ variants = ["heatmap"], style = {} }) {
-  // accept either a single variant string or an array
-  const vs = Array.isArray(variants) ? variants : [variants];
+/**
+ * Légende dynamique qui affiche les informations des calques actifs
+ * L'ordre suit celui du SidePanel: heatmap → departments → hospitals → pharmacies
+ */
+export default function Legend({ filters = {}, style = {} }) {
+  // Filtrer uniquement les calques actifs dans l'ordre
+  const activeLayers = LAYER_ORDER.filter(layer => filters[layer.key]);
 
   const heatLevels = [
     { color: "#ffffff", label: "Faible (1-25)" },
@@ -25,13 +29,92 @@ export default function Legend({ variants = ["heatmap"], style = {} }) {
     { color: "#46B464", label: "Faible" },
   ];
 
-  const renderSection = (variant, idx) => {
-    if (variant === "departments") {
+  const pharmaciesLevels = [
+    { color: "#00ff00", label: "Stock élevé (75-100%)" },
+    { color: "#ffff00", label: "Stock moyen (50-75%)" },
+    { color: "#ffa500", label: "Stock faible (25-50%)" },
+    { color: "#ff0000", label: "Stock critique (0-25%)" },
+  ];
+
+  const renderSection = (layer, idx) => {
+    const { key, label } = layer;
+
+    if (key === "departments") {
       return (
-        <div key={variant} style={{ marginBottom: idx < vs.length - 1 ? 12 : 0 }}>
-          <div style={{ fontWeight: 700, marginBottom: 8 }}>📊 KPI départements</div>
+        <>
+          <div key={key}>
+            <div style={{ fontWeight: 700, marginBottom: 8 }}>📊 {label}</div>
+            <div style={{ display: "grid", gridTemplateColumns: "1fr", gap: 8 }}>
+              {departmentsLevels.map((lvl, i) => (
+                <div key={i} style={{ display: "flex", alignItems: "center", gap: 8 }}>
+                  <span
+                    style={{
+                      width: 18,
+                      height: 18,
+                      backgroundColor: lvl.color,
+                      borderRadius: 4,
+                      border: "1px solid #14173D10",
+                    }}
+                  />
+                  <span>{lvl.label}</span>
+                </div>
+              ))}
+
+              <div style={{ marginTop: 6 }}>
+                <div style={{ display: "flex", alignItems: "flex-end", gap: 6 }}>
+                  <div style={{ width: 24, height: 8, background: "#ddd", border: "1px solid #ccc" }} />
+                  <div style={{ width: 24, height: 18, background: "#bbb", border: "1px solid #aaa" }} />
+                  <div style={{ width: 24, height: 34, background: "#999", border: "1px solid #888" }} />
+                  <div style={{ marginLeft: 8, fontSize: "0.8rem", color: "#444" }}>0% &nbsp;&nbsp;50% &nbsp;&nbsp;100%</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          {idx < activeLayers.length - 1 && (
+            <div style={{ height: 1, backgroundColor: "#ddd", margin: "12px 0" }} />
+          )}
+        </>
+      );
+    }
+
+    if (key === "pharmacies") {
+      return (
+        <>
+          <div key={key}>
+            <div style={{ fontWeight: 700, marginBottom: 8 }}>💉 {label}</div>
+            <div style={{ display: "grid", gridTemplateColumns: "1fr", gap: 8 }}>
+              {pharmaciesLevels.map((lvl, i) => (
+                <div key={i} style={{ display: "flex", alignItems: "center", gap: 8 }}>
+                  <span
+                    style={{
+                      width: 18,
+                      height: 18,
+                      backgroundColor: lvl.color,
+                      borderRadius: 4,
+                      border: "1px solid #14173D10",
+                    }}
+                  />
+                  <span>{lvl.label}</span>
+                </div>
+              ))}
+            </div>
+          </div>
+          {idx < activeLayers.length - 1 && (
+            <div style={{ height: 1, backgroundColor: "#ddd", margin: "12px 0" }} />
+          )}
+        </>
+      );
+    }
+
+    const levels = key === "hospitals" ? hospitalLevels : heatLevels;
+    const icon = key === "hospitals" ? "🏥" : "🔥";
+
+    return (
+      <>
+        <div key={key}>
+          <div style={{ fontWeight: 700, marginBottom: 8 }}>{icon} {label}</div>
           <div style={{ display: "grid", gridTemplateColumns: "1fr", gap: 8 }}>
-            {departmentsLevels.map((lvl, i) => (
+            {levels.map((lvl, i) => (
               <div key={i} style={{ display: "flex", alignItems: "center", gap: 8 }}>
                 <span
                   style={{
@@ -45,44 +128,12 @@ export default function Legend({ variants = ["heatmap"], style = {} }) {
                 <span>{lvl.label}</span>
               </div>
             ))}
-
-            <div style={{ marginTop: 6 }}>
-              <div style={{ fontSize: "0.85rem", color: "#555", marginBottom: 6 }}>Extrusion — hauteur proportionnelle au taux de saturation (%)</div>
-              <div style={{ display: "flex", alignItems: "flex-end", gap: 6 }}>
-                <div style={{ width: 24, height: 8, background: "#ddd", border: "1px solid #ccc" }} />
-                <div style={{ width: 24, height: 18, background: "#bbb", border: "1px solid #aaa" }} />
-                <div style={{ width: 24, height: 34, background: "#999", border: "1px solid #888" }} />
-                <div style={{ marginLeft: 8, fontSize: "0.8rem", color: "#444" }}>0% &nbsp;&nbsp;50% &nbsp;&nbsp;100%</div>
-              </div>
-            </div>
           </div>
         </div>
-      );
-    }
-
-    const levels = variant === "hospitals" ? hospitalLevels : heatLevels;
-    const title = variant === "hospitals" ? "🏥 Saturation hôpitaux" : "🔥 Niveau de contamination";
-
-    return (
-      <div key={variant} style={{ marginBottom: idx < vs.length - 1 ? 12 : 0 }}>
-        <div style={{ fontWeight: 700, marginBottom: 8 }}>{title}</div>
-        <div style={{ display: "grid", gridTemplateColumns: "1fr", gap: 8 }}>
-          {levels.map((lvl, i) => (
-            <div key={i} style={{ display: "flex", alignItems: "center", gap: 8 }}>
-              <span
-                style={{
-                  width: 18,
-                  height: 18,
-                  backgroundColor: lvl.color,
-                  borderRadius: 4,
-                  border: "1px solid #14173D10",
-                }}
-              />
-              <span>{lvl.label}</span>
-            </div>
-          ))}
-        </div>
-      </div>
+        {idx < activeLayers.length - 1 && (
+          <div style={{ height: 1, backgroundColor: "#ddd", margin: "12px 0" }} />
+        )}
+      </>
     );
   };
 
@@ -102,13 +153,11 @@ export default function Legend({ variants = ["heatmap"], style = {} }) {
         ...style,
       }}
     >
-      {vs.map((v, i) => renderSection(v, i))}
-
-      <div style={{ marginTop: 6, fontSize: "0.8rem", opacity: 0.75 }}>
-        {vs.includes("hospitals")
-          ? "Couleurs (coupures nettes) — moyenne sur l'hexagone"
-          : "Survolez la carte pour voir les zones actives"}
-      </div>
+      {activeLayers.length === 0 ? (
+        <div style={{ fontStyle: "italic", opacity: 0.7 }}>Aucun calque actif</div>
+      ) : (
+        activeLayers.map((layer, i) => renderSection(layer, i))
+      )}
     </div>
   );
 }
