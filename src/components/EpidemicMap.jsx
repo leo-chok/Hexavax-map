@@ -19,6 +19,9 @@ export default function EpidemicMap({
   showHeatmap = true,
   showHospitals = true,
   showPharmacies = true,
+  showVulnerablePopulation = false,
+  vulnerablePopulationData = null,
+  departmentsGeojson = null,
   viewGeojson = null,
   viewMode = "national",
   domTomCoords = null,
@@ -29,17 +32,28 @@ export default function EpidemicMap({
   const lastUpdateRef = useRef(0);
 
   const [zoom, setZoom] = useState(VIEW_STATES.national.zoom);
+  const [isMapTransitioning, setIsMapTransitioning] = useState(false);
 
   // Forcer le rerender de DeckGL quand viewMode ou domTomCoords changent
   const [viewKey, setViewKey] = useState(0);
 
   useEffect(() => {
+    // Bloquer le rendu des layers pendant la transition
+    setIsMapTransitioning(true);
     setViewKey(prev => prev + 1);
+    
     if (domTomCoords) {
       setZoom(domTomCoords.zoom);
     } else {
       setZoom(VIEW_STATES[viewMode]?.zoom || 5);
     }
+
+    // Attendre que la carte soit stable avant de redessiner les layers
+    const timer = setTimeout(() => {
+      setIsMapTransitioning(false);
+    }, 800); // 800ms pour laisser la transition Mapbox se terminer
+
+    return () => clearTimeout(timer);
   }, [viewMode, domTomCoords]);
 
   // compute scaling based on zoom
@@ -50,8 +64,13 @@ export default function EpidemicMap({
     [radiusMeters, elevationMultiplier, heatmapRadiusPixels]
   );
 
-  const layers = useMemo(() =>
-    createLayers({
+  const layers = useMemo(() => {
+    // Ne pas créer de layers pendant la transition de la carte
+    if (isMapTransitioning) {
+      return [];
+    }
+    
+    return createLayers({
       points,
       hospitals,
       pharmacies,
@@ -61,11 +80,15 @@ export default function EpidemicMap({
       showHeatmap,
       showHospitals,
       showPharmacies,
+      showVulnerablePopulation,
+      vulnerablePopulationData,
+      departmentsGeojson,
       scaling,
       zoom,
       areaTimeseries,
       currentDate,
-    }),
+    });
+  },
     // depend on counts + flags + scaling values to avoid deep comparisons
     [
       points?.length,
@@ -74,6 +97,9 @@ export default function EpidemicMap({
       showHeatmap,
       showHospitals,
       showPharmacies,
+      showVulnerablePopulation,
+      vulnerablePopulationData,
+      departmentsGeojson,
       scaling.radiusMeters,
       scaling.elevationMultiplier,
       scaling.heatmapRadiusPixels,
@@ -83,6 +109,7 @@ export default function EpidemicMap({
       zoom,
       areaTimeseries,
       currentDate,
+      isMapTransitioning, // Ajouter la dépendance pour recalculer quand la transition se termine
     ]
   );
 
@@ -101,7 +128,14 @@ export default function EpidemicMap({
       getCursor={({ isHovering }) => (isHovering ? "pointer" : "default")}
       controller={true}
       layers={layers}
-      getTooltip={(info) => getTooltipContent({ ...info, viewMode, pharmacies })}
+      getTooltip={(info) => getTooltipContent({ 
+        ...info, 
+        viewMode, 
+        pharmacies, 
+        areaTimeseries, 
+        currentDate,
+        vulnerablePopulationData
+      })}
     >
       <Map
         reuseMaps

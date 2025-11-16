@@ -18,7 +18,7 @@ export function createHeatmapLayer({ points = [], scaling = {} }) {
     radiusPixels: scaling.heatmapRadiusPixels || 100,
     intensity: 1.5,
     threshold: 0.01,
-    pickable: true,
+    pickable: false,
     opacity: 0.6,
   });
 }

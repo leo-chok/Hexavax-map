@@ -2,6 +2,7 @@ import { createViewLayers } from "../createViewLayers";
 import { createHeatmapLayer } from "./heatmapLayer";
 import { createHospitalsLayer } from "./hospitalsLayer";
 import { createPharmaciesLayer } from "./pharmaciesLayer";
+import { createVulnerablePopulationLayer } from "./vulnerablePopulationLayer";
 
 /**
  * Point d'entrée principal pour la création de tous les layers deck.gl
@@ -14,6 +15,9 @@ import { createPharmaciesLayer } from "./pharmaciesLayer";
  * @param {boolean} options.showHeatmap - Afficher la heatmap
  * @param {boolean} options.showHospitals - Afficher les hôpitaux
  * @param {boolean} options.showPharmacies - Afficher les pharmacies
+ * @param {boolean} options.showVulnerablePopulation - Afficher la population vulnérable
+ * @param {Object} options.vulnerablePopulationData - Données de population vulnérable
+ * @param {Object} options.departmentsGeojson - GeoJSON des départements pour population vulnérable
  * @param {Object} options.scaling - Paramètres de scaling (radiusMeters, elevationMultiplier, heatmapRadiusPixels)
  * @param {Object} options.viewGeojson - GeoJSON pour les limites administratives
  * @param {string} options.viewMode - Mode de vue (national, regional, departmental)
@@ -30,6 +34,9 @@ export function createLayers({
   showHeatmap = false,
   showHospitals = false,
   showPharmacies = false,
+  showVulnerablePopulation = false,
+  vulnerablePopulationData = null,
+  departmentsGeojson = null,
   scaling = {
     radiusMeters: 1500,
     elevationMultiplier: 6000,
@@ -74,6 +81,16 @@ export function createLayers({
   if (showPharmacies) {
     const pharmaciesLayer = createPharmaciesLayer({ pharmacies, zoom });
     if (pharmaciesLayer) layers.push(pharmaciesLayer);
+  }
+
+  // 5. Layer population vulnérable 65+ (extrusion 3D par département)
+  if (showVulnerablePopulation && vulnerablePopulationData && departmentsGeojson) {
+    const vulnerableLayer = createVulnerablePopulationLayer({
+      geojson: departmentsGeojson,
+      populationData: vulnerablePopulationData,
+      visible: showVulnerablePopulation,
+    });
+    if (vulnerableLayer) layers.push(vulnerableLayer);
   }
 
   return layers;

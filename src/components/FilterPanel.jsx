@@ -54,6 +54,20 @@ export default function FilterPanel({ filters, onFiltersChange }) {
         }
         label="Centres de vaccination"
       />
+
+      <FormControlLabel
+        control={
+          <Checkbox
+            checked={!!filters.vulnerablePopulation}
+            onChange={() => handleToggle("vulnerablePopulation")}
+            sx={{
+              color: "#1976d2",
+              "&.Mui-checked": { color: "#1976d2" },
+            }}
+          />
+        }
+        label="Population 65+ ans"
+      />
     </FormGroup>
   );
 }

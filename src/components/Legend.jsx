@@ -36,6 +36,13 @@ export default function Legend({ filters = {}, style = {} }) {
     { color: "#ff0000", label: "Stock critique (0-25%)" },
   ];
 
+  const vulnerablePopulationLevels = [
+    { color: "rgba(239, 79, 145, 0.8)", label: "≥ 27% (Très élevé)" },
+    { color: "rgba(255, 107, 129, 0.7)", label: "24-27% (Élevé)" },
+    { color: "rgba(126, 227, 242, 0.6)", label: "21-24% (Moyen)" },
+    { color: "rgba(110, 107, 243, 0.5)", label: "< 21% (Faible)" },
+  ];
+
   const renderSection = (layer, idx) => {
     const { key, label } = layer;
 
@@ -84,6 +91,35 @@ export default function Legend({ filters = {}, style = {} }) {
             <div style={{ fontWeight: 700, marginBottom: 8 }}>💉 {label}</div>
             <div style={{ display: "grid", gridTemplateColumns: "1fr", gap: 8 }}>
               {pharmaciesLevels.map((lvl, i) => (
+                <div key={i} style={{ display: "flex", alignItems: "center", gap: 8 }}>
+                  <span
+                    style={{
+                      width: 18,
+                      height: 18,
+                      backgroundColor: lvl.color,
+                      borderRadius: 4,
+                      border: "1px solid #14173D10",
+                    }}
+                  />
+                  <span>{lvl.label}</span>
+                </div>
+              ))}
+            </div>
+          </div>
+          {idx < activeLayers.length - 1 && (
+            <div style={{ height: 1, backgroundColor: "#ddd", margin: "12px 0" }} />
+          )}
+        </>
+      );
+    }
+
+    if (key === "vulnerablePopulation") {
+      return (
+        <>
+          <div key={key}>
+            <div style={{ fontWeight: 700, marginBottom: 8 }}>👴 {label}</div>
+            <div style={{ display: "grid", gridTemplateColumns: "1fr", gap: 8 }}>
+              {vulnerablePopulationLevels.map((lvl, i) => (
                 <div key={i} style={{ display: "flex", alignItems: "center", gap: 8 }}>
                   <span
                     style={{

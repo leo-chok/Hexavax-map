@@ -76,9 +76,9 @@ export const DATA_SOURCES = {
   },
   views: {
     national: "./data/geojson/metropole.geojson",
-    regional: "./data/geojson/regions.geojson",
-    departmental: "./data/geojson/departements.geojson",
-    domtom: "./data/geojson/departements.geojson",
+    regional: "./data/geojson/regions-avec-outre-mer.geojson",
+    departmental: "./data/geojson/departements-avec-outre-mer.geojson",
+    domtom: "./data/geojson/departements-avec-outre-mer.geojson",
   },
 };
 
@@ -90,6 +90,7 @@ export const DEFAULT_FILTERS = {
   heatmap: false,
   hospitals: false,
   pharmacies: false,
+  vulnerablePopulation: false,
 };
 
 // ============================================
@@ -101,6 +102,7 @@ export const LAYER_ORDER = [
   { key: 'departments', label: 'Alertes départementales' },
   { key: 'hospitals', label: 'Saturation hôpitaux' },
   { key: 'pharmacies', label: 'Centres de vaccination' },
+  { key: 'vulnerablePopulation', label: 'Population 65+ ans' },
 ];
 
 // ============================================

@@ -63,12 +63,19 @@ export function createViewLayers({
         const props = feature.properties || {};
         let areaData = null;
 
-        if (viewMode === "departmental") {
+        if (viewMode === "departmental" || viewMode === "domtom") {
           // Match by department code
           const code = props.code || props.CODE || props.cod_dep || props.COD_DEP;
           if (code) {
-            const numCode = String(Number(String(code).replace(/^0+/, "")));
-            areaData = areaTimeseries[currentDate][numCode] || areaTimeseries[currentDate][code];
+            const codeStr = String(code);
+            // Essayer directement le code
+            areaData = areaTimeseries[currentDate][codeStr];
+            
+            // Si pas trouvé, essayer sans les zéros initiaux
+            if (!areaData) {
+              const numCode = String(Number(codeStr.replace(/^0+/, "")));
+              areaData = areaTimeseries[currentDate][numCode];
+            }
           }
         } else if (viewMode === "regional") {
           // Match by region name

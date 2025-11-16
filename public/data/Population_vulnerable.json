@@ -1,0 +1,1027 @@
+{
+  "metadata": {
+    "title": "Données démographiques par département français",
+    "source": "Données démographiques INSEE",
+    "note": "Données approximatives basées sur les dernières statistiques disponibles",
+    "definitions": {
+      "population_totale": "Population totale du département",
+      "population_65_plus": "Nombre de personnes de 65 ans et plus",
+      "pourcentage_65_plus": "Pourcentage de la population de 65 ans et plus",
+      "population_moins_25": "Nombre de personnes de moins de 25 ans",
+      "pourcentage_moins_25": "Pourcentage de la population de moins de 25 ans",
+      "population_a_risque": "Population à risque (estimation incluant 65+, comorbidités, immunodépression) - environ 25-30% de la population totale"
+    }
+  },
+  "departements": [
+    {
+      "code": "01",
+      "nom": "Ain",
+      "population_totale": 664000,
+      "population_65_plus": 131472,
+      "pourcentage_65_plus": 19.8,
+      "population_moins_25": 205176,
+      "pourcentage_moins_25": 30.9,
+      "population_a_risque": 179280
+    },
+    {
+      "code": "02",
+      "nom": "Aisne",
+      "population_totale": 531000,
+      "population_65_plus": 108855,
+      "pourcentage_65_plus": 20.5,
+      "population_moins_25": 167796,
+      "pourcentage_moins_25": 31.6,
+      "population_a_risque": 143370
+    },
+    {
+      "code": "03",
+      "nom": "Allier",
+      "population_totale": 333000,
+      "population_65_plus": 89244,
+      "pourcentage_65_plus": 26.8,
+      "population_moins_25": 92907,
+      "pourcentage_moins_25": 27.9,
+      "population_a_risque": 89910
+    },
+    {
+      "code": "04",
+      "nom": "Alpes-de-Haute-Provence",
+      "population_totale": 164000,
+      "population_65_plus": 41492,
+      "pourcentage_65_plus": 25.3,
+      "population_moins_25": 43460,
+      "pourcentage_moins_25": 26.5,
+      "population_a_risque": 44280
+    },
+    {
+      "code": "05",
+      "nom": "Hautes-Alpes",
+      "population_totale": 141000,
+      "population_65_plus": 33417,
+      "pourcentage_65_plus": 23.7,
+      "population_moins_25": 39198,
+      "pourcentage_moins_25": 27.8,
+      "population_a_risque": 38070
+    },
+    {
+      "code": "06",
+      "nom": "Alpes-Maritimes",
+      "population_totale": 1083000,
+      "population_65_plus": 280497,
+      "pourcentage_65_plus": 25.9,
+      "population_moins_25": 271833,
+      "pourcentage_moins_25": 25.1,
+      "population_a_risque": 292410
+    },
+    {
+      "code": "07",
+      "nom": "Ardèche",
+      "population_totale": 329000,
+      "population_65_plus": 79618,
+      "pourcentage_65_plus": 24.2,
+      "population_moins_25": 90804,
+      "pourcentage_moins_25": 27.6,
+      "population_a_risque": 88830
+    },
+    {
+      "code": "08",
+      "nom": "Ardennes",
+      "population_totale": 270000,
+      "population_65_plus": 58860,
+      "pourcentage_65_plus": 21.8,
+      "population_moins_25": 82080,
+      "pourcentage_moins_25": 30.4,
+      "population_a_risque": 72900
+    },
+    {
+      "code": "09",
+      "nom": "Ariège",
+      "population_totale": 153000,
+      "population_65_plus": 39168,
+      "pourcentage_65_plus": 25.6,
+      "population_moins_25": 40086,
+      "pourcentage_moins_25": 26.2,
+      "population_a_risque": 41310
+    },
+    {
+      "code": "10",
+      "nom": "Aube",
+      "population_totale": 310000,
+      "population_65_plus": 66030,
+      "pourcentage_65_plus": 21.3,
+      "population_moins_25": 95480,
+      "pourcentage_moins_25": 30.8,
+      "population_a_risque": 83700
+    },
+    {
+      "code": "11",
+      "nom": "Aude",
+      "population_totale": 374000,
+      "population_65_plus": 93874,
+      "pourcentage_65_plus": 25.1,
+      "population_moins_25": 102102,
+      "pourcentage_moins_25": 27.3,
+      "population_a_risque": 100980
+    },
+    {
+      "code": "12",
+      "nom": "Aveyron",
+      "population_totale": 279000,
+      "population_65_plus": 73656,
+      "pourcentage_65_plus": 26.4,
+      "population_moins_25": 73935,
+      "pourcentage_moins_25": 26.5,
+      "population_a_risque": 75330
+    },
+    {
+      "code": "13",
+      "nom": "Bouches-du-Rhône",
+      "population_totale": 2043000,
+      "population_65_plus": 404514,
+      "pourcentage_65_plus": 19.8,
+      "population_moins_25": 606771,
+      "pourcentage_moins_25": 29.7,
+      "population_a_risque": 551610
+    },
+    {
+      "code": "14",
+      "nom": "Calvados",
+      "population_totale": 694000,
+      "population_65_plus": 148515,
+      "pourcentage_65_plus": 21.4,
+      "population_moins_25": 209588,
+      "pourcentage_moins_25": 30.2,
+      "population_a_risque": 187380
+    },
+    {
+      "code": "15",
+      "nom": "Cantal",
+      "population_totale": 144000,
+      "population_65_plus": 41040,
+      "pourcentage_65_plus": 28.5,
+      "population_moins_25": 36144,
+      "pourcentage_moins_25": 25.1,
+      "population_a_risque": 38880
+    },
+    {
+      "code": "16",
+      "nom": "Charente",
+      "population_totale": 352000,
+      "population_65_plus": 85536,
+      "pourcentage_65_plus": 24.3,
+      "population_moins_25": 99968,
+      "pourcentage_moins_25": 28.4,
+      "population_a_risque": 95040
+    },
+    {
+      "code": "17",
+      "nom": "Charente-Maritime",
+      "population_totale": 651000,
+      "population_65_plus": 170562,
+      "pourcentage_65_plus": 26.2,
+      "population_moins_25": 174468,
+      "pourcentage_moins_25": 26.8,
+      "population_a_risque": 175770
+    },
+    {
+      "code": "18",
+      "nom": "Cher",
+      "population_totale": 302000,
+      "population_65_plus": 75802,
+      "pourcentage_65_plus": 25.1,
+      "population_moins_25": 85164,
+      "pourcentage_moins_25": 28.2,
+      "population_a_risque": 81540
+    },
+    {
+      "code": "19",
+      "nom": "Corrèze",
+      "population_totale": 240000,
+      "population_65_plus": 64560,
+      "pourcentage_65_plus": 26.9,
+      "population_moins_25": 64320,
+      "pourcentage_moins_25": 26.8,
+      "population_a_risque": 64800
+    },
+    {
+      "code": "21",
+      "nom": "Côte-d'Or",
+      "population_totale": 534000,
+      "population_65_plus": 118014,
+      "pourcentage_65_plus": 22.1,
+      "population_moins_25": 157530,
+      "pourcentage_moins_25": 29.5,
+      "population_a_risque": 144180
+    },
+    {
+      "code": "22",
+      "nom": "Côtes-d'Armor",
+      "population_totale": 598000,
+      "population_65_plus": 154284,
+      "pourcentage_65_plus": 25.8,
+      "population_moins_25": 162656,
+      "pourcentage_moins_25": 27.2,
+      "population_a_risque": 161460
+    },
+    {
+      "code": "23",
+      "nom": "Creuse",
+      "population_totale": 116000,
+      "population_65_plus": 35032,
+      "pourcentage_65_plus": 30.2,
+      "population_moins_25": 28768,
+      "pourcentage_moins_25": 24.8,
+      "population_a_risque": 31320
+    },
+    {
+      "code": "24",
+      "nom": "Dordogne",
+      "population_totale": 413000,
+      "population_65_plus": 113575,
+      "pourcentage_65_plus": 27.5,
+      "population_moins_25": 104902,
+      "pourcentage_moins_25": 25.4,
+      "population_a_risque": 111510
+    },
+    {
+      "code": "25",
+      "nom": "Doubs",
+      "population_totale": 543000,
+      "population_65_plus": 106428,
+      "pourcentage_65_plus": 19.6,
+      "population_moins_25": 171045,
+      "pourcentage_moins_25": 31.5,
+      "population_a_risque": 146610
+    },
+    {
+      "code": "26",
+      "nom": "Drôme",
+      "population_totale": 517000,
+      "population_65_plus": 112706,
+      "pourcentage_65_plus": 21.8,
+      "population_moins_25": 151481,
+      "pourcentage_moins_25": 29.3,
+      "population_a_risque": 139590
+    },
+    {
+      "code": "27",
+      "nom": "Eure",
+      "population_totale": 601000,
+      "population_65_plus": 121402,
+      "pourcentage_65_plus": 20.2,
+      "population_moins_25": 187512,
+      "pourcentage_moins_25": 31.2,
+      "population_a_risque": 162270
+    },
+    {
+      "code": "28",
+      "nom": "Eure-et-Loir",
+      "population_totale": 431000,
+      "population_65_plus": 89648,
+      "pourcentage_65_plus": 20.8,
+      "population_moins_25": 131024,
+      "pourcentage_moins_25": 30.4,
+      "population_a_risque": 116370
+    },
+    {
+      "code": "29",
+      "nom": "Finistère",
+      "population_totale": 911000,
+      "population_65_plus": 214996,
+      "pourcentage_65_plus": 23.6,
+      "population_moins_25": 259635,
+      "pourcentage_moins_25": 28.5,
+      "population_a_risque": 245970
+    },
+    {
+      "code": "2A",
+      "nom": "Corse-du-Sud",
+      "population_totale": 158000,
+      "population_65_plus": 39184,
+      "pourcentage_65_plus": 24.8,
+      "population_moins_25": 42028,
+      "pourcentage_moins_25": 26.6,
+      "population_a_risque": 42660
+    },
+    {
+      "code": "2B",
+      "nom": "Haute-Corse",
+      "population_totale": 182000,
+      "population_65_plus": 44226,
+      "pourcentage_65_plus": 24.3,
+      "population_moins_25": 49322,
+      "pourcentage_moins_25": 27.1,
+      "population_a_risque": 49140
+    },
+    {
+      "code": "30",
+      "nom": "Gard",
+      "population_totale": 748000,
+      "population_65_plus": 171292,
+      "pourcentage_65_plus": 22.9,
+      "population_moins_25": 217668,
+      "pourcentage_moins_25": 29.1,
+      "population_a_risque": 201960
+    },
+    {
+      "code": "31",
+      "nom": "Haute-Garonne",
+      "population_totale": 1415000,
+      "population_65_plus": 251870,
+      "pourcentage_65_plus": 17.8,
+      "population_moins_25": 449970,
+      "pourcentage_moins_25": 31.8,
+      "population_a_risque": 382050
+    },
+    {
+      "code": "32",
+      "nom": "Gers",
+      "population_totale": 191000,
+      "population_65_plus": 52143,
+      "pourcentage_65_plus": 27.3,
+      "population_moins_25": 49469,
+      "pourcentage_moins_25": 25.9,
+      "population_a_risque": 51570
+    },
+    {
+      "code": "33",
+      "nom": "Gironde",
+      "population_totale": 1640000,
+      "population_65_plus": 332920,
+      "pourcentage_65_plus": 20.3,
+      "population_moins_25": 488720,
+      "pourcentage_moins_25": 29.8,
+      "population_a_risque": 442800
+    },
+    {
+      "code": "34",
+      "nom": "Hérault",
+      "population_totale": 1175000,
+      "population_65_plus": 264375,
+      "pourcentage_65_plus": 22.5,
+      "population_moins_25": 343100,
+      "pourcentage_moins_25": 29.2,
+      "population_a_risque": 317250
+    },
+    {
+      "code": "35",
+      "nom": "Ille-et-Vilaine",
+      "population_totale": 1096000,
+      "population_65_plus": 210432,
+      "pourcentage_65_plus": 19.2,
+      "population_moins_25": 344144,
+      "pourcentage_moins_25": 31.4,
+      "population_a_risque": 295920
+    },
+    {
+      "code": "36",
+      "nom": "Indre",
+      "population_totale": 219000,
+      "population_65_plus": 59349,
+      "pourcentage_65_plus": 27.1,
+      "population_moins_25": 58473,
+      "pourcentage_moins_25": 26.7,
+      "population_a_risque": 59130
+    },
+    {
+      "code": "37",
+      "nom": "Indre-et-Loire",
+      "population_totale": 610000,
+      "population_65_plus": 132980,
+      "pourcentage_65_plus": 21.8,
+      "population_moins_25": 181780,
+      "pourcentage_moins_25": 29.8,
+      "population_a_risque": 164700
+    },
+    {
+      "code": "38",
+      "nom": "Isère",
+      "population_totale": 1268000,
+      "population_65_plus": 239652,
+      "pourcentage_65_plus": 18.9,
+      "population_moins_25": 391812,
+      "pourcentage_moins_25": 30.9,
+      "population_a_risque": 342360
+    },
+    {
+      "code": "39",
+      "nom": "Jura",
+      "population_totale": 258000,
+      "population_65_plus": 60372,
+      "pourcentage_65_plus": 23.4,
+      "population_moins_25": 73788,
+      "pourcentage_moins_25": 28.6,
+      "population_a_risque": 69660
+    },
+    {
+      "code": "40",
+      "nom": "Landes",
+      "population_totale": 413000,
+      "population_65_plus": 99533,
+      "pourcentage_65_plus": 24.1,
+      "population_moins_25": 114814,
+      "pourcentage_moins_25": 27.8,
+      "population_a_risque": 111510
+    },
+    {
+      "code": "41",
+      "nom": "Loir-et-Cher",
+      "population_totale": 329000,
+      "population_65_plus": 80934,
+      "pourcentage_65_plus": 24.6,
+      "population_moins_25": 91791,
+      "pourcentage_moins_25": 27.9,
+      "population_a_risque": 88830
+    },
+    {
+      "code": "42",
+      "nom": "Loire",
+      "population_totale": 765000,
+      "population_65_plus": 162180,
+      "pourcentage_65_plus": 21.2,
+      "population_moins_25": 230265,
+      "pourcentage_moins_25": 30.1,
+      "population_a_risque": 206550
+    },
+    {
+      "code": "43",
+      "nom": "Haute-Loire",
+      "population_totale": 227000,
+      "population_65_plus": 56296,
+      "pourcentage_65_plus": 24.8,
+      "population_moins_25": 64014,
+      "pourcentage_moins_25": 28.2,
+      "population_a_risque": 61290
+    },
+    {
+      "code": "44",
+      "nom": "Loire-Atlantique",
+      "population_totale": 1429000,
+      "population_65_plus": 278655,
+      "pourcentage_65_plus": 19.5,
+      "population_moins_25": 445848,
+      "pourcentage_moins_25": 31.2,
+      "population_a_risque": 385830
+    },
+    {
+      "code": "45",
+      "nom": "Loiret",
+      "population_totale": 680000,
+      "population_65_plus": 136680,
+      "pourcentage_65_plus": 20.1,
+      "population_moins_25": 208080,
+      "pourcentage_moins_25": 30.6,
+      "population_a_risque": 183600
+    },
+    {
+      "code": "46",
+      "nom": "Lot",
+      "population_totale": 174000,
+      "population_65_plus": 49938,
+      "pourcentage_65_plus": 28.7,
+      "population_moins_25": 43326,
+      "pourcentage_moins_25": 24.9,
+      "population_a_risque": 46980
+    },
+    {
+      "code": "47",
+      "nom": "Lot-et-Garonne",
+      "population_totale": 334000,
+      "population_65_plus": 84836,
+      "pourcentage_65_plus": 25.4,
+      "population_moins_25": 92852,
+      "pourcentage_moins_25": 27.8,
+      "population_a_risque": 90180
+    },
+    {
+      "code": "48",
+      "nom": "Lozère",
+      "population_totale": 77000,
+      "population_65_plus": 21483,
+      "pourcentage_65_plus": 27.9,
+      "population_moins_25": 19866,
+      "pourcentage_moins_25": 25.8,
+      "population_a_risque": 20790
+    },
+    {
+      "code": "49",
+      "nom": "Maine-et-Loire",
+      "population_totale": 818000,
+      "population_65_plus": 169326,
+      "pourcentage_65_plus": 20.7,
+      "population_moins_25": 254398,
+      "pourcentage_moins_25": 31.1,
+      "population_a_risque": 220860
+    },
+    {
+      "code": "50",
+      "nom": "Manche",
+      "population_totale": 495000,
+      "population_65_plus": 121275,
+      "pourcentage_65_plus": 24.5,
+      "population_moins_25": 139590,
+      "pourcentage_moins_25": 28.2,
+      "population_a_risque": 133650
+    },
+    {
+      "code": "51",
+      "nom": "Marne",
+      "population_totale": 566000,
+      "population_65_plus": 114898,
+      "pourcentage_65_plus": 20.3,
+      "population_moins_25": 173762,
+      "pourcentage_moins_25": 30.7,
+      "population_a_risque": 152820
+    },
+    {
+      "code": "52",
+      "nom": "Haute-Marne",
+      "population_totale": 172000,
+      "population_65_plus": 42828,
+      "pourcentage_65_plus": 24.9,
+      "population_moins_25": 49020,
+      "pourcentage_moins_25": 28.5,
+      "population_a_risque": 46440
+    },
+    {
+      "code": "53",
+      "nom": "Mayenne",
+      "population_totale": 307000,
+      "population_65_plus": 69996,
+      "pourcentage_65_plus": 22.8,
+      "population_moins_25": 91486,
+      "pourcentage_moins_25": 29.8,
+      "population_a_risque": 82890
+    },
+    {
+      "code": "54",
+      "nom": "Meurthe-et-Moselle",
+      "population_totale": 733000,
+      "population_65_plus": 147333,
+      "pourcentage_65_plus": 20.1,
+      "population_moins_25": 225764,
+      "pourcentage_moins_25": 30.8,
+      "population_a_risque": 197910
+    },
+    {
+      "code": "55",
+      "nom": "Meuse",
+      "population_totale": 184000,
+      "population_65_plus": 41768,
+      "pourcentage_65_plus": 22.7,
+      "population_moins_25": 54464,
+      "pourcentage_moins_25": 29.6,
+      "population_a_risque": 49680
+    },
+    {
+      "code": "56",
+      "nom": "Morbihan",
+      "population_totale": 762000,
+      "population_65_plus": 185166,
+      "pourcentage_65_plus": 24.3,
+      "population_moins_25": 216408,
+      "pourcentage_moins_25": 28.4,
+      "population_a_risque": 205740
+    },
+    {
+      "code": "57",
+      "nom": "Moselle",
+      "population_totale": 1043000,
+      "population_65_plus": 202342,
+      "pourcentage_65_plus": 19.4,
+      "population_moins_25": 324373,
+      "pourcentage_moins_25": 31.1,
+      "population_a_risque": 281610
+    },
+    {
+      "code": "58",
+      "nom": "Nièvre",
+      "population_totale": 203000,
+      "population_65_plus": 55419,
+      "pourcentage_65_plus": 27.3,
+      "population_moins_25": 53998,
+      "pourcentage_moins_25": 26.6,
+      "population_a_risque": 54810
+    },
+    {
+      "code": "59",
+      "nom": "Nord",
+      "population_totale": 2606000,
+      "population_65_plus": 474292,
+      "pourcentage_65_plus": 18.2,
+      "population_moins_25": 844344,
+      "pourcentage_moins_25": 32.4,
+      "population_a_risque": 703620
+    },
+    {
+      "code": "60",
+      "nom": "Oise",
+      "population_totale": 829000,
+      "population_65_plus": 148390,
+      "pourcentage_65_plus": 17.9,
+      "population_moins_25": 271911,
+      "pourcentage_moins_25": 32.8,
+      "population_a_risque": 223830
+    },
+    {
+      "code": "61",
+      "nom": "Orne",
+      "population_totale": 279000,
+      "population_65_plus": 72819,
+      "pourcentage_65_plus": 26.1,
+      "population_moins_25": 75609,
+      "pourcentage_moins_25": 27.1,
+      "population_a_risque": 75330
+    },
+    {
+      "code": "62",
+      "nom": "Pas-de-Calais",
+      "population_totale": 1466000,
+      "population_65_plus": 282938,
+      "pourcentage_65_plus": 19.3,
+      "population_moins_25": 470586,
+      "pourcentage_moins_25": 32.1,
+      "population_a_risque": 395820
+    },
+    {
+      "code": "63",
+      "nom": "Puy-de-Dôme",
+      "population_totale": 662000,
+      "population_65_plus": 142992,
+      "pourcentage_65_plus": 21.6,
+      "population_moins_25": 197276,
+      "pourcentage_moins_25": 29.8,
+      "population_a_risque": 178740
+    },
+    {
+      "code": "64",
+      "nom": "Pyrénées-Atlantiques",
+      "population_totale": 682000,
+      "population_65_plus": 162316,
+      "pourcentage_65_plus": 23.8,
+      "population_moins_25": 192324,
+      "pourcentage_moins_25": 28.2,
+      "population_a_risque": 184140
+    },
+    {
+      "code": "65",
+      "nom": "Hautes-Pyrénées",
+      "population_totale": 229000,
+      "population_65_plus": 59998,
+      "pourcentage_65_plus": 26.2,
+      "population_moins_25": 61372,
+      "pourcentage_moins_25": 26.8,
+      "population_a_risque": 61830
+    },
+    {
+      "code": "66",
+      "nom": "Pyrénées-Orientales",
+      "population_totale": 479000,
+      "population_65_plus": 118313,
+      "pourcentage_65_plus": 24.7,
+      "population_moins_25": 132204,
+      "pourcentage_moins_25": 27.6,
+      "population_a_risque": 129330
+    },
+    {
+      "code": "67",
+      "nom": "Bas-Rhin",
+      "population_totale": 1148000,
+      "population_65_plus": 212380,
+      "pourcentage_65_plus": 18.5,
+      "population_moins_25": 363916,
+      "pourcentage_moins_25": 31.7,
+      "population_a_risque": 309960
+    },
+    {
+      "code": "68",
+      "nom": "Haut-Rhin",
+      "population_totale": 764000,
+      "population_65_plus": 150508,
+      "pourcentage_65_plus": 19.7,
+      "population_moins_25": 236076,
+      "pourcentage_moins_25": 30.9,
+      "population_a_risque": 206280
+    },
+    {
+      "code": "69",
+      "nom": "Rhône",
+      "population_totale": 1873000,
+      "population_65_plus": 324029,
+      "pourcentage_65_plus": 17.3,
+      "population_moins_25": 589995,
+      "pourcentage_moins_25": 31.5,
+      "population_a_risque": 505710
+    },
+    {
+      "code": "70",
+      "nom": "Haute-Saône",
+      "population_totale": 235000,
+      "population_65_plus": 55930,
+      "pourcentage_65_plus": 23.8,
+      "population_moins_25": 67915,
+      "pourcentage_moins_25": 28.9,
+      "population_a_risque": 63450
+    },
+    {
+      "code": "71",
+      "nom": "Saône-et-Loire",
+      "population_totale": 551000,
+      "population_65_plus": 139954,
+      "pourcentage_65_plus": 25.4,
+      "population_moins_25": 153178,
+      "pourcentage_moins_25": 27.8,
+      "population_a_risque": 148770
+    },
+    {
+      "code": "72",
+      "nom": "Sarthe",
+      "population_totale": 566000,
+      "population_65_plus": 129614,
+      "pourcentage_65_plus": 22.9,
+      "population_moins_25": 167536,
+      "pourcentage_moins_25": 29.6,
+      "population_a_risque": 152820
+    },
+    {
+      "code": "73",
+      "nom": "Savoie",
+      "population_totale": 436000,
+      "population_65_plus": 93304,
+      "pourcentage_65_plus": 21.4,
+      "population_moins_25": 126004,
+      "pourcentage_moins_25": 28.9,
+      "population_a_risque": 117720
+    },
+    {
+      "code": "74",
+      "nom": "Haute-Savoie",
+      "population_totale": 825000,
+      "population_65_plus": 146850,
+      "pourcentage_65_plus": 17.8,
+      "population_moins_25": 262350,
+      "pourcentage_moins_25": 31.8,
+      "population_a_risque": 222750
+    },
+    {
+      "code": "75",
+      "nom": "Paris",
+      "population_totale": 2145000,
+      "population_65_plus": 366795,
+      "pourcentage_65_plus": 17.1,
+      "population_moins_25": 604890,
+      "pourcentage_moins_25": 28.2,
+      "population_a_risque": 579150
+    },
+    {
+      "code": "76",
+      "nom": "Seine-Maritime",
+      "population_totale": 1255000,
+      "population_65_plus": 261040,
+      "pourcentage_65_plus": 20.8,
+      "population_moins_25": 387795,
+      "pourcentage_moins_25": 30.9,
+      "population_a_risque": 338850
+    },
+    {
+      "code": "77",
+      "nom": "Seine-et-Marne",
+      "population_totale": 1421000,
+      "population_65_plus": 240148,
+      "pourcentage_65_plus": 16.9,
+      "population_moins_25": 470351,
+      "pourcentage_moins_25": 33.1,
+      "population_a_risque": 383670
+    },
+    {
+      "code": "78",
+      "nom": "Yvelines",
+      "population_totale": 1438000,
+      "population_65_plus": 253088,
+      "pourcentage_65_plus": 17.6,
+      "population_moins_25": 448656,
+      "pourcentage_moins_25": 31.2,
+      "population_a_risque": 388260
+    },
+    {
+      "code": "79",
+      "nom": "Deux-Sèvres",
+      "population_totale": 374000,
+      "population_65_plus": 90508,
+      "pourcentage_65_plus": 24.2,
+      "population_moins_25": 108834,
+      "pourcentage_moins_25": 29.1,
+      "population_a_risque": 100980
+    },
+    {
+      "code": "80",
+      "nom": "Somme",
+      "population_totale": 571000,
+      "population_65_plus": 119339,
+      "pourcentage_65_plus": 20.9,
+      "population_moins_25": 178152,
+      "pourcentage_moins_25": 31.2,
+      "population_a_risque": 154170
+    },
+    {
+      "code": "81",
+      "nom": "Tarn",
+      "population_totale": 387000,
+      "population_65_plus": 94815,
+      "pourcentage_65_plus": 24.5,
+      "population_moins_25": 107973,
+      "pourcentage_moins_25": 27.9,
+      "population_a_risque": 104490
+    },
+    {
+      "code": "82",
+      "nom": "Tarn-et-Garonne",
+      "population_totale": 260000,
+      "population_65_plus": 59280,
+      "pourcentage_65_plus": 22.8,
+      "population_moins_25": 76440,
+      "pourcentage_moins_25": 29.4,
+      "population_a_risque": 70200
+    },
+    {
+      "code": "83",
+      "nom": "Var",
+      "population_totale": 1076000,
+      "population_65_plus": 277608,
+      "pourcentage_65_plus": 25.8,
+      "population_moins_25": 281912,
+      "pourcentage_moins_25": 26.2,
+      "population_a_risque": 290520
+    },
+    {
+      "code": "84",
+      "nom": "Vaucluse",
+      "population_totale": 560000,
+      "population_65_plus": 125440,
+      "pourcentage_65_plus": 22.4,
+      "population_moins_25": 165760,
+      "pourcentage_moins_25": 29.6,
+      "population_a_risque": 151200
+    },
+    {
+      "code": "85",
+      "nom": "Vendée",
+      "population_totale": 676000,
+      "population_65_plus": 156156,
+      "pourcentage_65_plus": 23.1,
+      "population_moins_25": 198068,
+      "pourcentage_moins_25": 29.3,
+      "population_a_risque": 182520
+    },
+    {
+      "code": "86",
+      "nom": "Vienne",
+      "population_totale": 438000,
+      "population_65_plus": 97674,
+      "pourcentage_65_plus": 22.3,
+      "population_moins_25": 131838,
+      "pourcentage_moins_25": 30.1,
+      "population_a_risque": 118260
+    },
+    {
+      "code": "87",
+      "nom": "Haute-Vienne",
+      "population_totale": 373000,
+      "population_65_plus": 95861,
+      "pourcentage_65_plus": 25.7,
+      "population_moins_25": 103694,
+      "pourcentage_moins_25": 27.8,
+      "population_a_risque": 100710
+    },
+    {
+      "code": "88",
+      "nom": "Vosges",
+      "population_totale": 364000,
+      "population_65_plus": 84448,
+      "pourcentage_65_plus": 23.2,
+      "population_moins_25": 105196,
+      "pourcentage_moins_25": 28.9,
+      "population_a_risque": 98280
+    },
+    {
+      "code": "89",
+      "nom": "Yonne",
+      "population_totale": 335000,
+      "population_65_plus": 86430,
+      "pourcentage_65_plus": 25.8,
+      "population_moins_25": 92460,
+      "pourcentage_moins_25": 27.6,
+      "population_a_risque": 90450
+    },
+    {
+      "code": "90",
+      "nom": "Territoire de Belfort",
+      "population_totale": 142000,
+      "population_65_plus": 27264,
+      "pourcentage_65_plus": 19.2,
+      "population_moins_25": 44588,
+      "pourcentage_moins_25": 31.4,
+      "population_a_risque": 38340
+    },
+    {
+      "code": "91",
+      "nom": "Essonne",
+      "population_totale": 1313000,
+      "population_65_plus": 215331,
+      "pourcentage_65_plus": 16.4,
+      "population_moins_25": 435916,
+      "pourcentage_moins_25": 33.2,
+      "population_a_risque": 354510
+    },
+    {
+      "code": "92",
+      "nom": "Hauts-de-Seine",
+      "population_totale": 1624000,
+      "population_65_plus": 289072,
+      "pourcentage_65_plus": 17.8,
+      "population_moins_25": 500192,
+      "pourcentage_moins_25": 30.8,
+      "population_a_risque": 438480
+    },
+    {
+      "code": "93",
+      "nom": "Seine-Saint-Denis",
+      "population_totale": 1644000,
+      "population_65_plus": 233448,
+      "pourcentage_65_plus": 14.2,
+      "population_moins_25": 577044,
+      "pourcentage_moins_25": 35.1,
+      "population_a_risque": 443880
+    },
+    {
+      "code": "94",
+      "nom": "Val-de-Marne",
+      "population_totale": 1407000,
+      "population_65_plus": 246225,
+      "pourcentage_65_plus": 17.5,
+      "population_moins_25": 441798,
+      "pourcentage_moins_25": 31.4,
+      "population_a_risque": 379890
+    },
+    {
+      "code": "95",
+      "nom": "Val-d'Oise",
+      "population_totale": 1251000,
+      "population_65_plus": 197658,
+      "pourcentage_65_plus": 15.8,
+      "population_moins_25": 424089,
+      "pourcentage_moins_25": 33.9,
+      "population_a_risque": 337770
+    },
+    {
+      "code": "971",
+      "nom": "Guadeloupe",
+      "population_totale": 384000,
+      "population_65_plus": 71424,
+      "pourcentage_65_plus": 18.6,
+      "population_moins_25": 122112,
+      "pourcentage_moins_25": 31.8,
+      "population_a_risque": 103680
+    },
+    {
+      "code": "972",
+      "nom": "Martinique",
+      "population_totale": 361000,
+      "population_65_plus": 80863,
+      "pourcentage_65_plus": 22.4,
+      "population_moins_25": 104329,
+      "pourcentage_moins_25": 28.9,
+      "population_a_risque": 97470
+    },
+    {
+      "code": "973",
+      "nom": "Guyane",
+      "population_totale": 290000,
+      "population_65_plus": 25810,
+      "pourcentage_65_plus": 8.9,
+      "population_moins_25": 128180,
+      "pourcentage_moins_25": 44.2,
+      "population_a_risque": 78300
+    },
+    {
+      "code": "974",
+      "nom": "La Réunion",
+      "population_totale": 860000,
+      "population_65_plus": 118680,
+      "pourcentage_65_plus": 13.8,
+      "population_moins_25": 306160,
+      "pourcentage_moins_25": 35.6,
+      "population_a_risque": 232200
+    },
+    {
+      "code": "976",
+      "nom": "Mayotte",
+      "population_totale": 310000,
+      "population_65_plus": 13020,
+      "pourcentage_65_plus": 4.2,
+      "population_moins_25": 161510,
+      "pourcentage_moins_25": 52.1,
+      "population_a_risque": 83700
+    }
+  ]
+}

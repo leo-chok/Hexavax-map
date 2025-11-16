@@ -22,6 +22,8 @@ export default function App() {
   const [sidePanelOpen, setSidePanelOpen] = useState(true);
   const [showAdminBoundaries, setShowAdminBoundaries] = useState(true);
   const [domTomCoords, setDomTomCoords] = useState(null);
+  const [vulnerablePopulationData, setVulnerablePopulationData] = useState(null);
+  const [departmentsGeojson, setDepartmentsGeojson] = useState(null);
   // load persisted filters from localStorage if present (sanitise stored object)
   const [filters, setFilters] = useState(() => {
     try {
@@ -32,6 +34,7 @@ export default function App() {
           heatmap: !!parsed.heatmap,
           hospitals: !!parsed.hospitals,
           pharmacies: !!parsed.pharmacies,
+          vulnerablePopulation: !!parsed.vulnerablePopulation,
         };
       }
     } catch (e) {
@@ -102,6 +105,22 @@ export default function App() {
       .then(res => res.json())
       .then(setNationalTimeseries)
       .catch(err => console.error("Erreur chargement timeseries national :", err));
+  }, []);
+
+  // Charger les données de population vulnérable
+  useEffect(() => {
+    fetch("/data/Population_vulnerable.json")
+      .then(res => res.json())
+      .then(setVulnerablePopulationData)
+      .catch(err => console.error("Erreur chargement population vulnérable :", err));
+  }, []);
+
+  // Charger le geojson des départements pour le layer population vulnérable
+  useEffect(() => {
+    fetch("/data/geojson/departements-avec-outre-mer.geojson")
+      .then(res => res.json())
+      .then(setDepartmentsGeojson)
+      .catch(err => console.error("Erreur chargement geojson départements :", err));
   }, []);
 
   // Charger la geojson pour la vue active (national / regional / departmental / domtom)
@@ -330,10 +349,20 @@ export default function App() {
     setSelectedAreaData(areaData);
   };
 
+  const isPredictive = currentDate >= "2025-12-01";
+
   return (
     <div className="app">
       {/* --- HEADER --- */}
-      <header className="header">
+      <header 
+        className="header"
+        style={{
+          boxShadow: isPredictive 
+            ? "0 8px 40px rgba(239, 79, 145, 0.6)" 
+            : "0 2px 4px rgba(0, 0, 0, 0.1)",
+          transition: "box-shadow 0.3s ease",
+        }}
+      >
         <h3 style={{ color: "#14173D", margin: 0 }}>
           HEXAVAX
         </h3>
@@ -354,12 +383,15 @@ export default function App() {
             showHeatmap={filters.heatmap}
             showHospitals={filters.hospitals}
             showPharmacies={filters.pharmacies}
+            showVulnerablePopulation={filters.vulnerablePopulation}
+            vulnerablePopulationData={vulnerablePopulationData}
+            departmentsGeojson={departmentsGeojson}
             areaTimeseries={
-              viewMode === "departmental"
+              viewMode === "departmental" || viewMode === "domtom"
                 ? departmentsAreaTimeseries
                 : viewMode === "regional"
                 ? regionsTimeseries
-                : {}
+                : nationalTimeseries
             }
             currentDate={currentDate}
           />
@@ -386,8 +418,14 @@ export default function App() {
           />
 
           {/* Légende dynamique qui s'affiche si au moins un calque est actif */}
-          {(filters.heatmap || filters.hospitals || filters.pharmacies) && (
-            <div className="legend">
+          {(filters.heatmap || filters.hospitals || filters.pharmacies || filters.vulnerablePopulation) && (
+            <div 
+              className="legend"
+              style={{
+                transform: selectedArea ? "translateX(-400px)" : "translateX(0)",
+                transition: "transform 0.3s ease",
+              }}
+            >
               <Legend filters={filters} />
             </div>
           )}
@@ -395,7 +433,15 @@ export default function App() {
       </main>
 
       {/* --- SLIDER & DATE --- */}
-      <footer className="footer">
+      <footer 
+        className="footer"
+        style={{
+          boxShadow: isPredictive 
+            ? "0 -8px 40px rgba(239, 79, 145, 0.6)" 
+            : "0 -2px 4px rgba(0, 0, 0, 0.1)",
+          transition: "box-shadow 0.3s ease",
+        }}
+      >
         <div className="panel" style={{ width: "100%" }}>
           <div style={{ display: "flex", alignItems: "center", gap: 12, width: "100%" }}>
             <div className="slider-wrap">
@@ -409,7 +455,7 @@ export default function App() {
             <div
               className="badge"
               style={{
-                background: "#6E6BF3",
+                background: currentDate >= "2025-12-01" ? "#EF4F91" : "#6E6BF3",
                 color: "white",
                 padding: "6px 16px",
                 borderRadius: "12px",
@@ -417,6 +463,7 @@ export default function App() {
                 marginLeft: "8px",
                 minWidth: "180px",
                 textAlign: "center",
+                transition: "background 0.3s ease",
               }}
             >
               {currentDate 

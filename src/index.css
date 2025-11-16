@@ -4,6 +4,7 @@ html, body, #root {
   font-family: 'Roboto', sans-serif;
   background-color: #E9E6F8; /* fond lilas clair */
   color: #14173D; /* texte sombre */
+  overflow: hidden;
 }
 
 .app {
@@ -76,4 +77,21 @@ html, body, #root {
   display: flex;
   gap: 64px;
   align-items: center;
+}
+
+/* Tooltip deck.gl */
+.deck-tooltip {
+  position: absolute;
+  left : 15px !important;
+  pointer-events: none;
+  z-index: 1000;
+  padding: 10px 14px !important;
+  background: rgba(255, 255, 255, 0.70) !important;
+  color: #333 !important;
+  border-radius: 8px !important;
+  font-size: 13px !important;
+  max-width: 300px;
+  white-space: pre-line;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15) !important;
+  border: 1px solid rgba(0, 0, 0, 0.1) !important;
 }
