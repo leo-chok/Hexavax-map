@@ -1,6 +1,38 @@
 export function getTooltipContent({ object, layer, viewMode }) {
   if (!object || !layer) return null;
 
+  // Vérifier d'abord les layers pharmacies pour éviter les conflits
+  if (layer.id === "pharmacies-hexagon-layer") {
+    // HexagonLayer : affichage agrégé
+    if (object) {
+      const count = object.count || object.colorValue || 1;
+      const totalDoses = object.elevationValue || 0;
+      
+      if (count === 1) {
+        return { text: `1 pharmacie\nStock : ${Math.round(totalDoses)} doses` };
+      }
+      
+      return { 
+        text: `${count} pharmacies\nStock total : ${Math.round(totalDoses)} doses` 
+      };
+    }
+    return { text: "Pharmacie" };
+  }
+
+  // ScatterplotLayer : affichage individuel détaillé
+  if (layer.id === "pharmacies-scatter-layer") {
+    if (object) {
+      const lines = [];
+      if (object.name) lines.push(object.name);
+      if (object.address) lines.push(object.address);
+      if (object.open !== undefined) lines.push(`Ouvert : ${object.open ? "Oui" : "Non"}`);
+      const stock = object.stock_doses || object.doses;
+      if (stock !== undefined) lines.push(`Stock : ${stock} doses`);
+      return { text: lines.length > 0 ? lines.join("\n") : "Pharmacie" };
+    }
+    return { text: "Pharmacie" };
+  }
+
   if (layer.id === "hospital-saturation") {
     const item = object.object ?? object;
     const label = item?.label ?? item?.name ?? "Hôpital";
@@ -13,12 +45,22 @@ export function getTooltipContent({ object, layer, viewMode }) {
     return { text: `Indice de risque ${(object.weight * 100).toFixed(0)} / 100` };
   }
 
-  if (layer.id === "pharmacies-layer") {
-    return { text: object.name };
+  if (layer.id === "pharmacies-layer" || layer.id === "pharmacies-cube-layer") {
+    // Affiche le nom et éventuellement d'autres infos
+    let txt = object.name || "Pharmacie";
+    if (object.address) txt += `\n${object.address}`;
+    if (object.city) txt += `\n${object.city}`;
+    if (object.open || !object.open) txt += `\nOuvert : ${(object.open ? "Oui" : "Non")}`;
+    if (object.stock_doses) txt += `\nDoses en stock : ${object.stock_doses}`;
+    return { text: txt };
   }
 
   // View / administrative boundaries hover: show the region/department name
+  // MAIS seulement si ce n'est pas un autre layer plus prioritaire (pharmacies, hôpitaux, etc.)
   if (layer.id && (layer.id.startsWith("view-layer") || layer.id === "departments-layer")) {
+    // Ne pas afficher si l'objet a une propriété `points` (c'est un HexagonLayer)
+    if (object && object.points) return null;
+    
     const feat = object.object || object;
     const p = (feat && feat.properties) || {};
     const rawName = p.nom || p.name || p.NOM || p.LIBELLE || p.label || p.CODE || p.code || p.dep || p.DEP || "";

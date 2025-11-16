@@ -1,72 +1,72 @@
 import React from "react";
 import {
-  Paper,
   FormGroup,
   FormControlLabel,
   Checkbox,
-  Typography,
 } from "@mui/material";
 
-export default function FilterPanel({ filters, onToggle }) {
+export default function FilterPanel({ filters, onFiltersChange }) {
+  const handleToggle = (key) => {
+    onFiltersChange({ ...filters, [key]: !filters[key] });
+  };
+
   return (
-    <Paper
-      elevation={3}
-      sx={{
-        padding: 2,
-        borderRadius: 2,
-        background: "rgba(255,255,255,0.95)",
-        width: 260,
-      }}
-    >
-      <Typography variant="subtitle1" sx={{ fontWeight: 700, marginBottom: 1 }}>
-        Calques
-      </Typography>
+    <FormGroup>
+      <FormControlLabel
+        control={
+          <Checkbox
+            checked={!!filters.heatmap}
+            onChange={() => handleToggle("heatmap")}
+            sx={{
+              color: "#1976d2",
+              "&.Mui-checked": { color: "#1976d2" },
+            }}
+          />
+        }
+        label="Propagation virale"
+      />
 
-      <FormGroup>
-        <FormControlLabel
-          control={
-            <Checkbox
-              checked={!!filters.heatmap}
-              onChange={() => onToggle("heatmap")}
-              color="primary"
-            />
-          }
-          label="Propagation (heatmap)"
-        />
+      <FormControlLabel
+        control={
+          <Checkbox
+            checked={!!filters.departments}
+            onChange={() => handleToggle("departments")}
+            sx={{
+              color: "#1976d2",
+              "&.Mui-checked": { color: "#1976d2" },
+            }}
+          />
+        }
+        label="Alertes départementales"
+      />
 
-        <FormControlLabel
-          control={
-            <Checkbox
-              checked={!!filters.departments}
-              onChange={() => onToggle("departments")}
-              color="primary"
-            />
-          }
-          label="KPI départements"
-        />
+      <FormControlLabel
+        control={
+          <Checkbox
+            checked={!!filters.hospitals}
+            onChange={() => handleToggle("hospitals")}
+            sx={{
+              color: "#1976d2",
+              "&.Mui-checked": { color: "#1976d2" },
+            }}
+          />
+        }
+        label="Saturation hôpitaux"
+      />
 
-        <FormControlLabel
-          control={
-            <Checkbox
-              checked={!!filters.hospitals}
-              onChange={() => onToggle("hospitals")}
-              color="primary"
-            />
-          }
-          label="Saturation hôpitaux"
-        />
-
-        <FormControlLabel
-          control={
-            <Checkbox
-              checked={!!filters.pharmacies}
-              onChange={() => onToggle("pharmacies")}
-              color="primary"
-            />
-          }
-          label="Pharmacies"
-        />
-      </FormGroup>
-    </Paper>
+      <FormControlLabel
+        control={
+          <Checkbox
+            checked={!!filters.pharmacies}
+            onChange={() => handleToggle("pharmacies")}
+            sx={{
+              color: "#1976d2",
+              "&.Mui-checked": { color: "#1976d2" },
+            }}
+          />
+        }
+        label="Centres de vaccination"
+      />
+    </FormGroup>
   );
 }

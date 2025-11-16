@@ -3,8 +3,7 @@ import EpidemicMap from "./components/EpidemicMap.jsx";
 import TimeSlider from "./components/TimeSlider.jsx";
 import Legend from "./components/Legend.jsx";
 import DatasetSelector from "./components/DatasetSelector.jsx";
-import ViewSelector from "./components/ViewSelector.jsx";
-import FilterPanel from "./components/FilterPanel.jsx";
+import SidePanel from "./components/SidePanel.jsx";
 import DepartmentModal from "./components/DepartmentModal.jsx";
 import AreaModal from "./components/AreaModal.jsx";
 
@@ -18,6 +17,8 @@ export default function App() {
   const [departmentsStatsMap, setDepartmentsStatsMap] = useState({});
   const [viewMode, setViewMode] = useState("national");
   const [viewGeojson, setViewGeojson] = useState(null);
+  const [sidePanelOpen, setSidePanelOpen] = useState(true);
+  const [showAdminBoundaries, setShowAdminBoundaries] = useState(true);
   // load persisted filters from localStorage if present (sanitise stored object)
   const [filters, setFilters] = useState(() => {
     try {
@@ -67,11 +68,11 @@ export default function App() {
 
   // Charger les données des pharmacies (fixe)
   useEffect(() => {
-  fetch("./data/pharmacies_point.json")
-    .then(res => res.json())
-    .then(setPharmacies)
-    .catch(err => console.error("Erreur chargement pharmacies :", err));
-}, []);
+    fetch("./data/pharmacies_france_v1.json")
+      .then(res => res.json())
+      .then(setPharmacies)
+      .catch(err => console.error("Erreur chargement pharmacies :", err));
+  }, []);
 
   // Charger la geojson des départements (fichier fourni par l'utilisateur)
   useEffect(() => {
@@ -267,15 +268,7 @@ export default function App() {
   return (
     <div className="app">
       {/* --- HEADER --- */}
-      <header
-        className="header"
-        style={{
-          display: "flex",
-          justifyContent: "space-between",
-          alignItems: "center",
-          padding: "12px 24px",
-        }}
-      >
+      <header className="header">
         <h3 style={{ color: "#14173D", margin: 0 }}>
           HEXAVAX
         </h3>
@@ -290,7 +283,7 @@ export default function App() {
             pharmacies={pharmacies}
             departments={departmentsGeo}
             departmentsStatsMap={departmentsStatsMap}
-            viewGeojson={viewGeojson}
+            viewGeojson={showAdminBoundaries ? viewGeojson : null}
             viewMode={viewMode}
             onAreaClick={handleAreaClick}
             showDepartments={filters.departments}
@@ -301,25 +294,17 @@ export default function App() {
             showPharmacies={filters.pharmacies}
           />
 
-          {/* Left column: View selector above Filter panel with 24px gap */}
-          <div
-            style={{
-              position: "absolute",
-              left: 12,
-              top: 12,
-              zIndex: 1200,
-              display: "flex",
-              flexDirection: "column",
-              gap: 24,
-            }}
-          >
-            <ViewSelector value={viewMode} onChange={setViewMode} />
-
-            <FilterPanel
-              filters={filters}
-              onToggle={(key) => setFilters((p) => ({ ...p, [key]: !p[key] }))}
-            />
-          </div>
+          {/* Panneau latéral gauche */}
+          <SidePanel
+            isOpen={sidePanelOpen}
+            onToggle={() => setSidePanelOpen(!sidePanelOpen)}
+            showAdminBoundaries={showAdminBoundaries}
+            onAdminBoundariesChange={setShowAdminBoundaries}
+            viewMode={viewMode}
+            onViewModeChange={setViewMode}
+            filters={filters}
+            onFiltersChange={(newFilters) => setFilters(newFilters)}
+          />
 
           <DepartmentModal
             open={!!selectedDepartment}
@@ -351,9 +336,9 @@ export default function App() {
 
       {/* --- SLIDER & DATE --- */}
       <footer className="footer">
-        <div className="panel">
-          {((filters.heatmap || filters.hospitals) ? (
-            <div style={{ display: "flex", alignItems: "center", gap: 12 }}>
+        <div className="panel" style={{ width: "100%" }}>
+          {(filters.heatmap || filters.hospitals) && (
+            <div style={{ display: "flex", alignItems: "center", gap: 12, width: "100%" }}>
               <div className="slider-wrap">
                 <TimeSlider
                   dates={dates}
@@ -361,7 +346,6 @@ export default function App() {
                   onChange={setDateIndex}
                 />
               </div>
-
 
               <div
                 className="badge"
@@ -381,9 +365,7 @@ export default function App() {
                 {filters.heatmap && <DatasetSelector value={dataset} onChange={setDataset} />}
               </div>
             </div>
-          ) : (
-            <div style={{ height: 0 }} />
-          ))}
+          )}
         </div>
       </footer>
     </div>

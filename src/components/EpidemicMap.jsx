@@ -4,7 +4,7 @@ import { Map } from "react-map-gl";
 import "mapbox-gl/dist/mapbox-gl.css";
 
 import useViewScaling from "./EpidemicMap/hooks/useViewScaling";
-import { createLayers } from "./EpidemicMap/createLayers";
+import { createLayers } from "./EpidemicMap/layers";
 import { getTooltipContent } from "./EpidemicMap/tooltip";
 // 🔑 Mapbox token (depuis .env)
 const MAPBOX_TOKEN = import.meta.env.VITE_MAPBOX_TOKEN;
@@ -62,6 +62,7 @@ export default function EpidemicMap({
       showDepartments,
       onDepartmentClick,
       scaling,
+      zoom,
     }),
     // depend on counts + flags + scaling values to avoid deep comparisons
     [
@@ -81,6 +82,7 @@ export default function EpidemicMap({
       viewMode,
       onAreaClick,
       (viewGeojson && viewGeojson.features) ? viewGeojson.features.length : 0,
+      zoom,
     ]
   );
 
@@ -98,7 +100,7 @@ export default function EpidemicMap({
       getCursor={({ isHovering }) => (isHovering ? "pointer" : "default")}
       controller={true}
   layers={layers}
-  getTooltip={(info) => getTooltipContent({ ...info, viewMode })}
+  getTooltip={(info) => getTooltipContent({ ...info, viewMode, pharmacies })}
     >
       <Map
         reuseMaps
