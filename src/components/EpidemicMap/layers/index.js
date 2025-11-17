@@ -3,6 +3,7 @@ import { createHeatmapLayer } from "./heatmapLayer";
 import { createHospitalsLayer } from "./hospitalsLayer";
 import { createPharmaciesLayer } from "./pharmaciesLayer";
 import { createVulnerablePopulationLayer } from "./vulnerablePopulationLayer";
+import { createVaccineLogisticsLayer } from "./vaccineLogisticsLayer";
 
 /**
  * Point d'entrée principal pour la création de tous les layers deck.gl
@@ -16,7 +17,9 @@ import { createVulnerablePopulationLayer } from "./vulnerablePopulationLayer";
  * @param {boolean} options.showHospitals - Afficher les hôpitaux
  * @param {boolean} options.showPharmacies - Afficher les pharmacies
  * @param {boolean} options.showVulnerablePopulation - Afficher la population vulnérable
+ * @param {boolean} options.showVaccineLogistics - Afficher la logistique vaccins
  * @param {Object} options.vulnerablePopulationData - Données de population vulnérable
+ * @param {Object} options.vaccineLogisticsData - Données de logistique vaccins
  * @param {Object} options.departmentsGeojson - GeoJSON des départements pour population vulnérable
  * @param {Object} options.scaling - Paramètres de scaling (radiusMeters, elevationMultiplier, heatmapRadiusPixels)
  * @param {Object} options.viewGeojson - GeoJSON pour les limites administratives
@@ -35,7 +38,9 @@ export function createLayers({
   showHospitals = false,
   showPharmacies = false,
   showVulnerablePopulation = false,
+  showVaccineLogistics = false,
   vulnerablePopulationData = null,
+  vaccineLogisticsData = null,
   departmentsGeojson = null,
   scaling = {
     radiusMeters: 1500,
@@ -45,6 +50,7 @@ export function createLayers({
   viewGeojson = null,
   viewMode = "national",
   onAreaClick = null,
+  onWarehouseClick = null,
   zoom = 5,
   areaTimeseries = {},
   currentDate = null,
@@ -91,6 +97,19 @@ export function createLayers({
       visible: showVulnerablePopulation,
     });
     if (vulnerableLayer) layers.push(vulnerableLayer);
+  }
+
+  // 6. Layer logistique vaccins (arcs 3D + hangars)
+  if (showVaccineLogistics && vaccineLogisticsData && departmentsGeojson && currentDate) {
+    const logisticsLayers = createVaccineLogisticsLayer({
+      logisticsData: vaccineLogisticsData,
+      currentDate,
+      departmentsGeojson,
+      onWarehouseClick,
+    });
+    if (Array.isArray(logisticsLayers) && logisticsLayers.length) {
+      layers.push(...logisticsLayers);
+    }
   }
 
   return layers;

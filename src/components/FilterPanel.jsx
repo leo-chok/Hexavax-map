@@ -68,6 +68,20 @@ export default function FilterPanel({ filters, onFiltersChange }) {
         }
         label="Population 65+ ans"
       />
+
+      <FormControlLabel
+        control={
+          <Checkbox
+            checked={!!filters.vaccineLogistics}
+            onChange={() => handleToggle("vaccineLogistics")}
+            sx={{
+              color: "#6E6BF3",
+              "&.Mui-checked": { color: "#6E6BF3" },
+            }}
+          />
+        }
+        label="Logistique Doses Vaccins"
+      />
     </FormGroup>
   );
 }

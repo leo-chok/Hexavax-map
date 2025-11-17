@@ -1,6 +1,30 @@
 export function getTooltipContent({ object, layer, viewMode, areaTimeseries = {}, currentDate, vulnerablePopulationData = null }) {
   if (!object || !layer) return null;
 
+  // Tooltip pour les arcs de logistique vaccins
+  if (layer.id === "vaccine-logistics-arcs") {
+    const doses = object.doses?.toLocaleString('fr-FR') || '0';
+    const dept = object.dept || 'Département';
+    const type = object.type === 'urban' ? 'Urbain' : object.type === 'periurban' ? 'Périurbain' : 'Rural';
+    const warehouse = object.warehouse_name || 'Hangar';
+    return { 
+      text: `${warehouse}\n→ Département ${dept}\n${doses} doses\nType: ${type}` 
+    };
+  }
+
+  // Tooltip pour les hangars
+  if (layer.id === "vaccine-logistics-warehouses") {
+    const name = object.name || 'Hangar';
+    const location = object.location || '';
+    const stock = object.stock_current?.toLocaleString('fr-FR') || '0';
+    const capacity = object.capacity?.toLocaleString('fr-FR') || '0';
+    const fillRate = ((object.stock_current / object.capacity) * 100).toFixed(0);
+    const status = object.status === 'danger' ? '🔴 Critique' : object.status === 'warning' ? '🟠 Attention' : '🟢 Normal';
+    return { 
+      text: `${name}\n${location}\n\nStock: ${stock} / ${capacity} doses\nTaux: ${fillRate}%\nStatut: ${status}` 
+    };
+  }
+
   // Vérifier d'abord les layers pharmacies pour éviter les conflits
   if (layer.id === "pharmacies-hexagon-layer") {
     // HexagonLayer : affichage agrégé

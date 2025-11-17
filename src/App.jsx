@@ -4,6 +4,7 @@ import TimeSlider from "./components/TimeSlider.jsx";
 import Legend from "./components/Legend.jsx";
 import SidePanel from "./components/SidePanel.jsx";
 import AreaPanel from "./components/AreaPanel.jsx";
+import WarehousePanel from "./components/WarehousePanel.jsx";
 import { DATA_SOURCES, DEFAULT_FILTERS, STORAGE_KEYS } from "./config/constants";
 
 export default function App() {
@@ -24,6 +25,8 @@ export default function App() {
   const [domTomCoords, setDomTomCoords] = useState(null);
   const [vulnerablePopulationData, setVulnerablePopulationData] = useState(null);
   const [departmentsGeojson, setDepartmentsGeojson] = useState(null);
+  const [vaccineLogisticsData, setVaccineLogisticsData] = useState(null);
+  const [selectedWarehouse, setSelectedWarehouse] = useState(null);
   // load persisted filters from localStorage if present (sanitise stored object)
   const [filters, setFilters] = useState(() => {
     try {
@@ -35,6 +38,7 @@ export default function App() {
           hospitals: !!parsed.hospitals,
           pharmacies: !!parsed.pharmacies,
           vulnerablePopulation: !!parsed.vulnerablePopulation,
+          vaccineLogistics: !!parsed.vaccineLogistics,
         };
       }
     } catch (e) {
@@ -123,6 +127,14 @@ export default function App() {
       .catch(err => console.error("Erreur chargement geojson départements :", err));
   }, []);
 
+  // Charger les données de logistique des vaccins (timeseries)
+  useEffect(() => {
+    fetch(DATA_SOURCES.vaccineLogistics)
+      .then(res => res.json())
+      .then(setVaccineLogisticsData)
+      .catch(err => console.error("Erreur chargement logistique vaccins :", err));
+  }, []);
+
   // Charger la geojson pour la vue active (national / regional / departmental / domtom)
   useEffect(() => {
     const fileForMode = DATA_SOURCES.views[viewMode];
@@ -193,6 +205,7 @@ export default function App() {
         heatmap: !!filters.heatmap,
         hospitals: !!filters.hospitals,
         pharmacies: !!filters.pharmacies,
+        vaccineLogistics: !!filters.vaccineLogistics,
       };
       localStorage.setItem(STORAGE_KEYS.filters, JSON.stringify(toStore));
     } catch (e) {
@@ -349,6 +362,36 @@ export default function App() {
     setSelectedAreaData(areaData);
   };
 
+  // Handler clic sur un hangar
+  const handleWarehouseClick = (info) => {
+    if (!info || !info.object) {
+      setSelectedWarehouse(null);
+      return;
+    }
+
+    const warehouse = info.object;
+    
+    // Enrichir avec les livraisons du jour
+    if (vaccineLogisticsData && currentDate) {
+      const dayData = vaccineLogisticsData.daily_logistics?.[currentDate];
+      const whDayData = dayData?.[warehouse.id];
+      
+      if (whDayData) {
+        setSelectedWarehouse({
+          ...warehouse,
+          stock_current: whDayData.stock_current,
+          stock_planned: whDayData.stock_planned,
+          status: whDayData.status,
+          deliveries: whDayData.deliveries || [],
+        });
+      } else {
+        setSelectedWarehouse(warehouse);
+      }
+    } else {
+      setSelectedWarehouse(warehouse);
+    }
+  };
+
   const isPredictive = currentDate >= "2025-12-01";
 
   return (
@@ -379,12 +422,15 @@ export default function App() {
             viewMode={viewMode}
             domTomCoords={domTomCoords}
             onAreaClick={handleAreaClick}
+            onWarehouseClick={handleWarehouseClick}
             mapStyle={import.meta.env.VITE_MAPBOX_STYLE}
             showHeatmap={filters.heatmap}
             showHospitals={filters.hospitals}
             showPharmacies={filters.pharmacies}
             showVulnerablePopulation={filters.vulnerablePopulation}
+            showVaccineLogistics={filters.vaccineLogistics}
             vulnerablePopulationData={vulnerablePopulationData}
+            vaccineLogisticsData={vaccineLogisticsData}
             departmentsGeojson={departmentsGeojson}
             areaTimeseries={
               viewMode === "departmental" || viewMode === "domtom"
@@ -417,12 +463,21 @@ export default function App() {
             onClose={() => { setSelectedArea(null); setSelectedAreaData(null); }}
           />
 
+          <WarehousePanel
+            warehouse={selectedWarehouse}
+            currentDate={currentDate}
+            onClose={() => setSelectedWarehouse(null)}
+            departmentsAreaStatsMap={departmentsAreaStatsMap}
+            vulnerablePopulationData={vulnerablePopulationData}
+            vaccineLogisticsData={vaccineLogisticsData}
+          />
+
           {/* Légende dynamique qui s'affiche si au moins un calque est actif */}
           {(filters.heatmap || filters.hospitals || filters.pharmacies || filters.vulnerablePopulation) && (
             <div 
               className="legend"
               style={{
-                transform: selectedArea ? "translateX(-400px)" : "translateX(0)",
+                transform: selectedArea || selectedWarehouse ? "translateX(-420px)" : "translateX(0)",
                 transition: "transform 0.3s ease",
               }}
             >

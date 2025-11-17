@@ -1,0 +1,5887 @@
+{
+  "warehouses": [
+    {
+      "id": "WH_ROISSY",
+      "name": "Hub Roissy-Charles de Gaulle",
+      "location": "Roissy-en-France",
+      "coordinates": [
+        2.547778,
+        49.009722
+      ],
+      "altitude": 300,
+      "capacity": 5000000,
+      "coverage_departments": [
+        "75",
+        "77",
+        "78",
+        "91",
+        "92",
+        "93",
+        "94",
+        "95",
+        "60",
+        "02",
+        "51",
+        "10",
+        "89",
+        "45",
+        "28"
+      ]
+    },
+    {
+      "id": "WH_LYON",
+      "name": "Plateforme Lyon-Chassieu",
+      "location": "Chassieu",
+      "coordinates": [
+        4.9725,
+        45.7372
+      ],
+      "altitude": 300,
+      "capacity": 3500000,
+      "coverage_departments": [
+        "69",
+        "01",
+        "42",
+        "38",
+        "73",
+        "74",
+        "26",
+        "07",
+        "43",
+        "63",
+        "03",
+        "71",
+        "39",
+        "25",
+        "15"
+      ]
+    },
+    {
+      "id": "WH_MARSEILLE",
+      "name": "Centre Marseille-Vitrolles",
+      "location": "Vitrolles",
+      "coordinates": [
+        5.2478,
+        43.4417
+      ],
+      "altitude": 300,
+      "capacity": 3000000,
+      "coverage_departments": [
+        "13",
+        "83",
+        "84",
+        "06",
+        "04",
+        "05",
+        "30",
+        "34",
+        "11",
+        "66",
+        "48",
+        "2A",
+        "2B"
+      ]
+    },
+    {
+      "id": "WH_BORDEAUX",
+      "name": "Hub Bordeaux-Mérignac",
+      "location": "Mérignac",
+      "coordinates": [
+        -0.7,
+        44.8333
+      ],
+      "altitude": 300,
+      "capacity": 2800000,
+      "coverage_departments": [
+        "33",
+        "40",
+        "64",
+        "47",
+        "24",
+        "19",
+        "87",
+        "23",
+        "16",
+        "17",
+        "32",
+        "65",
+        "09",
+        "31",
+        "81",
+        "82",
+        "46",
+        "12"
+      ]
+    },
+    {
+      "id": "WH_LILLE",
+      "name": "Plateforme Lille-Lesquin",
+      "location": "Lesquin",
+      "coordinates": [
+        3.1097,
+        50.5703
+      ],
+      "altitude": 300,
+      "capacity": 3200000,
+      "coverage_departments": [
+        "59",
+        "62",
+        "80",
+        "08",
+        "55",
+        "54",
+        "57",
+        "67",
+        "68",
+        "70",
+        "90",
+        "88",
+        "52",
+        "21",
+        "58",
+        "18"
+      ]
+    },
+    {
+      "id": "WH_NANTES",
+      "name": "Hub Nantes-Atlantique",
+      "location": "Bouguenais",
+      "coordinates": [
+        -1.6108,
+        47.1533
+      ],
+      "altitude": 300,
+      "capacity": 2600000,
+      "coverage_departments": [
+        "44",
+        "49",
+        "53",
+        "72",
+        "85",
+        "79",
+        "86",
+        "37",
+        "41",
+        "36",
+        "35",
+        "56",
+        "29",
+        "22",
+        "50",
+        "61",
+        "14",
+        "27",
+        "76"
+      ]
+    }
+  ],
+  "daily_logistics": {
+    "2025-11-15": {
+      "WH_ROISSY": {
+        "stock_current": 3250000,
+        "stock_planned": 3500000,
+        "status": "normal",
+        "deliveries": [
+          {
+            "dept": "75",
+            "doses": 125667,
+            "type": "urban"
+          },
+          {
+            "dept": "78",
+            "doses": 75400,
+            "type": "urban"
+          },
+          {
+            "dept": "93",
+            "doses": 95507,
+            "type": "urban"
+          },
+          {
+            "dept": "60",
+            "doses": 42224,
+            "type": "periurban"
+          },
+          {
+            "dept": "51",
+            "doses": 35186,
+            "type": "rural"
+          },
+          {
+            "dept": "45",
+            "doses": 38202,
+            "type": "rural"
+          }
+        ]
+      },
+      "WH_LYON": {
+        "stock_current": 2275000,
+        "stock_planned": 2450000,
+        "status": "normal",
+        "deliveries": [
+          {
+            "dept": "69",
+            "doses": 102041,
+            "type": "urban"
+          },
+          {
+            "dept": "42",
+            "doses": 55854,
+            "type": "periurban"
+          },
+          {
+            "dept": "63",
+            "doses": 51557,
+            "type": "periurban"
+          },
+          {
+            "dept": "03",
+            "doses": 26853,
+            "type": "rural"
+          },
+          {
+            "dept": "39",
+            "doses": 23630,
+            "type": "rural"
+          },
+          {
+            "dept": "15",
+            "doses": 16111,
+            "type": "rural"
+          }
+        ]
+      },
+      "WH_MARSEILLE": {
+        "stock_current": 1950000,
+        "stock_planned": 2100000,
+        "status": "normal",
+        "deliveries": [
+          {
+            "dept": "84",
+            "doses": 48726,
+            "type": "periurban"
+          },
+          {
+            "dept": "06",
+            "doses": 95287,
+            "type": "urban"
+          },
+          {
+            "dept": "30",
+            "doses": 51974,
+            "type": "periurban"
+          },
+          {
+            "dept": "66",
+            "doses": 30318,
+            "type": "rural"
+          },
+          {
+            "dept": "48",
+            "doses": 12993,
+            "type": "rural"
+          }
+        ]
+      },
+      "WH_BORDEAUX": {
+        "stock_current": 1820000,
+        "stock_planned": 1959999,
+        "status": "normal",
+        "deliveries": [
+          {
+            "dept": "33",
+            "doses": 95264,
+            "type": "urban"
+          },
+          {
+            "dept": "24",
+            "doses": 27218,
+            "type": "rural"
+          },
+          {
+            "dept": "87",
+            "doses": 27218,
+            "type": "rural"
+          },
+          {
+            "dept": "09",
+            "doses": 11665,
+            "type": "rural"
+          },
+          {
+            "dept": "81",
+            "doses": 27218,
+            "type": "rural"
+          },
+          {
+            "dept": "12",
+            "doses": 21386,
+            "type": "rural"
+          }
+        ]
+      },
+      "WH_LILLE": {
+        "stock_current": 2080000,
+        "stock_planned": 2240000,
+        "status": "normal",
+        "deliveries": [
+          {
+            "dept": "54",
+            "doses": 60939,
+            "type": "periurban"
+          },
+          {
+            "dept": "57",
+            "doses": 71446,
+            "type": "periurban"
+          },
+          {
+            "dept": "90",
+            "doses": 10506,
+            "type": "rural"
+          },
+          {
+            "dept": "21",
+            "doses": 39925,
+            "type": "rural"
+          },
+          {
+            "dept": "18",
+            "doses": 29419,
+            "type": "rural"
+          }
+        ]
+      },
+      "WH_NANTES": {
+        "stock_current": 1690000,
+        "stock_planned": 1820000,
+        "status": "normal",
+        "deliveries": [
+          {
+            "dept": "72",
+            "doses": 41772,
+            "type": "rural"
+          },
+          {
+            "dept": "36",
+            "doses": 27481,
+            "type": "rural"
+          },
+          {
+            "dept": "27",
+            "doses": 38474,
+            "type": "rural"
+          }
+        ]
+      }
+    },
+    "2025-11-16": {
+      "WH_ROISSY": {
+        "stock_current": 3180357,
+        "stock_planned": 3500000,
+        "status": "normal",
+        "deliveries": [
+          {
+            "dept": "91",
+            "doses": 72852,
+            "type": "urban"
+          },
+          {
+            "dept": "94",
+            "doses": 82971,
+            "type": "urban"
+          },
+          {
+            "dept": "10",
+            "doses": 28331,
+            "type": "rural"
+          },
+          {
+            "dept": "28",
+            "doses": 32379,
+            "type": "rural"
+          }
+        ]
+      },
+      "WH_LYON": {
+        "stock_current": 2226250,
+        "stock_planned": 2450000,
+        "status": "normal",
+        "deliveries": [
+          {
+            "dept": "01",
+            "doses": 44467,
+            "type": "periurban"
+          },
+          {
+            "dept": "73",
+            "doses": 35203,
+            "type": "rural"
+          },
+          {
+            "dept": "07",
+            "doses": 25939,
+            "type": "rural"
+          },
+          {
+            "dept": "43",
+            "doses": 16675,
+            "type": "rural"
+          },
+          {
+            "dept": "25",
+            "doses": 35203,
+            "type": "rural"
+          }
+        ]
+      },
+      "WH_MARSEILLE": {
+        "stock_current": 1908214,
+        "stock_planned": 2100000,
+        "status": "normal",
+        "deliveries": [
+          {
+            "dept": "13",
+            "doses": 125748,
+            "type": "urban"
+          },
+          {
+            "dept": "04",
+            "doses": 12787,
+            "type": "rural"
+          },
+          {
+            "dept": "34",
+            "doses": 83121,
+            "type": "urban"
+          }
+        ]
+      },
+      "WH_BORDEAUX": {
+        "stock_current": 1781000,
+        "stock_planned": 1959999,
+        "status": "normal",
+        "deliveries": [
+          {
+            "dept": "40",
+            "doses": 25416,
+            "type": "rural"
+          },
+          {
+            "dept": "64",
+            "doses": 47202,
+            "type": "periurban"
+          },
+          {
+            "dept": "19",
+            "doses": 16339,
+            "type": "rural"
+          },
+          {
+            "dept": "16",
+            "doses": 25416,
+            "type": "rural"
+          },
+          {
+            "dept": "31",
+            "doses": 79881,
+            "type": "urban"
+          },
+          {
+            "dept": "82",
+            "doses": 16339,
+            "type": "rural"
+          },
+          {
+            "dept": "46",
+            "doses": 13616,
+            "type": "rural"
+          }
+        ]
+      },
+      "WH_LILLE": {
+        "stock_current": 2035428,
+        "stock_planned": 2240000,
+        "status": "normal",
+        "deliveries": [
+          {
+            "dept": "55",
+            "doses": 15289,
+            "type": "rural"
+          },
+          {
+            "dept": "67",
+            "doses": 79507,
+            "type": "urban"
+          },
+          {
+            "dept": "70",
+            "doses": 18347,
+            "type": "rural"
+          },
+          {
+            "dept": "88",
+            "doses": 28541,
+            "type": "rural"
+          },
+          {
+            "dept": "52",
+            "doses": 15289,
+            "type": "rural"
+          },
+          {
+            "dept": "58",
+            "doses": 18347,
+            "type": "rural"
+          }
+        ]
+      },
+      "WH_NANTES": {
+        "stock_current": 1653785,
+        "stock_planned": 1820000,
+        "status": "normal",
+        "deliveries": [
+          {
+            "dept": "49",
+            "doses": 49233,
+            "type": "periurban"
+          },
+          {
+            "dept": "85",
+            "doses": 39765,
+            "type": "periurban"
+          },
+          {
+            "dept": "79",
+            "doses": 33137,
+            "type": "rural"
+          },
+          {
+            "dept": "37",
+            "doses": 45445,
+            "type": "periurban"
+          },
+          {
+            "dept": "22",
+            "doses": 30297,
+            "type": "rural"
+          },
+          {
+            "dept": "61",
+            "doses": 26510,
+            "type": "rural"
+          },
+          {
+            "dept": "76",
+            "doses": 58701,
+            "type": "periurban"
+          }
+        ]
+      }
+    },
+    "2025-11-17": {
+      "WH_ROISSY": {
+        "stock_current": 3900000,
+        "stock_planned": 3500000,
+        "status": "normal",
+        "deliveries": [
+          {
+            "dept": "77",
+            "doses": 82722,
+            "type": "urban"
+          },
+          {
+            "dept": "92",
+            "doses": 93327,
+            "type": "urban"
+          },
+          {
+            "dept": "95",
+            "doses": 72116,
+            "type": "periurban"
+          },
+          {
+            "dept": "02",
+            "doses": 29695,
+            "type": "rural"
+          },
+          {
+            "dept": "89",
+            "doses": 23331,
+            "type": "rural"
+          }
+        ]
+      },
+      "WH_LYON": {
+        "stock_current": 2730000,
+        "stock_planned": 2450000,
+        "status": "normal",
+        "deliveries": [
+          {
+            "dept": "38",
+            "doses": 67163,
+            "type": "urban"
+          },
+          {
+            "dept": "74",
+            "doses": 41977,
+            "type": "periurban"
+          },
+          {
+            "dept": "26",
+            "doses": 32649,
+            "type": "rural"
+          },
+          {
+            "dept": "71",
+            "doses": 29850,
+            "type": "rural"
+          }
+        ]
+      },
+      "WH_MARSEILLE": {
+        "stock_current": 2340000,
+        "stock_planned": 2100000,
+        "status": "normal",
+        "deliveries": [
+          {
+            "dept": "83",
+            "doses": 70863,
+            "type": "periurban"
+          },
+          {
+            "dept": "05",
+            "doses": 10421,
+            "type": "rural"
+          },
+          {
+            "dept": "11",
+            "doses": 29179,
+            "type": "rural"
+          },
+          {
+            "dept": "2A",
+            "doses": 15631,
+            "type": "rural"
+          },
+          {
+            "dept": "2B",
+            "doses": 18757,
+            "type": "rural"
+          }
+        ]
+      },
+      "WH_BORDEAUX": {
+        "stock_current": 2184000,
+        "stock_planned": 1959999,
+        "status": "normal",
+        "deliveries": [
+          {
+            "dept": "47",
+            "doses": 24858,
+            "type": "rural"
+          },
+          {
+            "dept": "23",
+            "doses": 14914,
+            "type": "rural"
+          },
+          {
+            "dept": "17",
+            "doses": 47727,
+            "type": "periurban"
+          },
+          {
+            "dept": "32",
+            "doses": 14914,
+            "type": "rural"
+          },
+          {
+            "dept": "65",
+            "doses": 17897,
+            "type": "rural"
+          }
+        ]
+      },
+      "WH_LILLE": {
+        "stock_current": 2496000,
+        "stock_planned": 2240000,
+        "status": "normal",
+        "deliveries": [
+          {
+            "dept": "59",
+            "doses": 105863,
+            "type": "urban"
+          },
+          {
+            "dept": "62",
+            "doses": 83178,
+            "type": "urban"
+          },
+          {
+            "dept": "80",
+            "doses": 26465,
+            "type": "rural"
+          },
+          {
+            "dept": "08",
+            "doses": 20794,
+            "type": "rural"
+          },
+          {
+            "dept": "68",
+            "doses": 49150,
+            "type": "periurban"
+          }
+        ]
+      },
+      "WH_NANTES": {
+        "stock_current": 2028000,
+        "stock_planned": 1820000,
+        "status": "normal",
+        "deliveries": [
+          {
+            "dept": "44",
+            "doses": 72054,
+            "type": "urban"
+          },
+          {
+            "dept": "53",
+            "doses": 29560,
+            "type": "rural"
+          },
+          {
+            "dept": "86",
+            "doses": 32332,
+            "type": "rural"
+          },
+          {
+            "dept": "41",
+            "doses": 32332,
+            "type": "rural"
+          },
+          {
+            "dept": "35",
+            "doses": 53579,
+            "type": "periurban"
+          },
+          {
+            "dept": "56",
+            "doses": 35103,
+            "type": "rural"
+          },
+          {
+            "dept": "29",
+            "doses": 38798,
+            "type": "periurban"
+          },
+          {
+            "dept": "50",
+            "doses": 29560,
+            "type": "rural"
+          },
+          {
+            "dept": "14",
+            "doses": 44341,
+            "type": "periurban"
+          }
+        ]
+      }
+    },
+    "2025-11-18": {
+      "WH_ROISSY": {
+        "stock_current": 3041071,
+        "stock_planned": 3500000,
+        "status": "normal",
+        "deliveries": [
+          {
+            "dept": "75",
+            "doses": 130038,
+            "type": "urban"
+          },
+          {
+            "dept": "78",
+            "doses": 78023,
+            "type": "urban"
+          },
+          {
+            "dept": "93",
+            "doses": 98829,
+            "type": "urban"
+          },
+          {
+            "dept": "60",
+            "doses": 43692,
+            "type": "periurban"
+          },
+          {
+            "dept": "51",
+            "doses": 36410,
+            "type": "rural"
+          },
+          {
+            "dept": "45",
+            "doses": 39531,
+            "type": "rural"
+          }
+        ]
+      },
+      "WH_LYON": {
+        "stock_current": 2128750,
+        "stock_planned": 2450000,
+        "status": "normal",
+        "deliveries": [
+          {
+            "dept": "69",
+            "doses": 86911,
+            "type": "urban"
+          },
+          {
+            "dept": "42",
+            "doses": 47572,
+            "type": "periurban"
+          },
+          {
+            "dept": "63",
+            "doses": 43913,
+            "type": "periurban"
+          },
+          {
+            "dept": "03",
+            "doses": 22871,
+            "type": "rural"
+          },
+          {
+            "dept": "39",
+            "doses": 20126,
+            "type": "rural"
+          },
+          {
+            "dept": "15",
+            "doses": 13722,
+            "type": "rural"
+          }
+        ]
+      },
+      "WH_MARSEILLE": {
+        "stock_current": 1824642,
+        "stock_planned": 2100000,
+        "status": "normal",
+        "deliveries": [
+          {
+            "dept": "84",
+            "doses": 44754,
+            "type": "periurban"
+          },
+          {
+            "dept": "06",
+            "doses": 87520,
+            "type": "urban"
+          },
+          {
+            "dept": "30",
+            "doses": 47738,
+            "type": "periurban"
+          },
+          {
+            "dept": "66",
+            "doses": 27847,
+            "type": "rural"
+          },
+          {
+            "dept": "48",
+            "doses": 11934,
+            "type": "rural"
+          }
+        ]
+      },
+      "WH_BORDEAUX": {
+        "stock_current": 1703000,
+        "stock_planned": 1959999,
+        "status": "normal",
+        "deliveries": [
+          {
+            "dept": "33",
+            "doses": 96872,
+            "type": "urban"
+          },
+          {
+            "dept": "24",
+            "doses": 27677,
+            "type": "rural"
+          },
+          {
+            "dept": "87",
+            "doses": 27677,
+            "type": "rural"
+          },
+          {
+            "dept": "09",
+            "doses": 11861,
+            "type": "rural"
+          },
+          {
+            "dept": "81",
+            "doses": 27677,
+            "type": "rural"
+          },
+          {
+            "dept": "12",
+            "doses": 21746,
+            "type": "rural"
+          }
+        ]
+      },
+      "WH_LILLE": {
+        "stock_current": 1946285,
+        "stock_planned": 2240000,
+        "status": "normal",
+        "deliveries": [
+          {
+            "dept": "54",
+            "doses": 61652,
+            "type": "periurban"
+          },
+          {
+            "dept": "57",
+            "doses": 72282,
+            "type": "periurban"
+          },
+          {
+            "dept": "90",
+            "doses": 10629,
+            "type": "rural"
+          },
+          {
+            "dept": "21",
+            "doses": 40393,
+            "type": "rural"
+          },
+          {
+            "dept": "18",
+            "doses": 29763,
+            "type": "rural"
+          }
+        ]
+      },
+      "WH_NANTES": {
+        "stock_current": 1581357,
+        "stock_planned": 1820000,
+        "status": "normal",
+        "deliveries": [
+          {
+            "dept": "72",
+            "doses": 38955,
+            "type": "rural"
+          },
+          {
+            "dept": "36",
+            "doses": 25628,
+            "type": "rural"
+          },
+          {
+            "dept": "27",
+            "doses": 35879,
+            "type": "rural"
+          }
+        ]
+      }
+    },
+    "2025-11-19": {
+      "WH_ROISSY": {
+        "stock_current": 2971428,
+        "stock_planned": 3500000,
+        "status": "normal",
+        "deliveries": [
+          {
+            "dept": "91",
+            "doses": 74200,
+            "type": "urban"
+          },
+          {
+            "dept": "94",
+            "doses": 84505,
+            "type": "urban"
+          },
+          {
+            "dept": "10",
+            "doses": 28855,
+            "type": "rural"
+          },
+          {
+            "dept": "28",
+            "doses": 32977,
+            "type": "rural"
+          }
+        ]
+      },
+      "WH_LYON": {
+        "stock_current": 2080000,
+        "stock_planned": 2450000,
+        "status": "normal",
+        "deliveries": [
+          {
+            "dept": "01",
+            "doses": 49689,
+            "type": "periurban"
+          },
+          {
+            "dept": "73",
+            "doses": 39337,
+            "type": "rural"
+          },
+          {
+            "dept": "07",
+            "doses": 28985,
+            "type": "rural"
+          },
+          {
+            "dept": "43",
+            "doses": 18633,
+            "type": "rural"
+          },
+          {
+            "dept": "25",
+            "doses": 39337,
+            "type": "rural"
+          }
+        ]
+      },
+      "WH_MARSEILLE": {
+        "stock_current": 1782857,
+        "stock_planned": 2100000,
+        "status": "normal",
+        "deliveries": [
+          {
+            "dept": "13",
+            "doses": 124292,
+            "type": "urban"
+          },
+          {
+            "dept": "04",
+            "doses": 12639,
+            "type": "rural"
+          },
+          {
+            "dept": "34",
+            "doses": 82159,
+            "type": "urban"
+          }
+        ]
+      },
+      "WH_BORDEAUX": {
+        "stock_current": 1664000,
+        "stock_planned": 1959999,
+        "status": "normal",
+        "deliveries": [
+          {
+            "dept": "40",
+            "doses": 25227,
+            "type": "rural"
+          },
+          {
+            "dept": "64",
+            "doses": 46851,
+            "type": "periurban"
+          },
+          {
+            "dept": "19",
+            "doses": 16217,
+            "type": "rural"
+          },
+          {
+            "dept": "16",
+            "doses": 25227,
+            "type": "rural"
+          },
+          {
+            "dept": "31",
+            "doses": 79286,
+            "type": "urban"
+          },
+          {
+            "dept": "82",
+            "doses": 16217,
+            "type": "rural"
+          },
+          {
+            "dept": "46",
+            "doses": 13514,
+            "type": "rural"
+          }
+        ]
+      },
+      "WH_LILLE": {
+        "stock_current": 1901714,
+        "stock_planned": 2240000,
+        "status": "normal",
+        "deliveries": [
+          {
+            "dept": "55",
+            "doses": 13726,
+            "type": "rural"
+          },
+          {
+            "dept": "67",
+            "doses": 71378,
+            "type": "urban"
+          },
+          {
+            "dept": "70",
+            "doses": 16471,
+            "type": "rural"
+          },
+          {
+            "dept": "88",
+            "doses": 25623,
+            "type": "rural"
+          },
+          {
+            "dept": "52",
+            "doses": 13726,
+            "type": "rural"
+          },
+          {
+            "dept": "58",
+            "doses": 16471,
+            "type": "rural"
+          }
+        ]
+      },
+      "WH_NANTES": {
+        "stock_current": 1545142,
+        "stock_planned": 1820000,
+        "status": "normal",
+        "deliveries": [
+          {
+            "dept": "49",
+            "doses": 47002,
+            "type": "periurban"
+          },
+          {
+            "dept": "85",
+            "doses": 37963,
+            "type": "periurban"
+          },
+          {
+            "dept": "79",
+            "doses": 31636,
+            "type": "rural"
+          },
+          {
+            "dept": "37",
+            "doses": 43386,
+            "type": "periurban"
+          },
+          {
+            "dept": "22",
+            "doses": 28924,
+            "type": "rural"
+          },
+          {
+            "dept": "61",
+            "doses": 25309,
+            "type": "rural"
+          },
+          {
+            "dept": "76",
+            "doses": 56041,
+            "type": "periurban"
+          }
+        ]
+      }
+    },
+    "2025-11-20": {
+      "WH_ROISSY": {
+        "stock_current": 2901785,
+        "stock_planned": 3500000,
+        "status": "normal",
+        "deliveries": [
+          {
+            "dept": "77",
+            "doses": 85414,
+            "type": "urban"
+          },
+          {
+            "dept": "92",
+            "doses": 96365,
+            "type": "urban"
+          },
+          {
+            "dept": "95",
+            "doses": 74464,
+            "type": "periurban"
+          },
+          {
+            "dept": "02",
+            "doses": 30661,
+            "type": "rural"
+          },
+          {
+            "dept": "89",
+            "doses": 24091,
+            "type": "rural"
+          }
+        ]
+      },
+      "WH_LYON": {
+        "stock_current": 2031250,
+        "stock_planned": 2450000,
+        "status": "normal",
+        "deliveries": [
+          {
+            "dept": "38",
+            "doses": 66153,
+            "type": "urban"
+          },
+          {
+            "dept": "74",
+            "doses": 41346,
+            "type": "periurban"
+          },
+          {
+            "dept": "26",
+            "doses": 32158,
+            "type": "rural"
+          },
+          {
+            "dept": "71",
+            "doses": 29401,
+            "type": "rural"
+          }
+        ]
+      },
+      "WH_MARSEILLE": {
+        "stock_current": 1741071,
+        "stock_planned": 2100000,
+        "status": "normal",
+        "deliveries": [
+          {
+            "dept": "83",
+            "doses": 66703,
+            "type": "periurban"
+          },
+          {
+            "dept": "05",
+            "doses": 9809,
+            "type": "rural"
+          },
+          {
+            "dept": "11",
+            "doses": 27466,
+            "type": "rural"
+          },
+          {
+            "dept": "2A",
+            "doses": 14714,
+            "type": "rural"
+          },
+          {
+            "dept": "2B",
+            "doses": 17656,
+            "type": "rural"
+          }
+        ]
+      },
+      "WH_BORDEAUX": {
+        "stock_current": 1625000,
+        "stock_planned": 1959999,
+        "status": "normal",
+        "deliveries": [
+          {
+            "dept": "47",
+            "doses": 23805,
+            "type": "rural"
+          },
+          {
+            "dept": "23",
+            "doses": 14283,
+            "type": "rural"
+          },
+          {
+            "dept": "17",
+            "doses": 45705,
+            "type": "periurban"
+          },
+          {
+            "dept": "32",
+            "doses": 14283,
+            "type": "rural"
+          },
+          {
+            "dept": "65",
+            "doses": 17139,
+            "type": "rural"
+          }
+        ]
+      },
+      "WH_LILLE": {
+        "stock_current": 1857142,
+        "stock_planned": 2240000,
+        "status": "normal",
+        "deliveries": [
+          {
+            "dept": "59",
+            "doses": 105380,
+            "type": "urban"
+          },
+          {
+            "dept": "62",
+            "doses": 82798,
+            "type": "urban"
+          },
+          {
+            "dept": "80",
+            "doses": 26345,
+            "type": "rural"
+          },
+          {
+            "dept": "08",
+            "doses": 20699,
+            "type": "rural"
+          },
+          {
+            "dept": "68",
+            "doses": 48926,
+            "type": "periurban"
+          }
+        ]
+      },
+      "WH_NANTES": {
+        "stock_current": 1508928,
+        "stock_planned": 1820000,
+        "status": "normal",
+        "deliveries": [
+          {
+            "dept": "44",
+            "doses": 85765,
+            "type": "urban"
+          },
+          {
+            "dept": "53",
+            "doses": 35185,
+            "type": "rural"
+          },
+          {
+            "dept": "86",
+            "doses": 38484,
+            "type": "rural"
+          },
+          {
+            "dept": "41",
+            "doses": 38484,
+            "type": "rural"
+          },
+          {
+            "dept": "35",
+            "doses": 63774,
+            "type": "periurban"
+          },
+          {
+            "dept": "56",
+            "doses": 41783,
+            "type": "rural"
+          },
+          {
+            "dept": "29",
+            "doses": 46181,
+            "type": "periurban"
+          },
+          {
+            "dept": "50",
+            "doses": 35185,
+            "type": "rural"
+          },
+          {
+            "dept": "14",
+            "doses": 52778,
+            "type": "periurban"
+          }
+        ]
+      }
+    },
+    "2025-11-21": {
+      "WH_ROISSY": {
+        "stock_current": 2832142,
+        "stock_planned": 3500000,
+        "status": "normal",
+        "deliveries": [
+          {
+            "dept": "75",
+            "doses": 114426,
+            "type": "urban"
+          },
+          {
+            "dept": "78",
+            "doses": 68656,
+            "type": "urban"
+          },
+          {
+            "dept": "93",
+            "doses": 86964,
+            "type": "urban"
+          },
+          {
+            "dept": "60",
+            "doses": 38447,
+            "type": "periurban"
+          },
+          {
+            "dept": "51",
+            "doses": 32039,
+            "type": "rural"
+          },
+          {
+            "dept": "45",
+            "doses": 34785,
+            "type": "rural"
+          }
+        ]
+      },
+      "WH_LYON": {
+        "stock_current": 1982500,
+        "stock_planned": 2450000,
+        "status": "normal",
+        "deliveries": [
+          {
+            "dept": "69",
+            "doses": 104086,
+            "type": "urban"
+          },
+          {
+            "dept": "42",
+            "doses": 56973,
+            "type": "periurban"
+          },
+          {
+            "dept": "63",
+            "doses": 52591,
+            "type": "periurban"
+          },
+          {
+            "dept": "03",
+            "doses": 27391,
+            "type": "rural"
+          },
+          {
+            "dept": "39",
+            "doses": 24104,
+            "type": "rural"
+          },
+          {
+            "dept": "15",
+            "doses": 16434,
+            "type": "rural"
+          }
+        ]
+      },
+      "WH_MARSEILLE": {
+        "stock_current": 1699285,
+        "stock_planned": 2100000,
+        "status": "normal",
+        "deliveries": [
+          {
+            "dept": "84",
+            "doses": 48385,
+            "type": "periurban"
+          },
+          {
+            "dept": "06",
+            "doses": 94620,
+            "type": "urban"
+          },
+          {
+            "dept": "30",
+            "doses": 51611,
+            "type": "periurban"
+          },
+          {
+            "dept": "66",
+            "doses": 30106,
+            "type": "rural"
+          },
+          {
+            "dept": "48",
+            "doses": 12902,
+            "type": "rural"
+          }
+        ]
+      },
+      "WH_BORDEAUX": {
+        "stock_current": 1586000,
+        "stock_planned": 1959999,
+        "status": "normal",
+        "deliveries": [
+          {
+            "dept": "33",
+            "doses": 102251,
+            "type": "urban"
+          },
+          {
+            "dept": "24",
+            "doses": 29214,
+            "type": "rural"
+          },
+          {
+            "dept": "87",
+            "doses": 29214,
+            "type": "rural"
+          },
+          {
+            "dept": "09",
+            "doses": 12520,
+            "type": "rural"
+          },
+          {
+            "dept": "81",
+            "doses": 29214,
+            "type": "rural"
+          },
+          {
+            "dept": "12",
+            "doses": 22954,
+            "type": "rural"
+          }
+        ]
+      },
+      "WH_LILLE": {
+        "stock_current": 1812571,
+        "stock_planned": 2240000,
+        "status": "normal",
+        "deliveries": [
+          {
+            "dept": "54",
+            "doses": 53081,
+            "type": "periurban"
+          },
+          {
+            "dept": "57",
+            "doses": 62233,
+            "type": "periurban"
+          },
+          {
+            "dept": "90",
+            "doses": 9151,
+            "type": "rural"
+          },
+          {
+            "dept": "21",
+            "doses": 34777,
+            "type": "rural"
+          },
+          {
+            "dept": "18",
+            "doses": 25625,
+            "type": "rural"
+          }
+        ]
+      },
+      "WH_NANTES": {
+        "stock_current": 1472714,
+        "stock_planned": 1820000,
+        "status": "normal",
+        "deliveries": [
+          {
+            "dept": "72",
+            "doses": 36436,
+            "type": "rural"
+          },
+          {
+            "dept": "36",
+            "doses": 23971,
+            "type": "rural"
+          },
+          {
+            "dept": "27",
+            "doses": 33559,
+            "type": "rural"
+          }
+        ]
+      }
+    },
+    "2025-11-22": {
+      "WH_ROISSY": {
+        "stock_current": 3250000,
+        "stock_planned": 3500000,
+        "status": "normal",
+        "deliveries": [
+          {
+            "dept": "91",
+            "doses": 75916,
+            "type": "urban"
+          },
+          {
+            "dept": "94",
+            "doses": 86460,
+            "type": "urban"
+          },
+          {
+            "dept": "10",
+            "doses": 29523,
+            "type": "rural"
+          },
+          {
+            "dept": "28",
+            "doses": 33740,
+            "type": "rural"
+          }
+        ]
+      },
+      "WH_LYON": {
+        "stock_current": 2275000,
+        "stock_planned": 2450000,
+        "status": "normal",
+        "deliveries": [
+          {
+            "dept": "01",
+            "doses": 50969,
+            "type": "periurban"
+          },
+          {
+            "dept": "73",
+            "doses": 40350,
+            "type": "rural"
+          },
+          {
+            "dept": "07",
+            "doses": 29732,
+            "type": "rural"
+          },
+          {
+            "dept": "43",
+            "doses": 19113,
+            "type": "rural"
+          },
+          {
+            "dept": "25",
+            "doses": 40350,
+            "type": "rural"
+          }
+        ]
+      },
+      "WH_MARSEILLE": {
+        "stock_current": 1950000,
+        "stock_planned": 2100000,
+        "status": "normal",
+        "deliveries": [
+          {
+            "dept": "13",
+            "doses": 118853,
+            "type": "urban"
+          },
+          {
+            "dept": "04",
+            "doses": 12086,
+            "type": "rural"
+          },
+          {
+            "dept": "34",
+            "doses": 78563,
+            "type": "urban"
+          }
+        ]
+      },
+      "WH_BORDEAUX": {
+        "stock_current": 1820000,
+        "stock_planned": 1959999,
+        "status": "normal",
+        "deliveries": [
+          {
+            "dept": "40",
+            "doses": 28090,
+            "type": "rural"
+          },
+          {
+            "dept": "64",
+            "doses": 52167,
+            "type": "periurban"
+          },
+          {
+            "dept": "19",
+            "doses": 18057,
+            "type": "rural"
+          },
+          {
+            "dept": "16",
+            "doses": 28090,
+            "type": "rural"
+          },
+          {
+            "dept": "31",
+            "doses": 88283,
+            "type": "urban"
+          },
+          {
+            "dept": "82",
+            "doses": 18057,
+            "type": "rural"
+          },
+          {
+            "dept": "46",
+            "doses": 15048,
+            "type": "rural"
+          }
+        ]
+      },
+      "WH_LILLE": {
+        "stock_current": 2080000,
+        "stock_planned": 2240000,
+        "status": "normal",
+        "deliveries": [
+          {
+            "dept": "55",
+            "doses": 14175,
+            "type": "rural"
+          },
+          {
+            "dept": "67",
+            "doses": 73712,
+            "type": "urban"
+          },
+          {
+            "dept": "70",
+            "doses": 17010,
+            "type": "rural"
+          },
+          {
+            "dept": "88",
+            "doses": 26460,
+            "type": "rural"
+          },
+          {
+            "dept": "52",
+            "doses": 14175,
+            "type": "rural"
+          },
+          {
+            "dept": "58",
+            "doses": 17010,
+            "type": "rural"
+          }
+        ]
+      },
+      "WH_NANTES": {
+        "stock_current": 1690000,
+        "stock_planned": 1820000,
+        "status": "normal",
+        "deliveries": [
+          {
+            "dept": "49",
+            "doses": 50996,
+            "type": "periurban"
+          },
+          {
+            "dept": "85",
+            "doses": 41189,
+            "type": "periurban"
+          },
+          {
+            "dept": "79",
+            "doses": 34324,
+            "type": "rural"
+          },
+          {
+            "dept": "37",
+            "doses": 47073,
+            "type": "periurban"
+          },
+          {
+            "dept": "22",
+            "doses": 31382,
+            "type": "rural"
+          },
+          {
+            "dept": "61",
+            "doses": 27459,
+            "type": "rural"
+          },
+          {
+            "dept": "76",
+            "doses": 60803,
+            "type": "periurban"
+          }
+        ]
+      }
+    },
+    "2025-11-23": {
+      "WH_ROISSY": {
+        "stock_current": 3180357,
+        "stock_planned": 3500000,
+        "status": "normal",
+        "deliveries": [
+          {
+            "dept": "77",
+            "doses": 83602,
+            "type": "urban"
+          },
+          {
+            "dept": "92",
+            "doses": 94320,
+            "type": "urban"
+          },
+          {
+            "dept": "95",
+            "doses": 72884,
+            "type": "periurban"
+          },
+          {
+            "dept": "02",
+            "doses": 30011,
+            "type": "rural"
+          },
+          {
+            "dept": "89",
+            "doses": 23580,
+            "type": "rural"
+          }
+        ]
+      },
+      "WH_LYON": {
+        "stock_current": 2226250,
+        "stock_planned": 2450000,
+        "status": "normal",
+        "deliveries": [
+          {
+            "dept": "38",
+            "doses": 70671,
+            "type": "urban"
+          },
+          {
+            "dept": "74",
+            "doses": 44169,
+            "type": "periurban"
+          },
+          {
+            "dept": "26",
+            "doses": 34354,
+            "type": "rural"
+          },
+          {
+            "dept": "71",
+            "doses": 31409,
+            "type": "rural"
+          }
+        ]
+      },
+      "WH_MARSEILLE": {
+        "stock_current": 1908214,
+        "stock_planned": 2100000,
+        "status": "normal",
+        "deliveries": [
+          {
+            "dept": "83",
+            "doses": 74304,
+            "type": "periurban"
+          },
+          {
+            "dept": "05",
+            "doses": 10927,
+            "type": "rural"
+          },
+          {
+            "dept": "11",
+            "doses": 30595,
+            "type": "rural"
+          },
+          {
+            "dept": "2A",
+            "doses": 16390,
+            "type": "rural"
+          },
+          {
+            "dept": "2B",
+            "doses": 19668,
+            "type": "rural"
+          }
+        ]
+      },
+      "WH_BORDEAUX": {
+        "stock_current": 1781000,
+        "stock_planned": 1959999,
+        "status": "normal",
+        "deliveries": [
+          {
+            "dept": "47",
+            "doses": 24889,
+            "type": "rural"
+          },
+          {
+            "dept": "23",
+            "doses": 14933,
+            "type": "rural"
+          },
+          {
+            "dept": "17",
+            "doses": 47787,
+            "type": "periurban"
+          },
+          {
+            "dept": "32",
+            "doses": 14933,
+            "type": "rural"
+          },
+          {
+            "dept": "65",
+            "doses": 17920,
+            "type": "rural"
+          }
+        ]
+      },
+      "WH_LILLE": {
+        "stock_current": 2035428,
+        "stock_planned": 2240000,
+        "status": "normal",
+        "deliveries": [
+          {
+            "dept": "59",
+            "doses": 101474,
+            "type": "urban"
+          },
+          {
+            "dept": "62",
+            "doses": 79730,
+            "type": "urban"
+          },
+          {
+            "dept": "80",
+            "doses": 25368,
+            "type": "rural"
+          },
+          {
+            "dept": "08",
+            "doses": 19932,
+            "type": "rural"
+          },
+          {
+            "dept": "68",
+            "doses": 47113,
+            "type": "periurban"
+          }
+        ]
+      },
+      "WH_NANTES": {
+        "stock_current": 1653785,
+        "stock_planned": 1820000,
+        "status": "normal",
+        "deliveries": [
+          {
+            "dept": "44",
+            "doses": 73225,
+            "type": "urban"
+          },
+          {
+            "dept": "53",
+            "doses": 30041,
+            "type": "rural"
+          },
+          {
+            "dept": "86",
+            "doses": 32857,
+            "type": "rural"
+          },
+          {
+            "dept": "41",
+            "doses": 32857,
+            "type": "rural"
+          },
+          {
+            "dept": "35",
+            "doses": 54449,
+            "type": "periurban"
+          },
+          {
+            "dept": "56",
+            "doses": 35673,
+            "type": "rural"
+          },
+          {
+            "dept": "29",
+            "doses": 39429,
+            "type": "periurban"
+          },
+          {
+            "dept": "50",
+            "doses": 30041,
+            "type": "rural"
+          },
+          {
+            "dept": "14",
+            "doses": 45061,
+            "type": "periurban"
+          }
+        ]
+      }
+    },
+    "2025-11-24": {
+      "WH_ROISSY": {
+        "stock_current": 3900000,
+        "stock_planned": 3500000,
+        "status": "normal",
+        "deliveries": [
+          {
+            "dept": "75",
+            "doses": 135655,
+            "type": "urban"
+          },
+          {
+            "dept": "78",
+            "doses": 81393,
+            "type": "urban"
+          },
+          {
+            "dept": "93",
+            "doses": 103098,
+            "type": "urban"
+          },
+          {
+            "dept": "60",
+            "doses": 45580,
+            "type": "periurban"
+          },
+          {
+            "dept": "51",
+            "doses": 37983,
+            "type": "rural"
+          },
+          {
+            "dept": "45",
+            "doses": 41239,
+            "type": "rural"
+          }
+        ]
+      },
+      "WH_LYON": {
+        "stock_current": 2730000,
+        "stock_planned": 2450000,
+        "status": "normal",
+        "deliveries": [
+          {
+            "dept": "69",
+            "doses": 95586,
+            "type": "urban"
+          },
+          {
+            "dept": "42",
+            "doses": 52320,
+            "type": "periurban"
+          },
+          {
+            "dept": "63",
+            "doses": 48296,
+            "type": "periurban"
+          },
+          {
+            "dept": "03",
+            "doses": 25154,
+            "type": "rural"
+          },
+          {
+            "dept": "39",
+            "doses": 22135,
+            "type": "rural"
+          },
+          {
+            "dept": "15",
+            "doses": 15092,
+            "type": "rural"
+          }
+        ]
+      },
+      "WH_MARSEILLE": {
+        "stock_current": 2340000,
+        "stock_planned": 2100000,
+        "status": "normal",
+        "deliveries": [
+          {
+            "dept": "84",
+            "doses": 47556,
+            "type": "periurban"
+          },
+          {
+            "dept": "06",
+            "doses": 92999,
+            "type": "urban"
+          },
+          {
+            "dept": "30",
+            "doses": 50727,
+            "type": "periurban"
+          },
+          {
+            "dept": "66",
+            "doses": 29590,
+            "type": "rural"
+          },
+          {
+            "dept": "48",
+            "doses": 12681,
+            "type": "rural"
+          }
+        ]
+      },
+      "WH_BORDEAUX": {
+        "stock_current": 2184000,
+        "stock_planned": 1959999,
+        "status": "normal",
+        "deliveries": [
+          {
+            "dept": "33",
+            "doses": 95631,
+            "type": "urban"
+          },
+          {
+            "dept": "24",
+            "doses": 27323,
+            "type": "rural"
+          },
+          {
+            "dept": "87",
+            "doses": 27323,
+            "type": "rural"
+          },
+          {
+            "dept": "09",
+            "doses": 11709,
+            "type": "rural"
+          },
+          {
+            "dept": "81",
+            "doses": 27323,
+            "type": "rural"
+          },
+          {
+            "dept": "12",
+            "doses": 21468,
+            "type": "rural"
+          }
+        ]
+      },
+      "WH_LILLE": {
+        "stock_current": 2496000,
+        "stock_planned": 2240000,
+        "status": "normal",
+        "deliveries": [
+          {
+            "dept": "54",
+            "doses": 55759,
+            "type": "periurban"
+          },
+          {
+            "dept": "57",
+            "doses": 65373,
+            "type": "periurban"
+          },
+          {
+            "dept": "90",
+            "doses": 9613,
+            "type": "rural"
+          },
+          {
+            "dept": "21",
+            "doses": 36532,
+            "type": "rural"
+          },
+          {
+            "dept": "18",
+            "doses": 26918,
+            "type": "rural"
+          }
+        ]
+      },
+      "WH_NANTES": {
+        "stock_current": 2028000,
+        "stock_planned": 1820000,
+        "status": "normal",
+        "deliveries": [
+          {
+            "dept": "72",
+            "doses": 38352,
+            "type": "rural"
+          },
+          {
+            "dept": "36",
+            "doses": 25232,
+            "type": "rural"
+          },
+          {
+            "dept": "27",
+            "doses": 35324,
+            "type": "rural"
+          }
+        ]
+      }
+    },
+    "2025-11-25": {
+      "WH_ROISSY": {
+        "stock_current": 3041071,
+        "stock_planned": 3500000,
+        "status": "normal",
+        "deliveries": [
+          {
+            "dept": "91",
+            "doses": 71143,
+            "type": "urban"
+          },
+          {
+            "dept": "94",
+            "doses": 81024,
+            "type": "urban"
+          },
+          {
+            "dept": "10",
+            "doses": 27666,
+            "type": "rural"
+          },
+          {
+            "dept": "28",
+            "doses": 31619,
+            "type": "rural"
+          }
+        ]
+      },
+      "WH_LYON": {
+        "stock_current": 2128750,
+        "stock_planned": 2450000,
+        "status": "normal",
+        "deliveries": [
+          {
+            "dept": "01",
+            "doses": 47638,
+            "type": "periurban"
+          },
+          {
+            "dept": "73",
+            "doses": 37713,
+            "type": "rural"
+          },
+          {
+            "dept": "07",
+            "doses": 27788,
+            "type": "rural"
+          },
+          {
+            "dept": "43",
+            "doses": 17864,
+            "type": "rural"
+          },
+          {
+            "dept": "25",
+            "doses": 37713,
+            "type": "rural"
+          }
+        ]
+      },
+      "WH_MARSEILLE": {
+        "stock_current": 1824642,
+        "stock_planned": 2100000,
+        "status": "normal",
+        "deliveries": [
+          {
+            "dept": "13",
+            "doses": 127307,
+            "type": "urban"
+          },
+          {
+            "dept": "04",
+            "doses": 12946,
+            "type": "rural"
+          },
+          {
+            "dept": "34",
+            "doses": 84152,
+            "type": "urban"
+          }
+        ]
+      },
+      "WH_BORDEAUX": {
+        "stock_current": 1703000,
+        "stock_planned": 1959999,
+        "status": "normal",
+        "deliveries": [
+          {
+            "dept": "40",
+            "doses": 27944,
+            "type": "rural"
+          },
+          {
+            "dept": "64",
+            "doses": 51896,
+            "type": "periurban"
+          },
+          {
+            "dept": "19",
+            "doses": 17964,
+            "type": "rural"
+          },
+          {
+            "dept": "16",
+            "doses": 27944,
+            "type": "rural"
+          },
+          {
+            "dept": "31",
+            "doses": 87824,
+            "type": "urban"
+          },
+          {
+            "dept": "82",
+            "doses": 17964,
+            "type": "rural"
+          },
+          {
+            "dept": "46",
+            "doses": 14970,
+            "type": "rural"
+          }
+        ]
+      },
+      "WH_LILLE": {
+        "stock_current": 1946285,
+        "stock_planned": 2240000,
+        "status": "normal",
+        "deliveries": [
+          {
+            "dept": "55",
+            "doses": 16028,
+            "type": "rural"
+          },
+          {
+            "dept": "67",
+            "doses": 83345,
+            "type": "urban"
+          },
+          {
+            "dept": "70",
+            "doses": 19233,
+            "type": "rural"
+          },
+          {
+            "dept": "88",
+            "doses": 29918,
+            "type": "rural"
+          },
+          {
+            "dept": "52",
+            "doses": 16028,
+            "type": "rural"
+          },
+          {
+            "dept": "58",
+            "doses": 19233,
+            "type": "rural"
+          }
+        ]
+      },
+      "WH_NANTES": {
+        "stock_current": 1581357,
+        "stock_planned": 1820000,
+        "status": "normal",
+        "deliveries": [
+          {
+            "dept": "49",
+            "doses": 55625,
+            "type": "periurban"
+          },
+          {
+            "dept": "85",
+            "doses": 44928,
+            "type": "periurban"
+          },
+          {
+            "dept": "79",
+            "doses": 37440,
+            "type": "rural"
+          },
+          {
+            "dept": "37",
+            "doses": 51346,
+            "type": "periurban"
+          },
+          {
+            "dept": "22",
+            "doses": 34231,
+            "type": "rural"
+          },
+          {
+            "dept": "61",
+            "doses": 29952,
+            "type": "rural"
+          },
+          {
+            "dept": "76",
+            "doses": 66323,
+            "type": "periurban"
+          }
+        ]
+      }
+    },
+    "2025-11-26": {
+      "WH_ROISSY": {
+        "stock_current": 2971428,
+        "stock_planned": 3500000,
+        "status": "normal",
+        "deliveries": [
+          {
+            "dept": "77",
+            "doses": 75234,
+            "type": "urban"
+          },
+          {
+            "dept": "92",
+            "doses": 84879,
+            "type": "urban"
+          },
+          {
+            "dept": "95",
+            "doses": 65588,
+            "type": "periurban"
+          },
+          {
+            "dept": "02",
+            "doses": 27007,
+            "type": "rural"
+          },
+          {
+            "dept": "89",
+            "doses": 21219,
+            "type": "rural"
+          }
+        ]
+      },
+      "WH_LYON": {
+        "stock_current": 2080000,
+        "stock_planned": 2450000,
+        "status": "normal",
+        "deliveries": [
+          {
+            "dept": "38",
+            "doses": 67781,
+            "type": "urban"
+          },
+          {
+            "dept": "74",
+            "doses": 42363,
+            "type": "periurban"
+          },
+          {
+            "dept": "26",
+            "doses": 32949,
+            "type": "rural"
+          },
+          {
+            "dept": "71",
+            "doses": 30125,
+            "type": "rural"
+          }
+        ]
+      },
+      "WH_MARSEILLE": {
+        "stock_current": 1782857,
+        "stock_planned": 2100000,
+        "status": "normal",
+        "deliveries": [
+          {
+            "dept": "83",
+            "doses": 66519,
+            "type": "periurban"
+          },
+          {
+            "dept": "05",
+            "doses": 9782,
+            "type": "rural"
+          },
+          {
+            "dept": "11",
+            "doses": 27390,
+            "type": "rural"
+          },
+          {
+            "dept": "2A",
+            "doses": 14673,
+            "type": "rural"
+          },
+          {
+            "dept": "2B",
+            "doses": 17608,
+            "type": "rural"
+          }
+        ]
+      },
+      "WH_BORDEAUX": {
+        "stock_current": 1664000,
+        "stock_planned": 1959999,
+        "status": "normal",
+        "deliveries": [
+          {
+            "dept": "47",
+            "doses": 23707,
+            "type": "rural"
+          },
+          {
+            "dept": "23",
+            "doses": 14224,
+            "type": "rural"
+          },
+          {
+            "dept": "17",
+            "doses": 45517,
+            "type": "periurban"
+          },
+          {
+            "dept": "32",
+            "doses": 14224,
+            "type": "rural"
+          },
+          {
+            "dept": "65",
+            "doses": 17069,
+            "type": "rural"
+          }
+        ]
+      },
+      "WH_LILLE": {
+        "stock_current": 1901714,
+        "stock_planned": 2240000,
+        "status": "normal",
+        "deliveries": [
+          {
+            "dept": "59",
+            "doses": 110984,
+            "type": "urban"
+          },
+          {
+            "dept": "62",
+            "doses": 87202,
+            "type": "urban"
+          },
+          {
+            "dept": "80",
+            "doses": 27746,
+            "type": "rural"
+          },
+          {
+            "dept": "08",
+            "doses": 21800,
+            "type": "rural"
+          },
+          {
+            "dept": "68",
+            "doses": 51528,
+            "type": "periurban"
+          }
+        ]
+      },
+      "WH_NANTES": {
+        "stock_current": 1545142,
+        "stock_planned": 1820000,
+        "status": "normal",
+        "deliveries": [
+          {
+            "dept": "44",
+            "doses": 78641,
+            "type": "urban"
+          },
+          {
+            "dept": "53",
+            "doses": 32263,
+            "type": "rural"
+          },
+          {
+            "dept": "86",
+            "doses": 35287,
+            "type": "rural"
+          },
+          {
+            "dept": "41",
+            "doses": 35287,
+            "type": "rural"
+          },
+          {
+            "dept": "35",
+            "doses": 58477,
+            "type": "periurban"
+          },
+          {
+            "dept": "56",
+            "doses": 38312,
+            "type": "rural"
+          },
+          {
+            "dept": "29",
+            "doses": 42345,
+            "type": "periurban"
+          },
+          {
+            "dept": "50",
+            "doses": 32263,
+            "type": "rural"
+          },
+          {
+            "dept": "14",
+            "doses": 48394,
+            "type": "periurban"
+          }
+        ]
+      }
+    },
+    "2025-11-27": {
+      "WH_ROISSY": {
+        "stock_current": 2901785,
+        "stock_planned": 3500000,
+        "status": "normal",
+        "deliveries": [
+          {
+            "dept": "75",
+            "doses": 136852,
+            "type": "urban"
+          },
+          {
+            "dept": "78",
+            "doses": 82111,
+            "type": "urban"
+          },
+          {
+            "dept": "93",
+            "doses": 104008,
+            "type": "urban"
+          },
+          {
+            "dept": "60",
+            "doses": 45982,
+            "type": "periurban"
+          },
+          {
+            "dept": "51",
+            "doses": 38318,
+            "type": "rural"
+          },
+          {
+            "dept": "45",
+            "doses": 41603,
+            "type": "rural"
+          }
+        ]
+      },
+      "WH_LYON": {
+        "stock_current": 2031250,
+        "stock_planned": 2450000,
+        "status": "normal",
+        "deliveries": [
+          {
+            "dept": "69",
+            "doses": 99613,
+            "type": "urban"
+          },
+          {
+            "dept": "42",
+            "doses": 54525,
+            "type": "periurban"
+          },
+          {
+            "dept": "63",
+            "doses": 50331,
+            "type": "periurban"
+          },
+          {
+            "dept": "03",
+            "doses": 26214,
+            "type": "rural"
+          },
+          {
+            "dept": "39",
+            "doses": 23068,
+            "type": "rural"
+          },
+          {
+            "dept": "15",
+            "doses": 15728,
+            "type": "rural"
+          }
+        ]
+      },
+      "WH_MARSEILLE": {
+        "stock_current": 1741071,
+        "stock_planned": 2100000,
+        "status": "normal",
+        "deliveries": [
+          {
+            "dept": "84",
+            "doses": 41550,
+            "type": "periurban"
+          },
+          {
+            "dept": "06",
+            "doses": 81253,
+            "type": "urban"
+          },
+          {
+            "dept": "30",
+            "doses": 44320,
+            "type": "periurban"
+          },
+          {
+            "dept": "66",
+            "doses": 25853,
+            "type": "rural"
+          },
+          {
+            "dept": "48",
+            "doses": 11080,
+            "type": "rural"
+          }
+        ]
+      },
+      "WH_BORDEAUX": {
+        "stock_current": 1625000,
+        "stock_planned": 1959999,
+        "status": "normal",
+        "deliveries": [
+          {
+            "dept": "33",
+            "doses": 96875,
+            "type": "urban"
+          },
+          {
+            "dept": "24",
+            "doses": 27678,
+            "type": "rural"
+          },
+          {
+            "dept": "87",
+            "doses": 27678,
+            "type": "rural"
+          },
+          {
+            "dept": "09",
+            "doses": 11862,
+            "type": "rural"
+          },
+          {
+            "dept": "81",
+            "doses": 27678,
+            "type": "rural"
+          },
+          {
+            "dept": "12",
+            "doses": 21747,
+            "type": "rural"
+          }
+        ]
+      },
+      "WH_LILLE": {
+        "stock_current": 1857142,
+        "stock_planned": 2240000,
+        "status": "normal",
+        "deliveries": [
+          {
+            "dept": "54",
+            "doses": 57911,
+            "type": "periurban"
+          },
+          {
+            "dept": "57",
+            "doses": 67896,
+            "type": "periurban"
+          },
+          {
+            "dept": "90",
+            "doses": 9984,
+            "type": "rural"
+          },
+          {
+            "dept": "21",
+            "doses": 37942,
+            "type": "rural"
+          },
+          {
+            "dept": "18",
+            "doses": 27957,
+            "type": "rural"
+          }
+        ]
+      },
+      "WH_NANTES": {
+        "stock_current": 1508928,
+        "stock_planned": 1820000,
+        "status": "normal",
+        "deliveries": [
+          {
+            "dept": "72",
+            "doses": 38574,
+            "type": "rural"
+          },
+          {
+            "dept": "36",
+            "doses": 25378,
+            "type": "rural"
+          },
+          {
+            "dept": "27",
+            "doses": 35529,
+            "type": "rural"
+          }
+        ]
+      }
+    },
+    "2025-11-28": {
+      "WH_ROISSY": {
+        "stock_current": 2832142,
+        "stock_planned": 3500000,
+        "status": "normal",
+        "deliveries": [
+          {
+            "dept": "91",
+            "doses": 73127,
+            "type": "urban"
+          },
+          {
+            "dept": "94",
+            "doses": 83284,
+            "type": "urban"
+          },
+          {
+            "dept": "10",
+            "doses": 28438,
+            "type": "rural"
+          },
+          {
+            "dept": "28",
+            "doses": 32501,
+            "type": "rural"
+          }
+        ]
+      },
+      "WH_LYON": {
+        "stock_current": 1982500,
+        "stock_planned": 2450000,
+        "status": "normal",
+        "deliveries": [
+          {
+            "dept": "01",
+            "doses": 44621,
+            "type": "periurban"
+          },
+          {
+            "dept": "73",
+            "doses": 35325,
+            "type": "rural"
+          },
+          {
+            "dept": "07",
+            "doses": 26029,
+            "type": "rural"
+          },
+          {
+            "dept": "43",
+            "doses": 16733,
+            "type": "rural"
+          },
+          {
+            "dept": "25",
+            "doses": 35325,
+            "type": "rural"
+          }
+        ]
+      },
+      "WH_MARSEILLE": {
+        "stock_current": 1699285,
+        "stock_planned": 2100000,
+        "status": "normal",
+        "deliveries": [
+          {
+            "dept": "13",
+            "doses": 117571,
+            "type": "urban"
+          },
+          {
+            "dept": "04",
+            "doses": 11956,
+            "type": "rural"
+          },
+          {
+            "dept": "34",
+            "doses": 77716,
+            "type": "urban"
+          }
+        ]
+      },
+      "WH_BORDEAUX": {
+        "stock_current": 1586000,
+        "stock_planned": 1959999,
+        "status": "normal",
+        "deliveries": [
+          {
+            "dept": "40",
+            "doses": 27116,
+            "type": "rural"
+          },
+          {
+            "dept": "64",
+            "doses": 50359,
+            "type": "periurban"
+          },
+          {
+            "dept": "19",
+            "doses": 17432,
+            "type": "rural"
+          },
+          {
+            "dept": "16",
+            "doses": 27116,
+            "type": "rural"
+          },
+          {
+            "dept": "31",
+            "doses": 85223,
+            "type": "urban"
+          },
+          {
+            "dept": "82",
+            "doses": 17432,
+            "type": "rural"
+          },
+          {
+            "dept": "46",
+            "doses": 14526,
+            "type": "rural"
+          }
+        ]
+      },
+      "WH_LILLE": {
+        "stock_current": 1812571,
+        "stock_planned": 2240000,
+        "status": "normal",
+        "deliveries": [
+          {
+            "dept": "55",
+            "doses": 16297,
+            "type": "rural"
+          },
+          {
+            "dept": "67",
+            "doses": 84748,
+            "type": "urban"
+          },
+          {
+            "dept": "70",
+            "doses": 19557,
+            "type": "rural"
+          },
+          {
+            "dept": "88",
+            "doses": 30422,
+            "type": "rural"
+          },
+          {
+            "dept": "52",
+            "doses": 16297,
+            "type": "rural"
+          },
+          {
+            "dept": "58",
+            "doses": 19557,
+            "type": "rural"
+          }
+        ]
+      },
+      "WH_NANTES": {
+        "stock_current": 1472714,
+        "stock_planned": 1820000,
+        "status": "normal",
+        "deliveries": [
+          {
+            "dept": "49",
+            "doses": 55737,
+            "type": "periurban"
+          },
+          {
+            "dept": "85",
+            "doses": 45019,
+            "type": "periurban"
+          },
+          {
+            "dept": "79",
+            "doses": 37515,
+            "type": "rural"
+          },
+          {
+            "dept": "37",
+            "doses": 51450,
+            "type": "periurban"
+          },
+          {
+            "dept": "22",
+            "doses": 34300,
+            "type": "rural"
+          },
+          {
+            "dept": "61",
+            "doses": 30012,
+            "type": "rural"
+          },
+          {
+            "dept": "76",
+            "doses": 66456,
+            "type": "periurban"
+          }
+        ]
+      }
+    },
+    "2025-11-29": {
+      "WH_ROISSY": {
+        "stock_current": 3250000,
+        "stock_planned": 3500000,
+        "status": "normal",
+        "deliveries": [
+          {
+            "dept": "77",
+            "doses": 75845,
+            "type": "urban"
+          },
+          {
+            "dept": "92",
+            "doses": 85569,
+            "type": "urban"
+          },
+          {
+            "dept": "95",
+            "doses": 66121,
+            "type": "periurban"
+          },
+          {
+            "dept": "02",
+            "doses": 27226,
+            "type": "rural"
+          },
+          {
+            "dept": "89",
+            "doses": 21392,
+            "type": "rural"
+          }
+        ]
+      },
+      "WH_LYON": {
+        "stock_current": 2275000,
+        "stock_planned": 2450000,
+        "status": "normal",
+        "deliveries": [
+          {
+            "dept": "38",
+            "doses": 73317,
+            "type": "urban"
+          },
+          {
+            "dept": "74",
+            "doses": 45823,
+            "type": "periurban"
+          },
+          {
+            "dept": "26",
+            "doses": 35640,
+            "type": "rural"
+          },
+          {
+            "dept": "71",
+            "doses": 32585,
+            "type": "rural"
+          }
+        ]
+      },
+      "WH_MARSEILLE": {
+        "stock_current": 1950000,
+        "stock_planned": 2100000,
+        "status": "normal",
+        "deliveries": [
+          {
+            "dept": "83",
+            "doses": 65983,
+            "type": "periurban"
+          },
+          {
+            "dept": "05",
+            "doses": 9703,
+            "type": "rural"
+          },
+          {
+            "dept": "11",
+            "doses": 27169,
+            "type": "rural"
+          },
+          {
+            "dept": "2A",
+            "doses": 14555,
+            "type": "rural"
+          },
+          {
+            "dept": "2B",
+            "doses": 17466,
+            "type": "rural"
+          }
+        ]
+      },
+      "WH_BORDEAUX": {
+        "stock_current": 1820000,
+        "stock_planned": 1959999,
+        "status": "normal",
+        "deliveries": [
+          {
+            "dept": "47",
+            "doses": 23671,
+            "type": "rural"
+          },
+          {
+            "dept": "23",
+            "doses": 14203,
+            "type": "rural"
+          },
+          {
+            "dept": "17",
+            "doses": 45449,
+            "type": "periurban"
+          },
+          {
+            "dept": "32",
+            "doses": 14203,
+            "type": "rural"
+          },
+          {
+            "dept": "65",
+            "doses": 17043,
+            "type": "rural"
+          }
+        ]
+      },
+      "WH_LILLE": {
+        "stock_current": 2080000,
+        "stock_planned": 2240000,
+        "status": "normal",
+        "deliveries": [
+          {
+            "dept": "59",
+            "doses": 109111,
+            "type": "urban"
+          },
+          {
+            "dept": "62",
+            "doses": 85730,
+            "type": "urban"
+          },
+          {
+            "dept": "80",
+            "doses": 27277,
+            "type": "rural"
+          },
+          {
+            "dept": "08",
+            "doses": 21432,
+            "type": "rural"
+          },
+          {
+            "dept": "68",
+            "doses": 50659,
+            "type": "periurban"
+          }
+        ]
+      },
+      "WH_NANTES": {
+        "stock_current": 1690000,
+        "stock_planned": 1820000,
+        "status": "normal",
+        "deliveries": [
+          {
+            "dept": "44",
+            "doses": 75975,
+            "type": "urban"
+          },
+          {
+            "dept": "53",
+            "doses": 31169,
+            "type": "rural"
+          },
+          {
+            "dept": "86",
+            "doses": 34091,
+            "type": "rural"
+          },
+          {
+            "dept": "41",
+            "doses": 34091,
+            "type": "rural"
+          },
+          {
+            "dept": "35",
+            "doses": 56494,
+            "type": "periurban"
+          },
+          {
+            "dept": "56",
+            "doses": 37013,
+            "type": "rural"
+          },
+          {
+            "dept": "29",
+            "doses": 40909,
+            "type": "periurban"
+          },
+          {
+            "dept": "50",
+            "doses": 31169,
+            "type": "rural"
+          },
+          {
+            "dept": "14",
+            "doses": 46754,
+            "type": "periurban"
+          }
+        ]
+      }
+    },
+    "2025-11-30": {
+      "WH_ROISSY": {
+        "stock_current": 3180357,
+        "stock_planned": 3500000,
+        "status": "normal",
+        "deliveries": [
+          {
+            "dept": "75",
+            "doses": 114855,
+            "type": "urban"
+          },
+          {
+            "dept": "78",
+            "doses": 68913,
+            "type": "urban"
+          },
+          {
+            "dept": "93",
+            "doses": 87290,
+            "type": "urban"
+          },
+          {
+            "dept": "60",
+            "doses": 38591,
+            "type": "periurban"
+          },
+          {
+            "dept": "51",
+            "doses": 32159,
+            "type": "rural"
+          },
+          {
+            "dept": "45",
+            "doses": 34916,
+            "type": "rural"
+          }
+        ]
+      },
+      "WH_LYON": {
+        "stock_current": 2226250,
+        "stock_planned": 2450000,
+        "status": "normal",
+        "deliveries": [
+          {
+            "dept": "69",
+            "doses": 90482,
+            "type": "urban"
+          },
+          {
+            "dept": "42",
+            "doses": 49527,
+            "type": "periurban"
+          },
+          {
+            "dept": "63",
+            "doses": 45717,
+            "type": "periurban"
+          },
+          {
+            "dept": "03",
+            "doses": 23811,
+            "type": "rural"
+          },
+          {
+            "dept": "39",
+            "doses": 20953,
+            "type": "rural"
+          },
+          {
+            "dept": "15",
+            "doses": 14286,
+            "type": "rural"
+          }
+        ]
+      },
+      "WH_MARSEILLE": {
+        "stock_current": 1908214,
+        "stock_planned": 2100000,
+        "status": "normal",
+        "deliveries": [
+          {
+            "dept": "84",
+            "doses": 40637,
+            "type": "periurban"
+          },
+          {
+            "dept": "06",
+            "doses": 79469,
+            "type": "urban"
+          },
+          {
+            "dept": "30",
+            "doses": 43346,
+            "type": "periurban"
+          },
+          {
+            "dept": "66",
+            "doses": 25285,
+            "type": "rural"
+          },
+          {
+            "dept": "48",
+            "doses": 10836,
+            "type": "rural"
+          }
+        ]
+      },
+      "WH_BORDEAUX": {
+        "stock_current": 1781000,
+        "stock_planned": 1959999,
+        "status": "normal",
+        "deliveries": [
+          {
+            "dept": "33",
+            "doses": 94066,
+            "type": "urban"
+          },
+          {
+            "dept": "24",
+            "doses": 26876,
+            "type": "rural"
+          },
+          {
+            "dept": "87",
+            "doses": 26876,
+            "type": "rural"
+          },
+          {
+            "dept": "09",
+            "doses": 11518,
+            "type": "rural"
+          },
+          {
+            "dept": "81",
+            "doses": 26876,
+            "type": "rural"
+          },
+          {
+            "dept": "12",
+            "doses": 21116,
+            "type": "rural"
+          }
+        ]
+      },
+      "WH_LILLE": {
+        "stock_current": 2035428,
+        "stock_planned": 2240000,
+        "status": "normal",
+        "deliveries": [
+          {
+            "dept": "54",
+            "doses": 53453,
+            "type": "periurban"
+          },
+          {
+            "dept": "57",
+            "doses": 62669,
+            "type": "periurban"
+          },
+          {
+            "dept": "90",
+            "doses": 9216,
+            "type": "rural"
+          },
+          {
+            "dept": "21",
+            "doses": 35021,
+            "type": "rural"
+          },
+          {
+            "dept": "18",
+            "doses": 25804,
+            "type": "rural"
+          }
+        ]
+      },
+      "WH_NANTES": {
+        "stock_current": 1653785,
+        "stock_planned": 1820000,
+        "status": "normal",
+        "deliveries": [
+          {
+            "dept": "72",
+            "doses": 40293,
+            "type": "rural"
+          },
+          {
+            "dept": "36",
+            "doses": 26509,
+            "type": "rural"
+          },
+          {
+            "dept": "27",
+            "doses": 37112,
+            "type": "rural"
+          }
+        ]
+      }
+    },
+    "2025-12-01": {
+      "WH_ROISSY": {
+        "stock_current": 3900000,
+        "stock_planned": 3500000,
+        "status": "normal",
+        "deliveries": [
+          {
+            "dept": "91",
+            "doses": 77487,
+            "type": "urban"
+          },
+          {
+            "dept": "94",
+            "doses": 88249,
+            "type": "urban"
+          },
+          {
+            "dept": "10",
+            "doses": 30134,
+            "type": "rural"
+          },
+          {
+            "dept": "28",
+            "doses": 34438,
+            "type": "rural"
+          }
+        ]
+      },
+      "WH_LYON": {
+        "stock_current": 2730000,
+        "stock_planned": 2450000,
+        "status": "normal",
+        "deliveries": [
+          {
+            "dept": "01",
+            "doses": 43851,
+            "type": "periurban"
+          },
+          {
+            "dept": "73",
+            "doses": 34716,
+            "type": "rural"
+          },
+          {
+            "dept": "07",
+            "doses": 25580,
+            "type": "rural"
+          },
+          {
+            "dept": "43",
+            "doses": 16444,
+            "type": "rural"
+          },
+          {
+            "dept": "25",
+            "doses": 34716,
+            "type": "rural"
+          }
+        ]
+      },
+      "WH_MARSEILLE": {
+        "stock_current": 2340000,
+        "stock_planned": 2100000,
+        "status": "normal",
+        "deliveries": [
+          {
+            "dept": "13",
+            "doses": 115612,
+            "type": "urban"
+          },
+          {
+            "dept": "04",
+            "doses": 11757,
+            "type": "rural"
+          },
+          {
+            "dept": "34",
+            "doses": 76422,
+            "type": "urban"
+          }
+        ]
+      },
+      "WH_BORDEAUX": {
+        "stock_current": 2184000,
+        "stock_planned": 1959999,
+        "status": "normal",
+        "deliveries": [
+          {
+            "dept": "40",
+            "doses": 30252,
+            "type": "rural"
+          },
+          {
+            "dept": "64",
+            "doses": 56182,
+            "type": "periurban"
+          },
+          {
+            "dept": "19",
+            "doses": 19447,
+            "type": "rural"
+          },
+          {
+            "dept": "16",
+            "doses": 30252,
+            "type": "rural"
+          },
+          {
+            "dept": "31",
+            "doses": 95078,
+            "type": "urban"
+          },
+          {
+            "dept": "82",
+            "doses": 19447,
+            "type": "rural"
+          },
+          {
+            "dept": "46",
+            "doses": 16206,
+            "type": "rural"
+          }
+        ]
+      },
+      "WH_LILLE": {
+        "stock_current": 2496000,
+        "stock_planned": 2240000,
+        "status": "normal",
+        "deliveries": [
+          {
+            "dept": "55",
+            "doses": 15365,
+            "type": "rural"
+          },
+          {
+            "dept": "67",
+            "doses": 79898,
+            "type": "urban"
+          },
+          {
+            "dept": "70",
+            "doses": 18438,
+            "type": "rural"
+          },
+          {
+            "dept": "88",
+            "doses": 28681,
+            "type": "rural"
+          },
+          {
+            "dept": "52",
+            "doses": 15365,
+            "type": "rural"
+          },
+          {
+            "dept": "58",
+            "doses": 18438,
+            "type": "rural"
+          }
+        ]
+      },
+      "WH_NANTES": {
+        "stock_current": 2028000,
+        "stock_planned": 1820000,
+        "status": "normal",
+        "deliveries": [
+          {
+            "dept": "49",
+            "doses": 49024,
+            "type": "periurban"
+          },
+          {
+            "dept": "85",
+            "doses": 39596,
+            "type": "periurban"
+          },
+          {
+            "dept": "79",
+            "doses": 32997,
+            "type": "rural"
+          },
+          {
+            "dept": "37",
+            "doses": 45253,
+            "type": "periurban"
+          },
+          {
+            "dept": "22",
+            "doses": 30168,
+            "type": "rural"
+          },
+          {
+            "dept": "61",
+            "doses": 26397,
+            "type": "rural"
+          },
+          {
+            "dept": "76",
+            "doses": 58452,
+            "type": "periurban"
+          }
+        ]
+      }
+    },
+    "2025-12-02": {
+      "WH_ROISSY": {
+        "stock_current": 3041071,
+        "stock_planned": 3500000,
+        "status": "normal",
+        "deliveries": [
+          {
+            "dept": "77",
+            "doses": 83028,
+            "type": "urban"
+          },
+          {
+            "dept": "92",
+            "doses": 93673,
+            "type": "urban"
+          },
+          {
+            "dept": "95",
+            "doses": 72383,
+            "type": "periurban"
+          },
+          {
+            "dept": "02",
+            "doses": 29805,
+            "type": "rural"
+          },
+          {
+            "dept": "89",
+            "doses": 23418,
+            "type": "rural"
+          }
+        ]
+      },
+      "WH_LYON": {
+        "stock_current": 2128750,
+        "stock_planned": 2450000,
+        "status": "normal",
+        "deliveries": [
+          {
+            "dept": "38",
+            "doses": 69843,
+            "type": "urban"
+          },
+          {
+            "dept": "74",
+            "doses": 43652,
+            "type": "periurban"
+          },
+          {
+            "dept": "26",
+            "doses": 33951,
+            "type": "rural"
+          },
+          {
+            "dept": "71",
+            "doses": 31041,
+            "type": "rural"
+          }
+        ]
+      },
+      "WH_MARSEILLE": {
+        "stock_current": 1824642,
+        "stock_planned": 2100000,
+        "status": "normal",
+        "deliveries": [
+          {
+            "dept": "83",
+            "doses": 63737,
+            "type": "periurban"
+          },
+          {
+            "dept": "05",
+            "doses": 9373,
+            "type": "rural"
+          },
+          {
+            "dept": "11",
+            "doses": 26244,
+            "type": "rural"
+          },
+          {
+            "dept": "2A",
+            "doses": 14059,
+            "type": "rural"
+          },
+          {
+            "dept": "2B",
+            "doses": 16871,
+            "type": "rural"
+          }
+        ]
+      },
+      "WH_BORDEAUX": {
+        "stock_current": 1703000,
+        "stock_planned": 1959999,
+        "status": "normal",
+        "deliveries": [
+          {
+            "dept": "47",
+            "doses": 24367,
+            "type": "rural"
+          },
+          {
+            "dept": "23",
+            "doses": 14620,
+            "type": "rural"
+          },
+          {
+            "dept": "17",
+            "doses": 46786,
+            "type": "periurban"
+          },
+          {
+            "dept": "32",
+            "doses": 14620,
+            "type": "rural"
+          },
+          {
+            "dept": "65",
+            "doses": 17544,
+            "type": "rural"
+          }
+        ]
+      },
+      "WH_LILLE": {
+        "stock_current": 1946285,
+        "stock_planned": 2240000,
+        "status": "normal",
+        "deliveries": [
+          {
+            "dept": "59",
+            "doses": 106322,
+            "type": "urban"
+          },
+          {
+            "dept": "62",
+            "doses": 83538,
+            "type": "urban"
+          },
+          {
+            "dept": "80",
+            "doses": 26580,
+            "type": "rural"
+          },
+          {
+            "dept": "08",
+            "doses": 20884,
+            "type": "rural"
+          },
+          {
+            "dept": "68",
+            "doses": 49363,
+            "type": "periurban"
+          }
+        ]
+      },
+      "WH_NANTES": {
+        "stock_current": 1581357,
+        "stock_planned": 1820000,
+        "status": "normal",
+        "deliveries": [
+          {
+            "dept": "44",
+            "doses": 85320,
+            "type": "urban"
+          },
+          {
+            "dept": "53",
+            "doses": 35003,
+            "type": "rural"
+          },
+          {
+            "dept": "86",
+            "doses": 38284,
+            "type": "rural"
+          },
+          {
+            "dept": "41",
+            "doses": 38284,
+            "type": "rural"
+          },
+          {
+            "dept": "35",
+            "doses": 63443,
+            "type": "periurban"
+          },
+          {
+            "dept": "56",
+            "doses": 41566,
+            "type": "rural"
+          },
+          {
+            "dept": "29",
+            "doses": 45941,
+            "type": "periurban"
+          },
+          {
+            "dept": "50",
+            "doses": 35003,
+            "type": "rural"
+          },
+          {
+            "dept": "14",
+            "doses": 52504,
+            "type": "periurban"
+          }
+        ]
+      }
+    },
+    "2025-12-03": {
+      "WH_ROISSY": {
+        "stock_current": 2971428,
+        "stock_planned": 3500000,
+        "status": "normal",
+        "deliveries": [
+          {
+            "dept": "75",
+            "doses": 114803,
+            "type": "urban"
+          },
+          {
+            "dept": "78",
+            "doses": 68882,
+            "type": "urban"
+          },
+          {
+            "dept": "93",
+            "doses": 87250,
+            "type": "urban"
+          },
+          {
+            "dept": "60",
+            "doses": 38574,
+            "type": "periurban"
+          },
+          {
+            "dept": "51",
+            "doses": 32145,
+            "type": "rural"
+          },
+          {
+            "dept": "45",
+            "doses": 34900,
+            "type": "rural"
+          }
+        ]
+      },
+      "WH_LYON": {
+        "stock_current": 2080000,
+        "stock_planned": 2450000,
+        "status": "normal",
+        "deliveries": [
+          {
+            "dept": "69",
+            "doses": 91786,
+            "type": "urban"
+          },
+          {
+            "dept": "42",
+            "doses": 50240,
+            "type": "periurban"
+          },
+          {
+            "dept": "63",
+            "doses": 46376,
+            "type": "periurban"
+          },
+          {
+            "dept": "03",
+            "doses": 24154,
+            "type": "rural"
+          },
+          {
+            "dept": "39",
+            "doses": 21255,
+            "type": "rural"
+          },
+          {
+            "dept": "15",
+            "doses": 14492,
+            "type": "rural"
+          }
+        ]
+      },
+      "WH_MARSEILLE": {
+        "stock_current": 1782857,
+        "stock_planned": 2100000,
+        "status": "normal",
+        "deliveries": [
+          {
+            "dept": "84",
+            "doses": 43131,
+            "type": "periurban"
+          },
+          {
+            "dept": "06",
+            "doses": 84346,
+            "type": "urban"
+          },
+          {
+            "dept": "30",
+            "doses": 46007,
+            "type": "periurban"
+          },
+          {
+            "dept": "66",
+            "doses": 26837,
+            "type": "rural"
+          },
+          {
+            "dept": "48",
+            "doses": 11501,
+            "type": "rural"
+          }
+        ]
+      },
+      "WH_BORDEAUX": {
+        "stock_current": 1664000,
+        "stock_planned": 1959999,
+        "status": "normal",
+        "deliveries": [
+          {
+            "dept": "33",
+            "doses": 91140,
+            "type": "urban"
+          },
+          {
+            "dept": "24",
+            "doses": 26040,
+            "type": "rural"
+          },
+          {
+            "dept": "87",
+            "doses": 26040,
+            "type": "rural"
+          },
+          {
+            "dept": "09",
+            "doses": 11160,
+            "type": "rural"
+          },
+          {
+            "dept": "81",
+            "doses": 26040,
+            "type": "rural"
+          },
+          {
+            "dept": "12",
+            "doses": 20460,
+            "type": "rural"
+          }
+        ]
+      },
+      "WH_LILLE": {
+        "stock_current": 1901714,
+        "stock_planned": 2240000,
+        "status": "normal",
+        "deliveries": [
+          {
+            "dept": "54",
+            "doses": 52526,
+            "type": "periurban"
+          },
+          {
+            "dept": "57",
+            "doses": 61583,
+            "type": "periurban"
+          },
+          {
+            "dept": "90",
+            "doses": 9056,
+            "type": "rural"
+          },
+          {
+            "dept": "21",
+            "doses": 34414,
+            "type": "rural"
+          },
+          {
+            "dept": "18",
+            "doses": 25357,
+            "type": "rural"
+          }
+        ]
+      },
+      "WH_NANTES": {
+        "stock_current": 1545142,
+        "stock_planned": 1820000,
+        "status": "normal",
+        "deliveries": [
+          {
+            "dept": "72",
+            "doses": 37265,
+            "type": "rural"
+          },
+          {
+            "dept": "36",
+            "doses": 24517,
+            "type": "rural"
+          },
+          {
+            "dept": "27",
+            "doses": 34323,
+            "type": "rural"
+          }
+        ]
+      }
+    },
+    "2025-12-04": {
+      "WH_ROISSY": {
+        "stock_current": 2901785,
+        "stock_planned": 3500000,
+        "status": "normal",
+        "deliveries": [
+          {
+            "dept": "91",
+            "doses": 74271,
+            "type": "urban"
+          },
+          {
+            "dept": "94",
+            "doses": 84586,
+            "type": "urban"
+          },
+          {
+            "dept": "10",
+            "doses": 28883,
+            "type": "rural"
+          },
+          {
+            "dept": "28",
+            "doses": 33009,
+            "type": "rural"
+          }
+        ]
+      },
+      "WH_LYON": {
+        "stock_current": 2031250,
+        "stock_planned": 2450000,
+        "status": "normal",
+        "deliveries": [
+          {
+            "dept": "01",
+            "doses": 49717,
+            "type": "periurban"
+          },
+          {
+            "dept": "73",
+            "doses": 39360,
+            "type": "rural"
+          },
+          {
+            "dept": "07",
+            "doses": 29002,
+            "type": "rural"
+          },
+          {
+            "dept": "43",
+            "doses": 18644,
+            "type": "rural"
+          },
+          {
+            "dept": "25",
+            "doses": 39360,
+            "type": "rural"
+          }
+        ]
+      },
+      "WH_MARSEILLE": {
+        "stock_current": 1741071,
+        "stock_planned": 2100000,
+        "status": "normal",
+        "deliveries": [
+          {
+            "dept": "13",
+            "doses": 127640,
+            "type": "urban"
+          },
+          {
+            "dept": "04",
+            "doses": 12980,
+            "type": "rural"
+          },
+          {
+            "dept": "34",
+            "doses": 84372,
+            "type": "urban"
+          }
+        ]
+      },
+      "WH_BORDEAUX": {
+        "stock_current": 1625000,
+        "stock_planned": 1959999,
+        "status": "normal",
+        "deliveries": [
+          {
+            "dept": "40",
+            "doses": 25983,
+            "type": "rural"
+          },
+          {
+            "dept": "64",
+            "doses": 48255,
+            "type": "periurban"
+          },
+          {
+            "dept": "19",
+            "doses": 16703,
+            "type": "rural"
+          },
+          {
+            "dept": "16",
+            "doses": 25983,
+            "type": "rural"
+          },
+          {
+            "dept": "31",
+            "doses": 81662,
+            "type": "urban"
+          },
+          {
+            "dept": "82",
+            "doses": 16703,
+            "type": "rural"
+          },
+          {
+            "dept": "46",
+            "doses": 13919,
+            "type": "rural"
+          }
+        ]
+      },
+      "WH_LILLE": {
+        "stock_current": 1857142,
+        "stock_planned": 2240000,
+        "status": "normal",
+        "deliveries": [
+          {
+            "dept": "55",
+            "doses": 16223,
+            "type": "rural"
+          },
+          {
+            "dept": "67",
+            "doses": 84363,
+            "type": "urban"
+          },
+          {
+            "dept": "70",
+            "doses": 19468,
+            "type": "rural"
+          },
+          {
+            "dept": "88",
+            "doses": 30284,
+            "type": "rural"
+          },
+          {
+            "dept": "52",
+            "doses": 16223,
+            "type": "rural"
+          },
+          {
+            "dept": "58",
+            "doses": 19468,
+            "type": "rural"
+          }
+        ]
+      },
+      "WH_NANTES": {
+        "stock_current": 1508928,
+        "stock_planned": 1820000,
+        "status": "normal",
+        "deliveries": [
+          {
+            "dept": "49",
+            "doses": 54817,
+            "type": "periurban"
+          },
+          {
+            "dept": "85",
+            "doses": 44275,
+            "type": "periurban"
+          },
+          {
+            "dept": "79",
+            "doses": 36896,
+            "type": "rural"
+          },
+          {
+            "dept": "37",
+            "doses": 50601,
+            "type": "periurban"
+          },
+          {
+            "dept": "22",
+            "doses": 33734,
+            "type": "rural"
+          },
+          {
+            "dept": "61",
+            "doses": 29517,
+            "type": "rural"
+          },
+          {
+            "dept": "76",
+            "doses": 65359,
+            "type": "periurban"
+          }
+        ]
+      }
+    },
+    "2025-12-05": {
+      "WH_ROISSY": {
+        "stock_current": 2832142,
+        "stock_planned": 3500000,
+        "status": "normal",
+        "deliveries": [
+          {
+            "dept": "77",
+            "doses": 78150,
+            "type": "urban"
+          },
+          {
+            "dept": "92",
+            "doses": 88169,
+            "type": "urban"
+          },
+          {
+            "dept": "95",
+            "doses": 68130,
+            "type": "periurban"
+          },
+          {
+            "dept": "02",
+            "doses": 28053,
+            "type": "rural"
+          },
+          {
+            "dept": "89",
+            "doses": 22042,
+            "type": "rural"
+          }
+        ]
+      },
+      "WH_LYON": {
+        "stock_current": 1982500,
+        "stock_planned": 2450000,
+        "status": "normal",
+        "deliveries": [
+          {
+            "dept": "38",
+            "doses": 78403,
+            "type": "urban"
+          },
+          {
+            "dept": "74",
+            "doses": 49002,
+            "type": "periurban"
+          },
+          {
+            "dept": "26",
+            "doses": 38112,
+            "type": "rural"
+          },
+          {
+            "dept": "71",
+            "doses": 34845,
+            "type": "rural"
+          }
+        ]
+      },
+      "WH_MARSEILLE": {
+        "stock_current": 1699285,
+        "stock_planned": 2100000,
+        "status": "normal",
+        "deliveries": [
+          {
+            "dept": "83",
+            "doses": 71362,
+            "type": "periurban"
+          },
+          {
+            "dept": "05",
+            "doses": 10494,
+            "type": "rural"
+          },
+          {
+            "dept": "11",
+            "doses": 29384,
+            "type": "rural"
+          },
+          {
+            "dept": "2A",
+            "doses": 15741,
+            "type": "rural"
+          },
+          {
+            "dept": "2B",
+            "doses": 18890,
+            "type": "rural"
+          }
+        ]
+      },
+      "WH_BORDEAUX": {
+        "stock_current": 1586000,
+        "stock_planned": 1959999,
+        "status": "normal",
+        "deliveries": [
+          {
+            "dept": "47",
+            "doses": 24353,
+            "type": "rural"
+          },
+          {
+            "dept": "23",
+            "doses": 14612,
+            "type": "rural"
+          },
+          {
+            "dept": "17",
+            "doses": 46759,
+            "type": "periurban"
+          },
+          {
+            "dept": "32",
+            "doses": 14612,
+            "type": "rural"
+          },
+          {
+            "dept": "65",
+            "doses": 17534,
+            "type": "rural"
+          }
+        ]
+      },
+      "WH_LILLE": {
+        "stock_current": 1812571,
+        "stock_planned": 2240000,
+        "status": "normal",
+        "deliveries": [
+          {
+            "dept": "59",
+            "doses": 113154,
+            "type": "urban"
+          },
+          {
+            "dept": "62",
+            "doses": 88906,
+            "type": "urban"
+          },
+          {
+            "dept": "80",
+            "doses": 28288,
+            "type": "rural"
+          },
+          {
+            "dept": "08",
+            "doses": 22226,
+            "type": "rural"
+          },
+          {
+            "dept": "68",
+            "doses": 52535,
+            "type": "periurban"
+          }
+        ]
+      },
+      "WH_NANTES": {
+        "stock_current": 1472714,
+        "stock_planned": 1820000,
+        "status": "normal",
+        "deliveries": [
+          {
+            "dept": "44",
+            "doses": 76076,
+            "type": "urban"
+          },
+          {
+            "dept": "53",
+            "doses": 31210,
+            "type": "rural"
+          },
+          {
+            "dept": "86",
+            "doses": 34136,
+            "type": "rural"
+          },
+          {
+            "dept": "41",
+            "doses": 34136,
+            "type": "rural"
+          },
+          {
+            "dept": "35",
+            "doses": 56569,
+            "type": "periurban"
+          },
+          {
+            "dept": "56",
+            "doses": 37063,
+            "type": "rural"
+          },
+          {
+            "dept": "29",
+            "doses": 40964,
+            "type": "periurban"
+          },
+          {
+            "dept": "50",
+            "doses": 31210,
+            "type": "rural"
+          },
+          {
+            "dept": "14",
+            "doses": 46816,
+            "type": "periurban"
+          }
+        ]
+      }
+    },
+    "2025-12-06": {
+      "WH_ROISSY": {
+        "stock_current": 3250000,
+        "stock_planned": 3500000,
+        "status": "normal",
+        "deliveries": [
+          {
+            "dept": "75",
+            "doses": 118014,
+            "type": "urban"
+          },
+          {
+            "dept": "78",
+            "doses": 70808,
+            "type": "urban"
+          },
+          {
+            "dept": "93",
+            "doses": 89690,
+            "type": "urban"
+          },
+          {
+            "dept": "60",
+            "doses": 39652,
+            "type": "periurban"
+          },
+          {
+            "dept": "51",
+            "doses": 33043,
+            "type": "rural"
+          },
+          {
+            "dept": "45",
+            "doses": 35876,
+            "type": "rural"
+          }
+        ]
+      },
+      "WH_LYON": {
+        "stock_current": 2275000,
+        "stock_planned": 2450000,
+        "status": "normal",
+        "deliveries": [
+          {
+            "dept": "69",
+            "doses": 98796,
+            "type": "urban"
+          },
+          {
+            "dept": "42",
+            "doses": 54078,
+            "type": "periurban"
+          },
+          {
+            "dept": "63",
+            "doses": 49918,
+            "type": "periurban"
+          },
+          {
+            "dept": "03",
+            "doses": 25999,
+            "type": "rural"
+          },
+          {
+            "dept": "39",
+            "doses": 22879,
+            "type": "rural"
+          },
+          {
+            "dept": "15",
+            "doses": 15599,
+            "type": "rural"
+          }
+        ]
+      },
+      "WH_MARSEILLE": {
+        "stock_current": 1950000,
+        "stock_planned": 2100000,
+        "status": "normal",
+        "deliveries": [
+          {
+            "dept": "84",
+            "doses": 40738,
+            "type": "periurban"
+          },
+          {
+            "dept": "06",
+            "doses": 79665,
+            "type": "urban"
+          },
+          {
+            "dept": "30",
+            "doses": 43454,
+            "type": "periurban"
+          },
+          {
+            "dept": "66",
+            "doses": 25348,
+            "type": "rural"
+          },
+          {
+            "dept": "48",
+            "doses": 10863,
+            "type": "rural"
+          }
+        ]
+      },
+      "WH_BORDEAUX": {
+        "stock_current": 1820000,
+        "stock_planned": 1959999,
+        "status": "normal",
+        "deliveries": [
+          {
+            "dept": "33",
+            "doses": 104108,
+            "type": "urban"
+          },
+          {
+            "dept": "24",
+            "doses": 29745,
+            "type": "rural"
+          },
+          {
+            "dept": "87",
+            "doses": 29745,
+            "type": "rural"
+          },
+          {
+            "dept": "09",
+            "doses": 12748,
+            "type": "rural"
+          },
+          {
+            "dept": "81",
+            "doses": 29745,
+            "type": "rural"
+          },
+          {
+            "dept": "12",
+            "doses": 23371,
+            "type": "rural"
+          }
+        ]
+      },
+      "WH_LILLE": {
+        "stock_current": 2080000,
+        "stock_planned": 2240000,
+        "status": "normal",
+        "deliveries": [
+          {
+            "dept": "54",
+            "doses": 63272,
+            "type": "periurban"
+          },
+          {
+            "dept": "57",
+            "doses": 74182,
+            "type": "periurban"
+          },
+          {
+            "dept": "90",
+            "doses": 10909,
+            "type": "rural"
+          },
+          {
+            "dept": "21",
+            "doses": 41454,
+            "type": "rural"
+          },
+          {
+            "dept": "18",
+            "doses": 30545,
+            "type": "rural"
+          }
+        ]
+      },
+      "WH_NANTES": {
+        "stock_current": 1690000,
+        "stock_planned": 1820000,
+        "status": "normal",
+        "deliveries": [
+          {
+            "dept": "72",
+            "doses": 40249,
+            "type": "rural"
+          },
+          {
+            "dept": "36",
+            "doses": 26480,
+            "type": "rural"
+          },
+          {
+            "dept": "27",
+            "doses": 37072,
+            "type": "rural"
+          }
+        ]
+      }
+    },
+    "2025-12-07": {
+      "WH_ROISSY": {
+        "stock_current": 3180357,
+        "stock_planned": 3500000,
+        "status": "normal",
+        "deliveries": [
+          {
+            "dept": "91",
+            "doses": 65739,
+            "type": "urban"
+          },
+          {
+            "dept": "94",
+            "doses": 74870,
+            "type": "urban"
+          },
+          {
+            "dept": "10",
+            "doses": 25565,
+            "type": "rural"
+          },
+          {
+            "dept": "28",
+            "doses": 29217,
+            "type": "rural"
+          }
+        ]
+      },
+      "WH_LYON": {
+        "stock_current": 2226250,
+        "stock_planned": 2450000,
+        "status": "normal",
+        "deliveries": [
+          {
+            "dept": "01",
+            "doses": 46110,
+            "type": "periurban"
+          },
+          {
+            "dept": "73",
+            "doses": 36504,
+            "type": "rural"
+          },
+          {
+            "dept": "07",
+            "doses": 26897,
+            "type": "rural"
+          },
+          {
+            "dept": "43",
+            "doses": 17291,
+            "type": "rural"
+          },
+          {
+            "dept": "25",
+            "doses": 36504,
+            "type": "rural"
+          }
+        ]
+      },
+      "WH_MARSEILLE": {
+        "stock_current": 1908214,
+        "stock_planned": 2100000,
+        "status": "normal",
+        "deliveries": [
+          {
+            "dept": "13",
+            "doses": 106746,
+            "type": "urban"
+          },
+          {
+            "dept": "04",
+            "doses": 10855,
+            "type": "rural"
+          },
+          {
+            "dept": "34",
+            "doses": 70561,
+            "type": "urban"
+          }
+        ]
+      },
+      "WH_BORDEAUX": {
+        "stock_current": 1781000,
+        "stock_planned": 1959999,
+        "status": "normal",
+        "deliveries": [
+          {
+            "dept": "40",
+            "doses": 27216,
+            "type": "rural"
+          },
+          {
+            "dept": "64",
+            "doses": 50545,
+            "type": "periurban"
+          },
+          {
+            "dept": "19",
+            "doses": 17496,
+            "type": "rural"
+          },
+          {
+            "dept": "16",
+            "doses": 27216,
+            "type": "rural"
+          },
+          {
+            "dept": "31",
+            "doses": 85538,
+            "type": "urban"
+          },
+          {
+            "dept": "82",
+            "doses": 17496,
+            "type": "rural"
+          },
+          {
+            "dept": "46",
+            "doses": 14580,
+            "type": "rural"
+          }
+        ]
+      },
+      "WH_LILLE": {
+        "stock_current": 2035428,
+        "stock_planned": 2240000,
+        "status": "normal",
+        "deliveries": [
+          {
+            "dept": "55",
+            "doses": 15275,
+            "type": "rural"
+          },
+          {
+            "dept": "67",
+            "doses": 79433,
+            "type": "urban"
+          },
+          {
+            "dept": "70",
+            "doses": 18330,
+            "type": "rural"
+          },
+          {
+            "dept": "88",
+            "doses": 28514,
+            "type": "rural"
+          },
+          {
+            "dept": "52",
+            "doses": 15275,
+            "type": "rural"
+          },
+          {
+            "dept": "58",
+            "doses": 18330,
+            "type": "rural"
+          }
+        ]
+      },
+      "WH_NANTES": {
+        "stock_current": 1653785,
+        "stock_planned": 1820000,
+        "status": "normal",
+        "deliveries": [
+          {
+            "dept": "49",
+            "doses": 48196,
+            "type": "periurban"
+          },
+          {
+            "dept": "85",
+            "doses": 38928,
+            "type": "periurban"
+          },
+          {
+            "dept": "79",
+            "doses": 32440,
+            "type": "rural"
+          },
+          {
+            "dept": "37",
+            "doses": 44489,
+            "type": "periurban"
+          },
+          {
+            "dept": "22",
+            "doses": 29659,
+            "type": "rural"
+          },
+          {
+            "dept": "61",
+            "doses": 25952,
+            "type": "rural"
+          },
+          {
+            "dept": "76",
+            "doses": 57465,
+            "type": "periurban"
+          }
+        ]
+      }
+    },
+    "2025-12-08": {
+      "WH_ROISSY": {
+        "stock_current": 3900000,
+        "stock_planned": 3500000,
+        "status": "normal",
+        "deliveries": [
+          {
+            "dept": "77",
+            "doses": 79325,
+            "type": "urban"
+          },
+          {
+            "dept": "92",
+            "doses": 89494,
+            "type": "urban"
+          },
+          {
+            "dept": "95",
+            "doses": 69155,
+            "type": "periurban"
+          },
+          {
+            "dept": "02",
+            "doses": 28475,
+            "type": "rural"
+          },
+          {
+            "dept": "89",
+            "doses": 22373,
+            "type": "rural"
+          }
+        ]
+      },
+      "WH_LYON": {
+        "stock_current": 2730000,
+        "stock_planned": 2450000,
+        "status": "normal",
+        "deliveries": [
+          {
+            "dept": "38",
+            "doses": 67994,
+            "type": "urban"
+          },
+          {
+            "dept": "74",
+            "doses": 42496,
+            "type": "periurban"
+          },
+          {
+            "dept": "26",
+            "doses": 33053,
+            "type": "rural"
+          },
+          {
+            "dept": "71",
+            "doses": 30219,
+            "type": "rural"
+          }
+        ]
+      },
+      "WH_MARSEILLE": {
+        "stock_current": 2340000,
+        "stock_planned": 2100000,
+        "status": "normal",
+        "deliveries": [
+          {
+            "dept": "83",
+            "doses": 70203,
+            "type": "periurban"
+          },
+          {
+            "dept": "05",
+            "doses": 10324,
+            "type": "rural"
+          },
+          {
+            "dept": "11",
+            "doses": 28907,
+            "type": "rural"
+          },
+          {
+            "dept": "2A",
+            "doses": 15486,
+            "type": "rural"
+          },
+          {
+            "dept": "2B",
+            "doses": 18583,
+            "type": "rural"
+          }
+        ]
+      },
+      "WH_BORDEAUX": {
+        "stock_current": 2184000,
+        "stock_planned": 1959999,
+        "status": "normal",
+        "deliveries": [
+          {
+            "dept": "47",
+            "doses": 26780,
+            "type": "rural"
+          },
+          {
+            "dept": "23",
+            "doses": 16068,
+            "type": "rural"
+          },
+          {
+            "dept": "17",
+            "doses": 51419,
+            "type": "periurban"
+          },
+          {
+            "dept": "32",
+            "doses": 16068,
+            "type": "rural"
+          },
+          {
+            "dept": "65",
+            "doses": 19282,
+            "type": "rural"
+          }
+        ]
+      },
+      "WH_LILLE": {
+        "stock_current": 2496000,
+        "stock_planned": 2240000,
+        "status": "normal",
+        "deliveries": [
+          {
+            "dept": "59",
+            "doses": 119431,
+            "type": "urban"
+          },
+          {
+            "dept": "62",
+            "doses": 93839,
+            "type": "urban"
+          },
+          {
+            "dept": "80",
+            "doses": 29857,
+            "type": "rural"
+          },
+          {
+            "dept": "08",
+            "doses": 23459,
+            "type": "rural"
+          },
+          {
+            "dept": "68",
+            "doses": 55450,
+            "type": "periurban"
+          }
+        ]
+      },
+      "WH_NANTES": {
+        "stock_current": 2028000,
+        "stock_planned": 1820000,
+        "status": "normal",
+        "deliveries": [
+          {
+            "dept": "44",
+            "doses": 70700,
+            "type": "urban"
+          },
+          {
+            "dept": "53",
+            "doses": 29005,
+            "type": "rural"
+          },
+          {
+            "dept": "86",
+            "doses": 31724,
+            "type": "rural"
+          },
+          {
+            "dept": "41",
+            "doses": 31724,
+            "type": "rural"
+          },
+          {
+            "dept": "35",
+            "doses": 52572,
+            "type": "periurban"
+          },
+          {
+            "dept": "56",
+            "doses": 34443,
+            "type": "rural"
+          },
+          {
+            "dept": "29",
+            "doses": 38069,
+            "type": "periurban"
+          },
+          {
+            "dept": "50",
+            "doses": 29005,
+            "type": "rural"
+          },
+          {
+            "dept": "14",
+            "doses": 43508,
+            "type": "periurban"
+          }
+        ]
+      }
+    },
+    "2025-12-09": {
+      "WH_ROISSY": {
+        "stock_current": 3041071,
+        "stock_planned": 3500000,
+        "status": "normal",
+        "deliveries": [
+          {
+            "dept": "75",
+            "doses": 121458,
+            "type": "urban"
+          },
+          {
+            "dept": "78",
+            "doses": 72875,
+            "type": "urban"
+          },
+          {
+            "dept": "93",
+            "doses": 92308,
+            "type": "urban"
+          },
+          {
+            "dept": "60",
+            "doses": 40810,
+            "type": "periurban"
+          },
+          {
+            "dept": "51",
+            "doses": 34008,
+            "type": "rural"
+          },
+          {
+            "dept": "45",
+            "doses": 36923,
+            "type": "rural"
+          }
+        ]
+      },
+      "WH_LYON": {
+        "stock_current": 2128750,
+        "stock_planned": 2450000,
+        "status": "normal",
+        "deliveries": [
+          {
+            "dept": "69",
+            "doses": 92124,
+            "type": "urban"
+          },
+          {
+            "dept": "42",
+            "doses": 50425,
+            "type": "periurban"
+          },
+          {
+            "dept": "63",
+            "doses": 46547,
+            "type": "periurban"
+          },
+          {
+            "dept": "03",
+            "doses": 24243,
+            "type": "rural"
+          },
+          {
+            "dept": "39",
+            "doses": 21334,
+            "type": "rural"
+          },
+          {
+            "dept": "15",
+            "doses": 14545,
+            "type": "rural"
+          }
+        ]
+      },
+      "WH_MARSEILLE": {
+        "stock_current": 1824642,
+        "stock_planned": 2100000,
+        "status": "normal",
+        "deliveries": [
+          {
+            "dept": "84",
+            "doses": 44940,
+            "type": "periurban"
+          },
+          {
+            "dept": "06",
+            "doses": 87883,
+            "type": "urban"
+          },
+          {
+            "dept": "30",
+            "doses": 47936,
+            "type": "periurban"
+          },
+          {
+            "dept": "66",
+            "doses": 27962,
+            "type": "rural"
+          },
+          {
+            "dept": "48",
+            "doses": 11984,
+            "type": "rural"
+          }
+        ]
+      },
+      "WH_BORDEAUX": {
+        "stock_current": 1703000,
+        "stock_planned": 1959999,
+        "status": "normal",
+        "deliveries": [
+          {
+            "dept": "33",
+            "doses": 106326,
+            "type": "urban"
+          },
+          {
+            "dept": "24",
+            "doses": 30378,
+            "type": "rural"
+          },
+          {
+            "dept": "87",
+            "doses": 30378,
+            "type": "rural"
+          },
+          {
+            "dept": "09",
+            "doses": 13019,
+            "type": "rural"
+          },
+          {
+            "dept": "81",
+            "doses": 30378,
+            "type": "rural"
+          },
+          {
+            "dept": "12",
+            "doses": 23869,
+            "type": "rural"
+          }
+        ]
+      },
+      "WH_LILLE": {
+        "stock_current": 1946285,
+        "stock_planned": 2240000,
+        "status": "normal",
+        "deliveries": [
+          {
+            "dept": "54",
+            "doses": 60866,
+            "type": "periurban"
+          },
+          {
+            "dept": "57",
+            "doses": 71360,
+            "type": "periurban"
+          },
+          {
+            "dept": "90",
+            "doses": 10494,
+            "type": "rural"
+          },
+          {
+            "dept": "21",
+            "doses": 39878,
+            "type": "rural"
+          },
+          {
+            "dept": "18",
+            "doses": 29383,
+            "type": "rural"
+          }
+        ]
+      },
+      "WH_NANTES": {
+        "stock_current": 1581357,
+        "stock_planned": 1820000,
+        "status": "normal",
+        "deliveries": [
+          {
+            "dept": "72",
+            "doses": 36291,
+            "type": "rural"
+          },
+          {
+            "dept": "36",
+            "doses": 23875,
+            "type": "rural"
+          },
+          {
+            "dept": "27",
+            "doses": 33426,
+            "type": "rural"
+          }
+        ]
+      }
+    },
+    "2025-12-10": {
+      "WH_ROISSY": {
+        "stock_current": 2971428,
+        "stock_planned": 3500000,
+        "status": "normal",
+        "deliveries": [
+          {
+            "dept": "91",
+            "doses": 74483,
+            "type": "urban"
+          },
+          {
+            "dept": "94",
+            "doses": 84828,
+            "type": "urban"
+          },
+          {
+            "dept": "10",
+            "doses": 28965,
+            "type": "rural"
+          },
+          {
+            "dept": "28",
+            "doses": 33103,
+            "type": "rural"
+          }
+        ]
+      },
+      "WH_LYON": {
+        "stock_current": 2080000,
+        "stock_planned": 2450000,
+        "status": "normal",
+        "deliveries": [
+          {
+            "dept": "01",
+            "doses": 48755,
+            "type": "periurban"
+          },
+          {
+            "dept": "73",
+            "doses": 38598,
+            "type": "rural"
+          },
+          {
+            "dept": "07",
+            "doses": 28440,
+            "type": "rural"
+          },
+          {
+            "dept": "43",
+            "doses": 18283,
+            "type": "rural"
+          },
+          {
+            "dept": "25",
+            "doses": 38598,
+            "type": "rural"
+          }
+        ]
+      },
+      "WH_MARSEILLE": {
+        "stock_current": 1782857,
+        "stock_planned": 2100000,
+        "status": "normal",
+        "deliveries": [
+          {
+            "dept": "13",
+            "doses": 109743,
+            "type": "urban"
+          },
+          {
+            "dept": "04",
+            "doses": 11160,
+            "type": "rural"
+          },
+          {
+            "dept": "34",
+            "doses": 72542,
+            "type": "urban"
+          }
+        ]
+      },
+      "WH_BORDEAUX": {
+        "stock_current": 1664000,
+        "stock_planned": 1959999,
+        "status": "normal",
+        "deliveries": [
+          {
+            "dept": "40",
+            "doses": 26453,
+            "type": "rural"
+          },
+          {
+            "dept": "64",
+            "doses": 49128,
+            "type": "periurban"
+          },
+          {
+            "dept": "19",
+            "doses": 17006,
+            "type": "rural"
+          },
+          {
+            "dept": "16",
+            "doses": 26453,
+            "type": "rural"
+          },
+          {
+            "dept": "31",
+            "doses": 83140,
+            "type": "urban"
+          },
+          {
+            "dept": "82",
+            "doses": 17006,
+            "type": "rural"
+          },
+          {
+            "dept": "46",
+            "doses": 14171,
+            "type": "rural"
+          }
+        ]
+      },
+      "WH_LILLE": {
+        "stock_current": 1901714,
+        "stock_planned": 2240000,
+        "status": "normal",
+        "deliveries": [
+          {
+            "dept": "55",
+            "doses": 15499,
+            "type": "rural"
+          },
+          {
+            "dept": "67",
+            "doses": 80599,
+            "type": "urban"
+          },
+          {
+            "dept": "70",
+            "doses": 18599,
+            "type": "rural"
+          },
+          {
+            "dept": "88",
+            "doses": 28933,
+            "type": "rural"
+          },
+          {
+            "dept": "52",
+            "doses": 15499,
+            "type": "rural"
+          },
+          {
+            "dept": "58",
+            "doses": 18599,
+            "type": "rural"
+          }
+        ]
+      },
+      "WH_NANTES": {
+        "stock_current": 1545142,
+        "stock_planned": 1820000,
+        "status": "normal",
+        "deliveries": [
+          {
+            "dept": "49",
+            "doses": 49037,
+            "type": "periurban"
+          },
+          {
+            "dept": "85",
+            "doses": 39607,
+            "type": "periurban"
+          },
+          {
+            "dept": "79",
+            "doses": 33005,
+            "type": "rural"
+          },
+          {
+            "dept": "37",
+            "doses": 45265,
+            "type": "periurban"
+          },
+          {
+            "dept": "22",
+            "doses": 30176,
+            "type": "rural"
+          },
+          {
+            "dept": "61",
+            "doses": 26404,
+            "type": "rural"
+          },
+          {
+            "dept": "76",
+            "doses": 58467,
+            "type": "periurban"
+          }
+        ]
+      }
+    },
+    "2025-12-11": {
+      "WH_ROISSY": {
+        "stock_current": 2901785,
+        "stock_planned": 3500000,
+        "status": "normal",
+        "deliveries": [
+          {
+            "dept": "77",
+            "doses": 76164,
+            "type": "urban"
+          },
+          {
+            "dept": "92",
+            "doses": 85929,
+            "type": "urban"
+          },
+          {
+            "dept": "95",
+            "doses": 66400,
+            "type": "periurban"
+          },
+          {
+            "dept": "02",
+            "doses": 27341,
+            "type": "rural"
+          },
+          {
+            "dept": "89",
+            "doses": 21482,
+            "type": "rural"
+          }
+        ]
+      },
+      "WH_LYON": {
+        "stock_current": 2031250,
+        "stock_planned": 2450000,
+        "status": "normal",
+        "deliveries": [
+          {
+            "dept": "38",
+            "doses": 71319,
+            "type": "urban"
+          },
+          {
+            "dept": "74",
+            "doses": 44574,
+            "type": "periurban"
+          },
+          {
+            "dept": "26",
+            "doses": 34669,
+            "type": "rural"
+          },
+          {
+            "dept": "71",
+            "doses": 31697,
+            "type": "rural"
+          }
+        ]
+      },
+      "WH_MARSEILLE": {
+        "stock_current": 1741071,
+        "stock_planned": 2100000,
+        "status": "normal",
+        "deliveries": [
+          {
+            "dept": "83",
+            "doses": 72731,
+            "type": "periurban"
+          },
+          {
+            "dept": "05",
+            "doses": 10695,
+            "type": "rural"
+          },
+          {
+            "dept": "11",
+            "doses": 29948,
+            "type": "rural"
+          },
+          {
+            "dept": "2A",
+            "doses": 16043,
+            "type": "rural"
+          },
+          {
+            "dept": "2B",
+            "doses": 19252,
+            "type": "rural"
+          }
+        ]
+      },
+      "WH_BORDEAUX": {
+        "stock_current": 1625000,
+        "stock_planned": 1959999,
+        "status": "normal",
+        "deliveries": [
+          {
+            "dept": "47",
+            "doses": 24598,
+            "type": "rural"
+          },
+          {
+            "dept": "23",
+            "doses": 14759,
+            "type": "rural"
+          },
+          {
+            "dept": "17",
+            "doses": 47228,
+            "type": "periurban"
+          },
+          {
+            "dept": "32",
+            "doses": 14759,
+            "type": "rural"
+          },
+          {
+            "dept": "65",
+            "doses": 17710,
+            "type": "rural"
+          }
+        ]
+      },
+      "WH_LILLE": {
+        "stock_current": 1857142,
+        "stock_planned": 2240000,
+        "status": "normal",
+        "deliveries": [
+          {
+            "dept": "59",
+            "doses": 110012,
+            "type": "urban"
+          },
+          {
+            "dept": "62",
+            "doses": 86438,
+            "type": "urban"
+          },
+          {
+            "dept": "80",
+            "doses": 27503,
+            "type": "rural"
+          },
+          {
+            "dept": "08",
+            "doses": 21609,
+            "type": "rural"
+          },
+          {
+            "dept": "68",
+            "doses": 51077,
+            "type": "periurban"
+          }
+        ]
+      },
+      "WH_NANTES": {
+        "stock_current": 1508928,
+        "stock_planned": 1820000,
+        "status": "normal",
+        "deliveries": [
+          {
+            "dept": "44",
+            "doses": 78316,
+            "type": "urban"
+          },
+          {
+            "dept": "53",
+            "doses": 32129,
+            "type": "rural"
+          },
+          {
+            "dept": "86",
+            "doses": 35142,
+            "type": "rural"
+          },
+          {
+            "dept": "41",
+            "doses": 35142,
+            "type": "rural"
+          },
+          {
+            "dept": "35",
+            "doses": 58235,
+            "type": "periurban"
+          },
+          {
+            "dept": "56",
+            "doses": 38154,
+            "type": "rural"
+          },
+          {
+            "dept": "29",
+            "doses": 42170,
+            "type": "periurban"
+          },
+          {
+            "dept": "50",
+            "doses": 32129,
+            "type": "rural"
+          },
+          {
+            "dept": "14",
+            "doses": 48194,
+            "type": "periurban"
+          }
+        ]
+      }
+    },
+    "2025-12-12": {
+      "WH_ROISSY": {
+        "stock_current": 2832142,
+        "stock_planned": 3500000,
+        "status": "normal",
+        "deliveries": [
+          {
+            "dept": "75",
+            "doses": 123440,
+            "type": "urban"
+          },
+          {
+            "dept": "78",
+            "doses": 74064,
+            "type": "urban"
+          },
+          {
+            "dept": "93",
+            "doses": 93814,
+            "type": "urban"
+          },
+          {
+            "dept": "60",
+            "doses": 41475,
+            "type": "periurban"
+          },
+          {
+            "dept": "51",
+            "doses": 34563,
+            "type": "rural"
+          },
+          {
+            "dept": "45",
+            "doses": 37525,
+            "type": "rural"
+          }
+        ]
+      },
+      "WH_LYON": {
+        "stock_current": 1982500,
+        "stock_planned": 2450000,
+        "status": "normal",
+        "deliveries": [
+          {
+            "dept": "69",
+            "doses": 102463,
+            "type": "urban"
+          },
+          {
+            "dept": "42",
+            "doses": 56085,
+            "type": "periurban"
+          },
+          {
+            "dept": "63",
+            "doses": 51770,
+            "type": "periurban"
+          },
+          {
+            "dept": "03",
+            "doses": 26964,
+            "type": "rural"
+          },
+          {
+            "dept": "39",
+            "doses": 23728,
+            "type": "rural"
+          },
+          {
+            "dept": "15",
+            "doses": 16178,
+            "type": "rural"
+          }
+        ]
+      },
+      "WH_MARSEILLE": {
+        "stock_current": 1699285,
+        "stock_planned": 2100000,
+        "status": "normal",
+        "deliveries": [
+          {
+            "dept": "84",
+            "doses": 43725,
+            "type": "periurban"
+          },
+          {
+            "dept": "06",
+            "doses": 85507,
+            "type": "urban"
+          },
+          {
+            "dept": "30",
+            "doses": 46640,
+            "type": "periurban"
+          },
+          {
+            "dept": "66",
+            "doses": 27206,
+            "type": "rural"
+          },
+          {
+            "dept": "48",
+            "doses": 11660,
+            "type": "rural"
+          }
+        ]
+      },
+      "WH_BORDEAUX": {
+        "stock_current": 1586000,
+        "stock_planned": 1959999,
+        "status": "normal",
+        "deliveries": [
+          {
+            "dept": "33",
+            "doses": 94482,
+            "type": "urban"
+          },
+          {
+            "dept": "24",
+            "doses": 26994,
+            "type": "rural"
+          },
+          {
+            "dept": "87",
+            "doses": 26994,
+            "type": "rural"
+          },
+          {
+            "dept": "09",
+            "doses": 11569,
+            "type": "rural"
+          },
+          {
+            "dept": "81",
+            "doses": 26994,
+            "type": "rural"
+          },
+          {
+            "dept": "12",
+            "doses": 21210,
+            "type": "rural"
+          }
+        ]
+      },
+      "WH_LILLE": {
+        "stock_current": 1812571,
+        "stock_planned": 2240000,
+        "status": "normal",
+        "deliveries": [
+          {
+            "dept": "54",
+            "doses": 62140,
+            "type": "periurban"
+          },
+          {
+            "dept": "57",
+            "doses": 72854,
+            "type": "periurban"
+          },
+          {
+            "dept": "90",
+            "doses": 10713,
+            "type": "rural"
+          },
+          {
+            "dept": "21",
+            "doses": 40712,
+            "type": "rural"
+          },
+          {
+            "dept": "18",
+            "doses": 29998,
+            "type": "rural"
+          }
+        ]
+      },
+      "WH_NANTES": {
+        "stock_current": 1472714,
+        "stock_planned": 1820000,
+        "status": "normal",
+        "deliveries": [
+          {
+            "dept": "72",
+            "doses": 36179,
+            "type": "rural"
+          },
+          {
+            "dept": "36",
+            "doses": 23802,
+            "type": "rural"
+          },
+          {
+            "dept": "27",
+            "doses": 33323,
+            "type": "rural"
+          }
+        ]
+      }
+    }
+  }
+}

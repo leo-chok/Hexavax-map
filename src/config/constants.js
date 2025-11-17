@@ -74,6 +74,7 @@ export const DATA_SOURCES = {
   national: {
     timeseries: "./data/areas_stats/national_epidemic_timeseries_dec2025.json",
   },
+  vaccineLogistics: "./data/vaccine_logistics_timeseries_dec2025.json",
   views: {
     national: "./data/geojson/metropole.geojson",
     regional: "./data/geojson/regions-avec-outre-mer.geojson",
@@ -91,6 +92,7 @@ export const DEFAULT_FILTERS = {
   hospitals: false,
   pharmacies: false,
   vulnerablePopulation: false,
+  vaccineLogistics: false,
 };
 
 // ============================================
@@ -103,6 +105,7 @@ export const LAYER_ORDER = [
   { key: 'hospitals', label: 'Saturation hôpitaux' },
   { key: 'pharmacies', label: 'Centres de vaccination' },
   { key: 'vulnerablePopulation', label: 'Population 65+ ans' },
+  { key: 'vaccineLogistics', label: 'Logistique Doses Vaccins' },
 ];
 
 // ============================================
