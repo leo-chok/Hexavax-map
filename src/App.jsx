@@ -5,6 +5,7 @@ import Legend from "./components/Legend.jsx";
 import SidePanel from "./components/SidePanel.jsx";
 import AreaPanel from "./components/AreaPanel.jsx";
 import WarehousePanel from "./components/WarehousePanel.jsx";
+import BudgetPanel from "./components/BudgetPanel.jsx";
 import { DATA_SOURCES, DEFAULT_FILTERS, STORAGE_KEYS } from "./config/constants";
 
 export default function App() {
@@ -27,6 +28,10 @@ export default function App() {
   const [departmentsGeojson, setDepartmentsGeojson] = useState(null);
   const [vaccineLogisticsData, setVaccineLogisticsData] = useState(null);
   const [selectedWarehouse, setSelectedWarehouse] = useState(null);
+  const [budgetDepartmentsData, setBudgetDepartmentsData] = useState(null);
+  const [budgetRegionsData, setBudgetRegionsData] = useState(null);
+  const [selectedBudget, setSelectedBudget] = useState(null);
+  const [selectedBudgetData, setSelectedBudgetData] = useState(null);
   // load persisted filters from localStorage if present (sanitise stored object)
   const [filters, setFilters] = useState(() => {
     try {
@@ -133,6 +138,22 @@ export default function App() {
       .then(res => res.json())
       .then(setVaccineLogisticsData)
       .catch(err => console.error("Erreur chargement logistique vaccins :", err));
+  }, []);
+
+  // Charger les données du budget départements
+  useEffect(() => {
+    fetch(DATA_SOURCES.budget.departments)
+      .then(res => res.json())
+      .then(setBudgetDepartmentsData)
+      .catch(err => console.error("Erreur chargement budget départements :", err));
+  }, []);
+
+  // Charger les données du budget régions
+  useEffect(() => {
+    fetch(DATA_SOURCES.budget.regions)
+      .then(res => res.json())
+      .then(setBudgetRegionsData)
+      .catch(err => console.error("Erreur chargement budget régions :", err));
   }, []);
 
   // Charger la geojson pour la vue active (national / regional / departmental / domtom)
@@ -392,6 +413,65 @@ export default function App() {
     }
   };
 
+  // Handler clic sur le budget layer
+  const handleBudgetClick = (feature) => {
+    if (!feature) {
+      setSelectedBudget(null);
+      setSelectedBudgetData(null);
+      return;
+    }
+    
+    setSelectedBudget(feature);
+    
+    // Extract budget data for the clicked feature
+    if (budgetDepartmentsData && currentDate) {
+      // Adapter la date à la période du budget (2024)
+      let searchDate = currentDate;
+      if (currentDate.startsWith("2025-")) {
+        searchDate = currentDate.replace("2025-", "2024-");
+      }
+      
+      const code = readDepCode(feature);
+      const normalizeCode = (c) => String(c).replace(/^0+/, '') || '0';
+      const normalizedCode = normalizeCode(code);
+      
+      const dayData = budgetDepartmentsData.donnees?.find(d => d.date === searchDate);
+      const deptData = dayData?.departements?.find(d => 
+        d.code_insee === code || normalizeCode(d.code_insee) === normalizedCode
+      );
+      
+      if (deptData) {
+        setSelectedBudgetData(deptData);
+      }
+    }
+  };
+
+  // Auto-update budget data when date changes (if budget feature selected)
+  useEffect(() => {
+    if (!selectedBudget || !currentDate || !budgetDepartmentsData) return;
+    
+    // Adapter la date à la période du budget (2024)
+    let searchDate = currentDate;
+    if (currentDate.startsWith("2025-")) {
+      searchDate = currentDate.replace("2025-", "2024-");
+    }
+    
+    const code = readDepCode(selectedBudget);
+    if (!code) return;
+    
+    const normalizeCode = (c) => String(c).replace(/^0+/, '') || '0';
+    const normalizedCode = normalizeCode(code);
+    
+    const dayData = budgetDepartmentsData.donnees?.find(d => d.date === searchDate);
+    const deptData = dayData?.departements?.find(d => 
+      d.code_insee === code || normalizeCode(d.code_insee) === normalizedCode
+    );
+    
+    if (deptData) {
+      setSelectedBudgetData(deptData);
+    }
+  }, [currentDate, budgetDepartmentsData, selectedBudget]);
+
   const isPredictive = currentDate >= "2025-12-01";
 
   return (
@@ -423,14 +503,17 @@ export default function App() {
             domTomCoords={domTomCoords}
             onAreaClick={handleAreaClick}
             onWarehouseClick={handleWarehouseClick}
+            onBudgetClick={handleBudgetClick}
             mapStyle={import.meta.env.VITE_MAPBOX_STYLE}
             showHeatmap={filters.heatmap}
             showHospitals={filters.hospitals}
             showPharmacies={filters.pharmacies}
             showVulnerablePopulation={filters.vulnerablePopulation}
             showVaccineLogistics={filters.vaccineLogistics}
+            showBudget={filters.budget}
             vulnerablePopulationData={vulnerablePopulationData}
             vaccineLogisticsData={vaccineLogisticsData}
+            budgetDepartmentsData={budgetDepartmentsData}
             departmentsGeojson={departmentsGeojson}
             areaTimeseries={
               viewMode === "departmental" || viewMode === "domtom"
@@ -472,12 +555,20 @@ export default function App() {
             vaccineLogisticsData={vaccineLogisticsData}
           />
 
+          <BudgetPanel
+            open={!!selectedBudget}
+            feature={selectedBudget}
+            budgetData={budgetDepartmentsData}
+            currentDate={currentDate}
+            onClose={() => { setSelectedBudget(null); setSelectedBudgetData(null); }}
+          />
+
           {/* Légende dynamique qui s'affiche si au moins un calque est actif */}
           {(filters.heatmap || filters.hospitals || filters.pharmacies || filters.vulnerablePopulation) && (
             <div 
               className="legend"
               style={{
-                transform: selectedArea || selectedWarehouse ? "translateX(-420px)" : "translateX(0)",
+                transform: (selectedArea || selectedWarehouse || selectedBudget) ? "translateX(-420px)" : "translateX(0)",
                 transition: "transform 0.3s ease",
               }}
             >

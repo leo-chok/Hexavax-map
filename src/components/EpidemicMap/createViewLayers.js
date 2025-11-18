@@ -99,7 +99,7 @@ export function createViewLayers({
         if (onAreaClick && object) onAreaClick(object);
       },
       updateTriggers: {
-        getFillColor: [areaTimeseries, currentDate, viewMode],
+        getFillColor: [currentDate],
       },
     })
   );

@@ -75,6 +75,10 @@ export const DATA_SOURCES = {
     timeseries: "./data/areas_stats/national_epidemic_timeseries_dec2025.json",
   },
   vaccineLogistics: "./data/vaccine_logistics_timeseries_dec2025.json",
+  budget: {
+    departments: "./data/vaccination_budget_departements.json",
+    regions: "./data/vaccination_budget_regions.json",
+  },
   views: {
     national: "./data/geojson/metropole.geojson",
     regional: "./data/geojson/regions-avec-outre-mer.geojson",
@@ -93,6 +97,7 @@ export const DEFAULT_FILTERS = {
   pharmacies: false,
   vulnerablePopulation: false,
   vaccineLogistics: false,
+  budget: false,
 };
 
 // ============================================
@@ -106,6 +111,7 @@ export const LAYER_ORDER = [
   { key: 'pharmacies', label: 'Centres de vaccination' },
   { key: 'vulnerablePopulation', label: 'Population 65+ ans' },
   { key: 'vaccineLogistics', label: 'Logistique Doses Vaccins' },
+  { key: 'budget', label: 'Budget vaccination' },
 ];
 
 // ============================================

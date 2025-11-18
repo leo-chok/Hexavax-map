@@ -21,14 +21,17 @@ export default function EpidemicMap({
   showPharmacies = true,
   showVulnerablePopulation = false,
   showVaccineLogistics = false,
+  showBudget = false,
   vulnerablePopulationData = null,
   vaccineLogisticsData = null,
+  budgetDepartmentsData = null,
   departmentsGeojson = null,
   viewGeojson = null,
   viewMode = "national",
   domTomCoords = null,
   onAreaClick = null,
   onWarehouseClick = null,
+  onBudgetClick = null,
   areaTimeseries = {},
   currentDate = null,
 }) {
@@ -81,13 +84,16 @@ export default function EpidemicMap({
       viewMode,
       onAreaClick,
       onWarehouseClick,
+      onBudgetClick,
       showHeatmap,
       showHospitals,
       showPharmacies,
       showVulnerablePopulation,
       showVaccineLogistics,
+      showBudget,
       vulnerablePopulationData,
       vaccineLogisticsData,
+      budgetDepartmentsData,
       departmentsGeojson,
       scaling,
       zoom,
@@ -105,8 +111,10 @@ export default function EpidemicMap({
       showPharmacies,
       showVulnerablePopulation,
       showVaccineLogistics,
+      showBudget,
       vulnerablePopulationData,
       vaccineLogisticsData,
+      budgetDepartmentsData,
       departmentsGeojson,
       scaling.radiusMeters,
       scaling.elevationMultiplier,
@@ -114,11 +122,12 @@ export default function EpidemicMap({
       viewMode,
       onAreaClick,
       onWarehouseClick,
+      onBudgetClick,
       (viewGeojson && viewGeojson.features) ? viewGeojson.features.length : 0,
       zoom,
       areaTimeseries,
       currentDate,
-      isMapTransitioning, // Ajouter la dépendance pour recalculer quand la transition se termine
+      isMapTransitioning,
     ]
   );
 
@@ -131,6 +140,31 @@ export default function EpidemicMap({
         if (now - lastUpdateRef.current > 120) {
           lastUpdateRef.current = now;
           setZoom(newViewState.zoom);
+        }
+      }}
+      onHover={(info) => {
+        // Throttle hover updates to max 60fps (every ~16ms)
+        const now = Date.now();
+        if (now - lastHoverUpdateRef.current < 16) {
+          return;
+        }
+        lastHoverUpdateRef.current = now;
+
+        if (info.object) {
+          // Hover sur le budget layer
+          if (info.layer?.id === "budget-layer-polygons") {
+            const p = info.object.properties || {};
+            const featureId = p.code || p.CODE || p.insee || p.INSEE || p.code_insee || p.COD_DEP || p.cod_dep || p.dep || p.DEP;
+            setHoveredFeatureId(prev => prev !== featureId ? featureId : prev);
+          }
+          // Hover sur les view layers (national/regional/departmental)
+          else if (info.layer?.id?.startsWith("view-layer-")) {
+            const p = info.object.properties || {};
+            const featureId = p.code || p.CODE || p.cod_dep || p.COD_DEP || p.insee || p.INSEE || p.nom || p.name || p.NOM || p.LIBELLE;
+            setHoveredFeatureId(prev => prev !== featureId ? featureId : prev);
+          }
+        } else if (!info.object) {
+          setHoveredFeatureId(prev => prev !== null ? null : prev);
         }
       }}
       // show pointer cursor when hovering pickable layers (indicates clickable)

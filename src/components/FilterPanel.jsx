@@ -75,12 +75,26 @@ export default function FilterPanel({ filters, onFiltersChange }) {
             checked={!!filters.vaccineLogistics}
             onChange={() => handleToggle("vaccineLogistics")}
             sx={{
-              color: "#6E6BF3",
-              "&.Mui-checked": { color: "#6E6BF3" },
+              color: "#1976d2",
+              "&.Mui-checked": { color: "#1976d2" },
             }}
           />
         }
         label="Logistique Doses Vaccins"
+      />
+
+      <FormControlLabel
+        control={
+          <Checkbox
+            checked={!!filters.budget}
+            onChange={() => handleToggle("budget")}
+            sx={{
+              color: "#1976d2",
+              "&.Mui-checked": { color: "#1976d2" },
+            }}
+          />
+        }
+        label="Budget vaccination"
       />
     </FormGroup>
   );
