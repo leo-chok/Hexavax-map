@@ -48,8 +48,8 @@ export default function Legend({ filters = {}, style = {} }) {
 
     if (key === "departments") {
       return (
-        <>
-          <div key={key}>
+        <React.Fragment key={`${key}-fragment`}>
+          <div>
             <div style={{ fontWeight: 700, marginBottom: 8 }}>📊 {label}</div>
             <div style={{ display: "grid", gridTemplateColumns: "1fr", gap: 8 }}>
               {departmentsLevels.map((lvl, i) => (
@@ -80,14 +80,14 @@ export default function Legend({ filters = {}, style = {} }) {
           {idx < activeLayers.length - 1 && (
             <div style={{ height: 1, backgroundColor: "#ddd", margin: "12px 0" }} />
           )}
-        </>
+        </React.Fragment>
       );
     }
 
     if (key === "pharmacies") {
       return (
-        <>
-          <div key={key}>
+        <React.Fragment key={`${key}-fragment`}>
+          <div>
             <div style={{ fontWeight: 700, marginBottom: 8 }}>💉 {label}</div>
             <div style={{ display: "grid", gridTemplateColumns: "1fr", gap: 8 }}>
               {pharmaciesLevels.map((lvl, i) => (
@@ -109,14 +109,14 @@ export default function Legend({ filters = {}, style = {} }) {
           {idx < activeLayers.length - 1 && (
             <div style={{ height: 1, backgroundColor: "#ddd", margin: "12px 0" }} />
           )}
-        </>
+        </React.Fragment>
       );
     }
 
     if (key === "vulnerablePopulation") {
       return (
-        <>
-          <div key={key}>
+        <React.Fragment key={`${key}-fragment`}>
+          <div>
             <div style={{ fontWeight: 700, marginBottom: 8 }}>👴 {label}</div>
             <div style={{ display: "grid", gridTemplateColumns: "1fr", gap: 8 }}>
               {vulnerablePopulationLevels.map((lvl, i) => (
@@ -138,7 +138,7 @@ export default function Legend({ filters = {}, style = {} }) {
           {idx < activeLayers.length - 1 && (
             <div style={{ height: 1, backgroundColor: "#ddd", margin: "12px 0" }} />
           )}
-        </>
+        </React.Fragment>
       );
     }
 
@@ -146,8 +146,8 @@ export default function Legend({ filters = {}, style = {} }) {
     const icon = key === "hospitals" ? "🏥" : "🔥";
 
     return (
-      <>
-        <div key={key}>
+      <React.Fragment key={`${key}-fragment`}>
+        <div>
           <div style={{ fontWeight: 700, marginBottom: 8 }}>{icon} {label}</div>
           <div style={{ display: "grid", gridTemplateColumns: "1fr", gap: 8 }}>
             {levels.map((lvl, i) => (
@@ -169,7 +169,7 @@ export default function Legend({ filters = {}, style = {} }) {
         {idx < activeLayers.length - 1 && (
           <div style={{ height: 1, backgroundColor: "#ddd", margin: "12px 0" }} />
         )}
-      </>
+      </React.Fragment>
     );
   };
 

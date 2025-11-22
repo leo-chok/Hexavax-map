@@ -36,9 +36,11 @@ export default function EpidemicMap({
   currentDate = null,
 }) {
   const lastUpdateRef = useRef(0);
+  const lastHoverUpdateRef = useRef(0);
 
   const [zoom, setZoom] = useState(VIEW_STATES.national.zoom);
   const [isMapTransitioning, setIsMapTransitioning] = useState(false);
+  const [hoveredFeatureId, setHoveredFeatureId] = useState(null);
 
   // Forcer le rerender de DeckGL quand viewMode ou domTomCoords changent
   const [viewKey, setViewKey] = useState(0);
